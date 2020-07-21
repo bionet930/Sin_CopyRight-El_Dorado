@@ -1,6 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Runtime.InteropServices
 
+Imports System.Text
+Imports System.Security.Cryptography
+
+
+
 
 Public Class formlogin
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
@@ -13,26 +18,23 @@ Public Class formlogin
 
     End Sub
 
-
-
-
     Private Sub btningresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btningresar.Click
-        Dim conexion As MySqlConnection = New MySqlConnection
+        Dim conexion As MySqlConnection = New MySqlConnection()
         Dim comando As MySqlCommand = New MySqlCommand
-
 
         comando.Connection = conexion
 
 
+
         Try
-            conexion.ConnectionString = "Server=localhost; Database=eldorado; Uid=prueba; Pwd=;"
+            conexion.ConnectionString = "server=localhost; user id= 'prueba' ; password='prueba';database = eldorado"
             conexion.Open()
-            'MsgBox("Conectado a la BD")
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
 
-        comando.CommandText = "SELECT * FROM tblEmpleados WHERE NombreEmpl='" + txtnombre.Text + "' AND PassEmpl='" + txtpass.Text + "' "
+        comando.CommandText = "SELECT * FROM tblempleados WHERE NombreEmpl='" + txtnombre.Text + "' AND PassEmpl = (AES_encrypt('" + txtpass.Text + "', 'AES'))"
 
         Dim r As MySqlDataReader
 
