@@ -122,6 +122,12 @@
     <Compile Include="proveedoresprincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="registroempl.Designer.vb">
+      <DependentUpon>registroempl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registroempl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stockprincipal.Designer.vb">
       <DependentUpon>stockprincipal.vb</DependentUpon>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="proveedoresprincipal.resx">
       <DependentUpon>proveedoresprincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registroempl.resx">
+      <DependentUpon>registroempl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stockprincipal.resx">
       <DependentUpon>stockprincipal.vb</DependentUpon>
