@@ -29,11 +29,11 @@ Partial Class formlogin
         Me.txtpass = New System.Windows.Forms.TextBox()
         Me.btningresar = New System.Windows.Forms.Button()
         Me.panelsuplogin = New System.Windows.Forms.Panel()
-        Me.panelizqlogin = New System.Windows.Forms.Panel()
         Me.btnrestaura = New System.Windows.Forms.Button()
         Me.btnminm = New System.Windows.Forms.Button()
         Me.btnmaxim = New System.Windows.Forms.Button()
         Me.btncerrar = New System.Windows.Forms.Button()
+        Me.panelizqlogin = New System.Windows.Forms.Panel()
         Me.panelsuplogin.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -85,6 +85,7 @@ Partial Class formlogin
         'panelsuplogin
         '
         Me.panelsuplogin.BackColor = System.Drawing.Color.Gold
+        Me.panelsuplogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelsuplogin.Controls.Add(Me.btnrestaura)
         Me.panelsuplogin.Controls.Add(Me.btnminm)
         Me.panelsuplogin.Controls.Add(Me.btnmaxim)
@@ -95,15 +96,6 @@ Partial Class formlogin
         Me.panelsuplogin.Size = New System.Drawing.Size(507, 40)
         Me.panelsuplogin.TabIndex = 5
         '
-        'panelizqlogin
-        '
-        Me.panelizqlogin.BackColor = System.Drawing.Color.MidnightBlue
-        Me.panelizqlogin.Dock = System.Windows.Forms.DockStyle.Left
-        Me.panelizqlogin.Location = New System.Drawing.Point(0, 40)
-        Me.panelizqlogin.Name = "panelizqlogin"
-        Me.panelizqlogin.Size = New System.Drawing.Size(60, 310)
-        Me.panelizqlogin.TabIndex = 6
-        '
         'btnrestaura
         '
         Me.btnrestaura.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -113,7 +105,7 @@ Partial Class formlogin
         Me.btnrestaura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnrestaura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrestaura.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Restaurar
-        Me.btnrestaura.Location = New System.Drawing.Point(427, 0)
+        Me.btnrestaura.Location = New System.Drawing.Point(425, 0)
         Me.btnrestaura.Name = "btnrestaura"
         Me.btnrestaura.Size = New System.Drawing.Size(40, 40)
         Me.btnrestaura.TabIndex = 3
@@ -129,7 +121,7 @@ Partial Class formlogin
         Me.btnminm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnminm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnminm.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Minimizar
-        Me.btnminm.Location = New System.Drawing.Point(387, 0)
+        Me.btnminm.Location = New System.Drawing.Point(385, 0)
         Me.btnminm.Name = "btnminm"
         Me.btnminm.Size = New System.Drawing.Size(40, 40)
         Me.btnminm.TabIndex = 2
@@ -144,7 +136,7 @@ Partial Class formlogin
         Me.btnmaxim.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnmaxim.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnmaxim.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Maximizar
-        Me.btnmaxim.Location = New System.Drawing.Point(427, 0)
+        Me.btnmaxim.Location = New System.Drawing.Point(425, 0)
         Me.btnmaxim.Name = "btnmaxim"
         Me.btnmaxim.Size = New System.Drawing.Size(40, 40)
         Me.btnmaxim.TabIndex = 1
@@ -159,11 +151,21 @@ Partial Class formlogin
         Me.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncerrar.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_cerrar_FN
-        Me.btncerrar.Location = New System.Drawing.Point(467, 0)
+        Me.btncerrar.Location = New System.Drawing.Point(465, 0)
         Me.btncerrar.Name = "btncerrar"
         Me.btncerrar.Size = New System.Drawing.Size(40, 40)
         Me.btncerrar.TabIndex = 0
         Me.btncerrar.UseVisualStyleBackColor = True
+        '
+        'panelizqlogin
+        '
+        Me.panelizqlogin.BackColor = System.Drawing.Color.MidnightBlue
+        Me.panelizqlogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelizqlogin.Dock = System.Windows.Forms.DockStyle.Left
+        Me.panelizqlogin.Location = New System.Drawing.Point(0, 40)
+        Me.panelizqlogin.Name = "panelizqlogin"
+        Me.panelizqlogin.Size = New System.Drawing.Size(60, 310)
+        Me.panelizqlogin.TabIndex = 6
         '
         'formlogin
         '

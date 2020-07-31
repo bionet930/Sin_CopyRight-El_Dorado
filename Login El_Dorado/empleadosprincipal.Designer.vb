@@ -25,22 +25,30 @@ Partial Class empleadosprincipal
         Me.lblmenuempleados = New System.Windows.Forms.Label()
         Me.btnregistroempl = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.pnlpempl = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
+        Me.pnlpempl.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblmenuempleados
         '
         Me.lblmenuempleados.AutoSize = True
-        Me.lblmenuempleados.Location = New System.Drawing.Point(234, 9)
+        Me.lblmenuempleados.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.lblmenuempleados.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmenuempleados.Location = New System.Drawing.Point(238, 9)
         Me.lblmenuempleados.Name = "lblmenuempleados"
-        Me.lblmenuempleados.Size = New System.Drawing.Size(89, 13)
+        Me.lblmenuempleados.Size = New System.Drawing.Size(133, 16)
         Me.lblmenuempleados.TabIndex = 0
         Me.lblmenuempleados.Text = "Menu Empleados"
         '
         'btnregistroempl
         '
-        Me.btnregistroempl.Location = New System.Drawing.Point(71, 41)
+        Me.btnregistroempl.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnregistroempl.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnregistroempl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnregistroempl.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnregistroempl.Font = New System.Drawing.Font("Mongolian Baiti", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnregistroempl.Location = New System.Drawing.Point(12, 6)
         Me.btnregistroempl.Name = "btnregistroempl"
         Me.btnregistroempl.Size = New System.Drawing.Size(75, 51)
         Me.btnregistroempl.TabIndex = 1
@@ -49,7 +57,8 @@ Partial Class empleadosprincipal
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Gold
+        Me.Panel1.BackColor = System.Drawing.Color.DarkGoldenrod
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.lblmenuempleados)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -57,32 +66,32 @@ Partial Class empleadosprincipal
         Me.Panel1.Size = New System.Drawing.Size(578, 35)
         Me.Panel1.TabIndex = 2
         '
-        'Panel2
+        'pnlpempl
         '
-        Me.Panel2.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 35)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(53, 226)
-        Me.Panel2.TabIndex = 3
+        Me.pnlpempl.Controls.Add(Me.btnregistroempl)
+        Me.pnlpempl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlpempl.Location = New System.Drawing.Point(0, 35)
+        Me.pnlpempl.Name = "pnlpempl"
+        Me.pnlpempl.Size = New System.Drawing.Size(578, 226)
+        Me.pnlpempl.TabIndex = 4
         '
         'empleadosprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(578, 261)
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.pnlpempl)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btnregistroempl)
         Me.Name = "empleadosprincipal"
         Me.Text = "empleadosprincipal"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.pnlpempl.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents lblmenuempleados As System.Windows.Forms.Label
     Friend WithEvents btnregistroempl As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents pnlpempl As System.Windows.Forms.Panel
 End Class
