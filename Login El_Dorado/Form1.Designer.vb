@@ -34,6 +34,7 @@ Partial Class formlogin
         Me.btnmaxim = New System.Windows.Forms.Button()
         Me.btncerrar = New System.Windows.Forms.Button()
         Me.panelizqlogin = New System.Windows.Forms.Panel()
+        Me.btnaboutus = New System.Windows.Forms.Button()
         Me.panelsuplogin.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -167,11 +168,28 @@ Partial Class formlogin
         Me.panelizqlogin.Size = New System.Drawing.Size(60, 310)
         Me.panelizqlogin.TabIndex = 6
         '
+        'btnaboutus
+        '
+        Me.btnaboutus.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.btnaboutus.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnaboutus.FlatAppearance.BorderSize = 0
+        Me.btnaboutus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnaboutus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.btnaboutus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnaboutus.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnaboutus.Location = New System.Drawing.Point(400, 315)
+        Me.btnaboutus.Name = "btnaboutus"
+        Me.btnaboutus.Size = New System.Drawing.Size(95, 23)
+        Me.btnaboutus.TabIndex = 7
+        Me.btnaboutus.Text = "About US"
+        Me.btnaboutus.UseVisualStyleBackColor = False
+        '
         'formlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(507, 350)
+        Me.Controls.Add(Me.btnaboutus)
         Me.Controls.Add(Me.panelizqlogin)
         Me.Controls.Add(Me.panelsuplogin)
         Me.Controls.Add(Me.btningresar)
@@ -199,5 +217,6 @@ Partial Class formlogin
     Friend WithEvents btnmaxim As System.Windows.Forms.Button
     Friend WithEvents btnminm As System.Windows.Forms.Button
     Friend WithEvents btnrestaura As System.Windows.Forms.Button
+    Friend WithEvents btnaboutus As System.Windows.Forms.Button
 
 End Class
