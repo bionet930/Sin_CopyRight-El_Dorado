@@ -79,4 +79,8 @@ Public Class formlogin
     Private Sub btnaboutus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnaboutus.Click
         MsgBox("Sin Copyright ©" & vbNewLine & "" & vbNewLine & "Escuela Superior Catalina Harriague de Castaños" & vbNewLine & "" & vbNewLine & "[ESP] Integrantes:" & vbNewLine & "Hugo Muñoz" & vbNewLine & "Pablo Dominguez" & vbNewLine & "Ismael Dutra" & vbNewLine & "" & vbNewLine & "Gracias por usar nuestros servicios." & vbNewLine & "" & vbNewLine & "[ENG] Members:" & vbNewLine & "Hugo Muñoz" & vbNewLine & "Pablo Dominguez" & vbNewLine & "Ismael Dutra" & vbNewLine & "" & vbNewLine & "Thanks for using our services.", , "About us")
     End Sub
+
+    Private Sub formlogin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

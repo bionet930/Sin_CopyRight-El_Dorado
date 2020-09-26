@@ -61,7 +61,7 @@ Partial Class panelsupprincipal
         Me.pnlsuperiorprinciapl.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlsuperiorprinciapl.Location = New System.Drawing.Point(0, 0)
         Me.pnlsuperiorprinciapl.Name = "pnlsuperiorprinciapl"
-        Me.pnlsuperiorprinciapl.Size = New System.Drawing.Size(1036, 40)
+        Me.pnlsuperiorprinciapl.Size = New System.Drawing.Size(1084, 40)
         Me.pnlsuperiorprinciapl.TabIndex = 0
         '
         'btnrestauraprincipal
@@ -72,7 +72,7 @@ Partial Class panelsupprincipal
         Me.btnrestauraprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnrestauraprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrestauraprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Restaurar
-        Me.btnrestauraprincipal.Location = New System.Drawing.Point(954, 0)
+        Me.btnrestauraprincipal.Location = New System.Drawing.Point(1002, 0)
         Me.btnrestauraprincipal.Name = "btnrestauraprincipal"
         Me.btnrestauraprincipal.Size = New System.Drawing.Size(40, 40)
         Me.btnrestauraprincipal.TabIndex = 3
@@ -87,7 +87,7 @@ Partial Class panelsupprincipal
         Me.btnminimprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnminimprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnminimprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Minimizar
-        Me.btnminimprincipal.Location = New System.Drawing.Point(914, 0)
+        Me.btnminimprincipal.Location = New System.Drawing.Point(962, 0)
         Me.btnminimprincipal.Name = "btnminimprincipal"
         Me.btnminimprincipal.Size = New System.Drawing.Size(40, 40)
         Me.btnminimprincipal.TabIndex = 2
@@ -101,7 +101,7 @@ Partial Class panelsupprincipal
         Me.btnmaximprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnmaximprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnmaximprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Maximizar
-        Me.btnmaximprincipal.Location = New System.Drawing.Point(954, 0)
+        Me.btnmaximprincipal.Location = New System.Drawing.Point(1002, 0)
         Me.btnmaximprincipal.Name = "btnmaximprincipal"
         Me.btnmaximprincipal.Size = New System.Drawing.Size(40, 40)
         Me.btnmaximprincipal.TabIndex = 1
@@ -115,7 +115,7 @@ Partial Class panelsupprincipal
         Me.btncerrarprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btncerrarprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncerrarprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_cerrar_FN
-        Me.btncerrarprincipal.Location = New System.Drawing.Point(994, 0)
+        Me.btncerrarprincipal.Location = New System.Drawing.Point(1042, 0)
         Me.btncerrarprincipal.Name = "btncerrarprincipal"
         Me.btncerrarprincipal.Size = New System.Drawing.Size(40, 40)
         Me.btncerrarprincipal.TabIndex = 0
@@ -140,7 +140,7 @@ Partial Class panelsupprincipal
         Me.panelizqprincipal.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelizqprincipal.Location = New System.Drawing.Point(0, 40)
         Me.panelizqprincipal.Name = "panelizqprincipal"
-        Me.panelizqprincipal.Size = New System.Drawing.Size(156, 555)
+        Me.panelizqprincipal.Size = New System.Drawing.Size(60, 557)
         Me.panelizqprincipal.TabIndex = 1
         '
         'Panel4
@@ -292,7 +292,7 @@ Partial Class panelsupprincipal
         '
         Me.btnmenuprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnmenuprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Mobile_Menu_Icon
-        Me.btnmenuprincipal.Location = New System.Drawing.Point(100, 6)
+        Me.btnmenuprincipal.Location = New System.Drawing.Point(4, 6)
         Me.btnmenuprincipal.Name = "btnmenuprincipal"
         Me.btnmenuprincipal.Size = New System.Drawing.Size(48, 42)
         Me.btnmenuprincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -305,9 +305,9 @@ Partial Class panelsupprincipal
         Me.panelprincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelprincipal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.panelprincipal.Location = New System.Drawing.Point(156, 40)
+        Me.panelprincipal.Location = New System.Drawing.Point(60, 40)
         Me.panelprincipal.Name = "panelprincipal"
-        Me.panelprincipal.Size = New System.Drawing.Size(880, 555)
+        Me.panelprincipal.Size = New System.Drawing.Size(1024, 557)
         Me.panelprincipal.TabIndex = 2
         '
         'tmocultarmenu
@@ -322,7 +322,7 @@ Partial Class panelsupprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1036, 595)
+        Me.ClientSize = New System.Drawing.Size(1084, 597)
         Me.Controls.Add(Me.panelprincipal)
         Me.Controls.Add(Me.panelizqprincipal)
         Me.Controls.Add(Me.pnlsuperiorprinciapl)

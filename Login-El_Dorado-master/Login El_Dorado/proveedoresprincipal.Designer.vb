@@ -29,13 +29,13 @@ Partial Class proveedoresprincipal
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtdirprov = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtrutprov = New System.Windows.Forms.TextBox()
+        Me.txtempresaprov = New System.Windows.Forms.TextBox()
+        Me.txttelprov = New System.Windows.Forms.TextBox()
+        Me.txtnombreprov = New System.Windows.Forms.TextBox()
+        Me.txtidprov = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -120,13 +120,13 @@ Partial Class proveedoresprincipal
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
+        Me.GroupBox2.Controls.Add(Me.txtdirprov)
         Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.txtrutprov)
+        Me.GroupBox2.Controls.Add(Me.txtempresaprov)
+        Me.GroupBox2.Controls.Add(Me.txttelprov)
+        Me.GroupBox2.Controls.Add(Me.txtnombreprov)
+        Me.GroupBox2.Controls.Add(Me.txtidprov)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label3)
@@ -143,13 +143,13 @@ Partial Class proveedoresprincipal
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
         '
-        'TextBox6
+        'txtdirprov
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(140, 239)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(148, 22)
-        Me.TextBox6.TabIndex = 25
+        Me.txtdirprov.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtdirprov.Location = New System.Drawing.Point(140, 239)
+        Me.txtdirprov.Name = "txtdirprov"
+        Me.txtdirprov.Size = New System.Drawing.Size(148, 22)
+        Me.txtdirprov.TabIndex = 25
         '
         'Label6
         '
@@ -161,45 +161,45 @@ Partial Class proveedoresprincipal
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Direccion Empresa "
         '
-        'TextBox5
+        'txtrutprov
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(140, 194)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(148, 22)
-        Me.TextBox5.TabIndex = 21
+        Me.txtrutprov.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtrutprov.Location = New System.Drawing.Point(140, 194)
+        Me.txtrutprov.Name = "txtrutprov"
+        Me.txtrutprov.Size = New System.Drawing.Size(148, 22)
+        Me.txtrutprov.TabIndex = 21
         '
-        'TextBox4
+        'txtempresaprov
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(140, 158)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(138, 22)
-        Me.TextBox4.TabIndex = 20
+        Me.txtempresaprov.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtempresaprov.Location = New System.Drawing.Point(140, 158)
+        Me.txtempresaprov.Name = "txtempresaprov"
+        Me.txtempresaprov.Size = New System.Drawing.Size(138, 22)
+        Me.txtempresaprov.TabIndex = 20
         '
-        'TextBox3
+        'txttelprov
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(140, 123)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(66, 22)
-        Me.TextBox3.TabIndex = 19
+        Me.txttelprov.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txttelprov.Location = New System.Drawing.Point(140, 123)
+        Me.txttelprov.Name = "txttelprov"
+        Me.txttelprov.Size = New System.Drawing.Size(66, 22)
+        Me.txttelprov.TabIndex = 19
         '
-        'TextBox2
+        'txtnombreprov
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(140, 89)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(141, 22)
-        Me.TextBox2.TabIndex = 18
+        Me.txtnombreprov.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnombreprov.Location = New System.Drawing.Point(140, 89)
+        Me.txtnombreprov.Name = "txtnombreprov"
+        Me.txtnombreprov.Size = New System.Drawing.Size(141, 22)
+        Me.txtnombreprov.TabIndex = 18
         '
-        'TextBox1
+        'txtidprov
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(140, 45)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(141, 22)
-        Me.TextBox1.TabIndex = 17
+        Me.txtidprov.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtidprov.Location = New System.Drawing.Point(140, 45)
+        Me.txtidprov.Name = "txtidprov"
+        Me.txtidprov.Size = New System.Drawing.Size(141, 22)
+        Me.txtidprov.TabIndex = 17
         '
         'Label5
         '
@@ -295,7 +295,7 @@ Partial Class proveedoresprincipal
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(850, 35)
+        Me.Panel1.Size = New System.Drawing.Size(883, 35)
         Me.Panel1.TabIndex = 19
         '
         'lblmenuempleados
@@ -321,7 +321,7 @@ Partial Class proveedoresprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(850, 391)
+        Me.ClientSize = New System.Drawing.Size(883, 447)
         Me.Controls.Add(Me.dtgProveedores)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox4)
@@ -344,11 +344,11 @@ Partial Class proveedoresprincipal
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtrutprov As System.Windows.Forms.TextBox
+    Friend WithEvents txtempresaprov As System.Windows.Forms.TextBox
+    Friend WithEvents txttelprov As System.Windows.Forms.TextBox
+    Friend WithEvents txtnombreprov As System.Windows.Forms.TextBox
+    Friend WithEvents txtidprov As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -358,7 +358,7 @@ Partial Class proveedoresprincipal
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents txtdirprov As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblmenuempleados As System.Windows.Forms.Label

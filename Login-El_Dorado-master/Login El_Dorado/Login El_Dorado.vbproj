@@ -80,6 +80,7 @@
       <DependentUpon>clientesprincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="clientesprincipal.vb" />
+    <Compile Include="conexion.vb" />
     <Compile Include="empleadosprincipal.Designer.vb">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
     </Compile>

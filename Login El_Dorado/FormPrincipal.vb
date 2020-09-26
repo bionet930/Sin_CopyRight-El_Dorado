@@ -98,4 +98,8 @@ Public Class panelsupprincipal
     Private Sub btnproveedorprincipal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnproveedorprincipal.Click
         Abrirformprincipal(New proveedoresprincipal)
     End Sub
+
+    Private Sub panelprincipal_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles panelprincipal.Paint
+
+    End Sub
 End Class

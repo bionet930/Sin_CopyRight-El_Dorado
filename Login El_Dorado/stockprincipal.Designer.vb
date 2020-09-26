@@ -55,7 +55,8 @@ Partial Class stockprincipal
         '
         'datosstock
         '
-        Me.datosstock.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.datosstock.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.datosstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.datosstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datosstock.Location = New System.Drawing.Point(43, 92)
         Me.datosstock.Name = "datosstock"

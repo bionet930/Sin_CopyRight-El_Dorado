@@ -20,12 +20,17 @@ Public Class stockprincipal
             da.Fill(dt)
             datosstock.DataSource = dt
 
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
 
     Private Sub datosstock_RowEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles datosstock.RowEnter
-        sql = datosstock.Rows(e.RowIndex).Cells(0).Value.ToString
+        sql = datosstock.Rows(e.RowIndex).Cells(2).Value.ToString
+    End Sub
+
+    Private Sub stockprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -77,3 +77,20 @@ C:\Users\PABLO\Downloads\Compressed\Login-El_Dorado-master\Login El_Dorado\obj\x
 C:\Users\PABLO\Downloads\Compressed\Login-El_Dorado-master\Login El_Dorado\bin\Debug\Login El_Dorado.exe
 C:\Users\PABLO\Downloads\Compressed\Login-El_Dorado-master\Login El_Dorado\bin\Debug\Login El_Dorado.pdb
 C:\Users\PABLO\Downloads\Compressed\Login-El_Dorado-master\Login El_Dorado\bin\Debug\Login El_Dorado.xml
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login El_Dorado.exe
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login El_Dorado.xml
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login El_Dorado.pdb
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\bin\Debug\Login El_Dorado.exe
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\bin\Debug\Login El_Dorado.pdb
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\bin\Debug\Login El_Dorado.xml
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login El_Dorado.vbprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.clientesprincipal.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.empleadosprincipal.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.formlogin.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.panelsupprincipal.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.Resources.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.proveedoresprincipal.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.registroempl.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.stockprincipal.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.ventasprincipal.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login-El_Dorado-master\Login El_Dorado\obj\x86\Debug\Login El_Dorado.vbproj.GenerateResource.Cache

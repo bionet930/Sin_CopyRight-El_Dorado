@@ -27,7 +27,7 @@ Public Class formlogin
 
 
         Try
-            conexion.ConnectionString = "server=localhost; user id= 'root' ; password='Pablo142532++';database = eldorado"
+            conexion.ConnectionString = "server=localhost; user id= 'prueba' ; password='prueba';database = eldorado"
             conexion.Open()
 
         Catch ex As Exception
