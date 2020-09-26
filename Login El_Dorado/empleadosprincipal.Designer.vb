@@ -134,7 +134,7 @@ Partial Class empleadosprincipal
         Me.GroupBox4.Size = New System.Drawing.Size(208, 150)
         Me.GroupBox4.TabIndex = 15
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "GroupBox4"
+        Me.GroupBox4.Text = "Acciones Empleado"
         '
         'Button6
         '
@@ -196,7 +196,7 @@ Partial Class empleadosprincipal
         Me.GroupBox3.Size = New System.Drawing.Size(208, 208)
         Me.GroupBox3.TabIndex = 14
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "GroupBox3"
+        Me.GroupBox3.Text = "Acciones Foto"
         '
         'PictureBox1
         '
@@ -247,7 +247,7 @@ Partial Class empleadosprincipal
         Me.GroupBox2.Size = New System.Drawing.Size(294, 387)
         Me.GroupBox2.TabIndex = 13
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
+        Me.GroupBox2.Text = "Datos Empleados"
         '
         'TextBox5
         '

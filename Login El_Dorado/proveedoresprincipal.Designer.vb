@@ -66,7 +66,7 @@ Partial Class proveedoresprincipal
         Me.GroupBox4.Size = New System.Drawing.Size(196, 160)
         Me.GroupBox4.TabIndex = 18
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "GroupBox4"
+        Me.GroupBox4.Text = "Acciones Proveedor"
         '
         'Button6
         '
@@ -141,7 +141,7 @@ Partial Class proveedoresprincipal
         Me.GroupBox2.Size = New System.Drawing.Size(294, 336)
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
+        Me.GroupBox2.Text = "Datos Proveedor"
         '
         'txtdirprov
         '

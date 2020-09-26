@@ -19,7 +19,6 @@ Module conexion
             ds = New DataSet
             adt.Fill(ds)
             conexion.Close()
-            'lista = ds.Tables("tblproveedores").Rows.Count
             Return ds
         Catch ex As Exception
             conexion.Close()
