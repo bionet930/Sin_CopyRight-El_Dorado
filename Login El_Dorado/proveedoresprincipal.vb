@@ -1,11 +1,19 @@
 ﻿Imports System.Data
+Imports System.Data.DataRow
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms
 
+
 Public Class proveedoresprincipal
+
+    Public cmd As MySqlCommand
+    Public dr As MySqlDataReader
+    Public adt As MySqlDataAdapter
+    Public ds As DataSet
 
     Dim conexion As New MySqlConnection()
     Dim comando As New MySqlCommand()
+    Dim posicion As Integer
 
     Private Sub proveedoresprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -21,6 +29,7 @@ Public Class proveedoresprincipal
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Close()
+        conexion.Close()
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
@@ -47,6 +56,55 @@ Public Class proveedoresprincipal
         Catch ex As Exception
             MsgBox("Error al Guardar los Datos")
         End Try
+
+    End Sub
+
+    Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
+
+        Try
+            sql = "SELECT * FROM tblproveedores"
+            adt = New MySqlDataAdapter(sql, conexion)
+            ds = New DataSet
+            adt.Fill(ds)
+            lista = ds.Tables(0).Rows.Count
+
+        Catch ex As Exception
+
+        End Try
+
+        posicion = posicion + 1
+
+        If posicion < ds.Tables(0).Rows.Count Then
+            cargar()
+        Else
+            posicion = 0
+            cargar()
+        End If
+
+
+    End Sub
+
+
+    Public Sub cargar()
+        If lista <> 0 Then
+            txtidprov.Text = ds.Tables(0).Rows(posicion).Item("id_Prov")
+            txtnombreprov.Text = ds.Tables(0).Rows(posicion).Item("NombrePrv")
+            txttelprov.Text = ds.Tables(0).Rows(posicion).Item("TelefonoProv")
+            txtempresaprov.Text = ds.Tables(0).Rows(posicion).Item("EmpresaProv")
+            txtrutprov.Text = ds.Tables(0).Rows(posicion).Item("RutEmpresaProv")
+            txtdirprov.Text = ds.Tables(0).Rows(posicion).Item("DirEmpresaProv")
+        End If
+    End Sub
+
+    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
+        posicion -= 1
+
+        If posicion > -1 Then
+            cargar()
+        Else
+            posicion = ds.Tables(0).Rows.Count - 1
+            cargar()
+        End If
 
     End Sub
 End Class

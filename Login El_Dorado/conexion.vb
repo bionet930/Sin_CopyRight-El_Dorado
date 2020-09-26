@@ -1,26 +1,31 @@
-﻿Imports System.Data
-Imports MySql.Data.MySqlClient
-Imports System.Windows.Forms
+﻿Imports MySql.Data.MySqlClient
+
+Module conexion
+
+    Public conexion As New MySqlConnection("server=localhost; user id= 'prueba' ; password='prueba';database = eldorado")
+    Public comando As New MySqlCommand
+    Public adt As New MySqlDataAdapter
+    Public ds As New DataSet
+    Public lista As Byte
+
+    Public sql As String
 
 
-Public Class conexion
-    Dim comando As New MySqlCommand
-
-
-    Public conexion As MySqlConnection = New MySqlConnection("server=localhost; user id= 'prueba' ; password='prueba';database = eldorado")
-
-    Public Sub Conectar()
-
+    Public Function cargardatos(ByVal tabla As String) As DataSet 'Funcion para cargar datos de una tabla, hay que pasarle el parametro de que tabla ver
         Try
             conexion.Open()
-            MessageBox.Show("Conectado")
-        Catch ex As Exception
-            MessageBox.Show("Error al conectar")
-        Finally
+            sql = "SELECT * FROM " & tabla
+            adt = New MySqlDataAdapter
+            ds = New DataSet
+            adt.Fill(ds)
             conexion.Close()
+            'lista = ds.Tables("tblproveedores").Rows.Count
+            Return ds
+        Catch ex As Exception
+            conexion.Close()
+            Return ds
+
         End Try
+    End Function
 
-
-    End Sub
-
-End Class
+End Module
