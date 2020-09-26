@@ -37,6 +37,13 @@ Public Class proveedoresprincipal
             comando.ExecuteNonQuery()
             MsgBox("Datos Guardado")
 
+            txtidprov.Text = ""
+            txtnombreprov.Text = ""
+            txttelprov.Text = ""
+            txtempresaprov.Text = ""
+            txtrutprov.Text = ""
+            txtdirprov.Text = ""
+
         Catch ex As Exception
             MsgBox("Error al Guardar los Datos")
         End Try
