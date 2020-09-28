@@ -27,7 +27,7 @@ Public Class formlogin
 
 
         Try
-            conexion.ConnectionString = "server=localhost; user id= 'root' ; password='Pablo142532++';database = eldorado"
+            conexion.ConnectionString = "server=localhost; user id= 'prueba' ; password='prueba';database = eldorado"
             conexion.Open()
             MsgBox("se conecto")
         Catch ex As Exception
@@ -77,7 +77,7 @@ Public Class formlogin
     End Sub
 
     Private Sub btnaboutus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnaboutus.Click
-        MsgBox("Sin Copyright ©" & vbNewLine & "" & vbNewLine & "Escuela Superior Catalina Harriague de Castaños" & vbNewLine & "" & vbNewLine & "[ESP] Integrantes:" & vbNewLine & "Hugo Muñoz" & vbNewLine & "Pablo Dominguez" & vbNewLine & "Ismael Dutra" & vbNewLine & "" & vbNewLine & "Gracias por usar nuestros servicios." & vbNewLine & "" & vbNewLine & "[ENG] Members:" & vbNewLine & "Hugo Muñoz" & vbNewLine & "Pablo Dominguez" & vbNewLine & "Ismael Dutra" & vbNewLine & "" & vbNewLine & "Thanks for using our services.", , "About us")
+        MsgBox("Sin Copyright ©" & vbNewLine & "" & vbNewLine & "Escuela Superior Catalina Harriague de Castaños" & vbNewLine & "" & vbNewLine & "[Español]" & vbNewLine & "Integrantes:" & vbNewLine & "Hugo Muñoz" & vbNewLine & "Pablo Dominguez" & vbNewLine & "Ismael Dutra" & vbNewLine & "" & vbNewLine & "Un especial agradecimiento a la empresa 'El Dorado' por confiar en nuestros servicios" & vbNewLine & "" & vbNewLine & "[English]" & vbNewLine & "Members:" & vbNewLine & "Hugo Muñoz" & vbNewLine & "Pablo Dominguez" & vbNewLine & "Ismael Dutra" & vbNewLine & "" & vbNewLine & "A special thanks to the company 'El Dorado' for trusting in our services", , "About us")
     End Sub
 
     Private Sub formlogin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

@@ -107,4 +107,35 @@ Public Class proveedoresprincipal
         End If
 
     End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+
+        txtidprov.Text = ""
+        txtnombreprov.Text = ""
+        txttelprov.Text = ""
+        txtempresaprov.Text = ""
+        txtrutprov.Text = ""
+        txtdirprov.Text = ""
+
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+        Try
+            sql = "DELETE FROM tblproveedores WHERE id_Prov = '" & txtidprov.Text.Trim & "'"
+            cmd = New MySqlCommand(sql, conexion)
+            cmd.ExecuteNonQuery()
+            MsgBox("Datos Borrados")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        txtidprov.Text = ""
+        txtnombreprov.Text = ""
+        txttelprov.Text = ""
+        txtempresaprov.Text = ""
+        txtrutprov.Text = ""
+        txtdirprov.Text = ""
+
+    End Sub
 End Class
