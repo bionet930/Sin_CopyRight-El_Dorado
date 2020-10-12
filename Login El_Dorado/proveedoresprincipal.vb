@@ -138,4 +138,6 @@ Public Class proveedoresprincipal
         txtdirprov.Text = ""
 
     End Sub
+
+   
 End Class

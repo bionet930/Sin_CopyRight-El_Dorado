@@ -46,7 +46,7 @@ Partial Class stockprincipal
         Me.btnstockprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnstockprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnstockprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnstockprincipal.Location = New System.Drawing.Point(145, 52)
+        Me.btnstockprincipal.Location = New System.Drawing.Point(614, 198)
         Me.btnstockprincipal.Name = "btnstockprincipal"
         Me.btnstockprincipal.Size = New System.Drawing.Size(212, 34)
         Me.btnstockprincipal.TabIndex = 0
@@ -58,9 +58,9 @@ Partial Class stockprincipal
         Me.datosstock.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.datosstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.datosstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datosstock.Location = New System.Drawing.Point(43, 92)
+        Me.datosstock.Location = New System.Drawing.Point(68, 251)
         Me.datosstock.Name = "datosstock"
-        Me.datosstock.Size = New System.Drawing.Size(416, 150)
+        Me.datosstock.Size = New System.Drawing.Size(758, 150)
         Me.datosstock.TabIndex = 1
         '
         'panelsupstock
@@ -69,7 +69,7 @@ Partial Class stockprincipal
         Me.panelsupstock.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelsupstock.Location = New System.Drawing.Point(0, 0)
         Me.panelsupstock.Name = "panelsupstock"
-        Me.panelsupstock.Size = New System.Drawing.Size(510, 40)
+        Me.panelsupstock.Size = New System.Drawing.Size(852, 40)
         Me.panelsupstock.TabIndex = 2
         '
         'panelizqstock
@@ -78,14 +78,14 @@ Partial Class stockprincipal
         Me.panelizqstock.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelizqstock.Location = New System.Drawing.Point(0, 40)
         Me.panelizqstock.Name = "panelizqstock"
-        Me.panelizqstock.Size = New System.Drawing.Size(37, 256)
+        Me.panelizqstock.Size = New System.Drawing.Size(37, 373)
         Me.panelizqstock.TabIndex = 3
         '
         'stockprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(510, 296)
+        Me.ClientSize = New System.Drawing.Size(852, 413)
         Me.Controls.Add(Me.panelizqstock)
         Me.Controls.Add(Me.panelsupstock)
         Me.Controls.Add(Me.datosstock)

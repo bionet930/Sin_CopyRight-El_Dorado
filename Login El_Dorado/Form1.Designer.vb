@@ -64,6 +64,7 @@ Partial Class formlogin
         Me.txtnombre.Name = "txtnombre"
         Me.txtnombre.Size = New System.Drawing.Size(135, 20)
         Me.txtnombre.TabIndex = 2
+        Me.txtnombre.Text = "Prueba"
         '
         'txtpass
         '
@@ -71,6 +72,7 @@ Partial Class formlogin
         Me.txtpass.Name = "txtpass"
         Me.txtpass.Size = New System.Drawing.Size(135, 20)
         Me.txtpass.TabIndex = 3
+        Me.txtpass.Text = "Prueba"
         Me.txtpass.UseSystemPasswordChar = True
         '
         'btningresar

@@ -81,6 +81,7 @@
     </Compile>
     <Compile Include="clientesprincipal.vb" />
     <Compile Include="conexion.vb" />
+    <Compile Include="ConexionPablo.vb" />
     <Compile Include="empleadosprincipal.Designer.vb">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
     </Compile>
