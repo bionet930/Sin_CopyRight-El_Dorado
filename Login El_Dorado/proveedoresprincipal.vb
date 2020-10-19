@@ -35,14 +35,15 @@ Public Class proveedoresprincipal
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
 
         Try
-            comando = New MySqlCommand("INSERT INTO tblproveedores(id_Prov,NombrePrv,TelefonoProv,EmpresaProv,RutEmpresaProv,DirEmpresaProv)" & Chr(13) &
-                                       "VALUES(@id_Prov, @NombrePrv, @TelefonoProv, @EmpresaProv, @RutEmpresaProv, @DirEmpresaProv)", conexion)
+            comando = New MySqlCommand("INSERT INTO tblproveedores(id_Prov,NombrePrv,TelefonoProv,EmpresaProv,RutEmpresaProv,DirEmpresaProv,EstadoProv)" & Chr(13) &
+                                       "VALUES(@id_Prov, @NombrePrv, @TelefonoProv, @EmpresaProv, @RutEmpresaProv, @DirEmpresaProv,@EstadoProv)", conexion)
             comando.Parameters.AddWithValue("@id_Prov", txtidprov.Text)
             comando.Parameters.AddWithValue("@NombrePrv", txtnombreprov.Text)
             comando.Parameters.AddWithValue("@TelefonoProv", txttelprov.Text)
             comando.Parameters.AddWithValue("@EmpresaProv", txtempresaprov.Text)
             comando.Parameters.AddWithValue("@RutEmpresaProv", txtrutprov.Text)
             comando.Parameters.AddWithValue("@DirEmpresaProv", txtdirprov.Text)
+            comando.Parameters.AddWithValue("@EstadoProv", RBProvactivo.Checked)
             comando.ExecuteNonQuery()
             MsgBox("Datos Guardado")
 
@@ -140,4 +141,7 @@ Public Class proveedoresprincipal
     End Sub
 
    
+    Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
+
+    End Sub
 End Class
