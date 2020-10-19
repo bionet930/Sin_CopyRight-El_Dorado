@@ -1,7 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class ConexionPablo
 
-
     Private conexion As New MySqlConnection("data source=localhost;user id='prueba';password='prueba';database=eldorado;port=3306;CHARSET=utf8;")
     Private adaptador As MySqlDataAdapter
     Private comando As MySqlCommand
@@ -25,7 +24,7 @@ Public Class ConexionPablo
         End Try
     End Sub
 
-    'ESTOS METODOS NO SE PUEDEN ACCEDER DESDE OTRO FORMULARIO
+
 
     Public Sub consultaSinRetorno(ByVal Sql As String)
 
@@ -87,8 +86,6 @@ Public Class ConexionPablo
     End Function
 
 
-
-    '----BUSCAR CLIENTE POR NOMBRE----'
     Public Function mostrarEnTabla(ByVal consulta As String) As DataTable
 
         Return insertarEnTabla(consulta)

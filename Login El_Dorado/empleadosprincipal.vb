@@ -25,6 +25,8 @@ Public Class empleadosprincipal
         dgvEmpleados.DataSource = consulta.mostrarEnTabla("Select  Id_Empleado, NombreEmpl,EdadEmpl,TelefonoEmpl,DireccionEmpl,ImagenEmpl,CarnetEmpl from tblEmpleados;")
 
 
+
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnregistroempl.Click
@@ -40,9 +42,10 @@ Public Class empleadosprincipal
 
 
         txtEdad.Text = DateDiff(DateInterval.Year, dtpNacimiento.Value, Date.Now)
+
         consulta.consultaSinRetorno("INSERT INTO tblEmpleados (NombreEmpl,EdadEmpl,TelefonoEmpl,DireccionEmpl,ImagenEmpl,CarnetEmpl,PassEmpl) Values ('" & txtNombre.Text &
                                     "', " & txtEdad.Text & ", '" & txtTelefono.Text & "','" & txtDireccion.Text & "', '" & txtImagen.Text &
-                                    "','" & txtcarnet.Text & "','" & txtPass.Text & "'  );")
+                                    "','" & txtCarnet.Text & "','" & txtPass.Text & "'  );")
 
         If consulta.resultado = 1 Then
             MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")
@@ -76,27 +79,6 @@ Public Class empleadosprincipal
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
 
-        '-----TENGO QUE ORGANIZAR LO DEL 
-
-        'consulta.consultaSinRetorno("INSERT INTO tblEmpleados (NombreEmpl,EdadEmpl,TelefonoEmpl,DireccionEmpl,ImagenEmpl,CarnetEmpl,PassEmpl) Values ('" & txtNombre.Text &
-        '                            "', " & txtEdad.Text & ", '" & txtTelefono.Text & "','" & txtDireccion.Text & "', '" & txtImagen.Text &
-        '                            "','" & txtCarnet.Text & "','" & txtPass.Text & "'  );")
-
-        'If consulta.resultado = 1 Then
-        '    MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")
-        '    dgvEmpleados.DataSource = consulta.mostrarEnTabla("Select  Id_Empleado, NombreEmpl,EdadEmpl,TelefonoEmpl,DireccionEmpl,ImagenEmpl,CarnetEmpl from tblEmpleados;")
-        'End If
-
-        'txtId.Text = ""
-        'txtNombre.Text = ""
-        'txtEdad.Text = ""
-        'txtCarnet.Text = ""
-        'txtDireccion.Text = ""
-        'txtImagen.Text = ""
-        'txtPass.Text = ""
-        'txtTelefono.Text = ""
-
-
 
         MsgBox("se debe agregar campo visible boolean (1/0) y las delete pasan a hacer una consulta que altera el visible. las consultas posteriores se deben hacer con esa condicion")
     End Sub
@@ -126,5 +108,7 @@ Public Class empleadosprincipal
         MsgBox("Imagen borrada")
     End Sub
 
-    
+    Private Sub panelprincipal_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles panelprincipal.Paint
+
+    End Sub
 End Class

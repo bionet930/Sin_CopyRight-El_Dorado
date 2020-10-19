@@ -23,6 +23,7 @@ Partial Class ventasprincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -41,13 +42,10 @@ Partial Class ventasprincipal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.dgvVentas = New System.Windows.Forms.DataGridView()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox4
@@ -64,6 +62,16 @@ Partial Class ventasprincipal
         Me.GroupBox4.TabIndex = 20
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "GroupBox4"
+        '
+        'Button7
+        '
+        Me.Button7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(17, 246)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(161, 23)
+        Me.Button7.TabIndex = 7
+        Me.Button7.Text = "Imprimir Factura"
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'Button6
         '
@@ -129,10 +137,6 @@ Partial Class ventasprincipal
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.Button11)
-        Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Controls.Add(Me.Button9)
-        Me.GroupBox2.Controls.Add(Me.Button10)
         Me.GroupBox2.Location = New System.Drawing.Point(15, -1)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(284, 309)
@@ -248,57 +252,20 @@ Partial Class ventasprincipal
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "ID-Venta"
         '
-        'Button11
+        'dgvVentas
         '
-        Me.Button11.Location = New System.Drawing.Point(67, 275)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(55, 23)
-        Me.Button11.TabIndex = 11
-        Me.Button11.Text = "<"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(6, 275)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(55, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "<<"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(189, 275)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(55, 23)
-        Me.Button9.TabIndex = 9
-        Me.Button9.Text = ">>"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(128, 275)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(55, 23)
-        Me.Button10.TabIndex = 10
-        Me.Button10.Text = ">"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(17, 246)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(161, 23)
-        Me.Button7.TabIndex = 7
-        Me.Button7.Text = "Imprimir Factura"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVentas.Location = New System.Drawing.Point(70, 343)
+        Me.dgvVentas.Name = "dgvVentas"
+        Me.dgvVentas.Size = New System.Drawing.Size(409, 150)
+        Me.dgvVentas.TabIndex = 21
         '
         'ventasprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(805, 335)
+        Me.ClientSize = New System.Drawing.Size(569, 450)
+        Me.Controls.Add(Me.dgvVentas)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "ventasprincipal"
@@ -306,6 +273,7 @@ Partial Class ventasprincipal
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -328,9 +296,6 @@ Partial Class ventasprincipal
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents dgvVentas As System.Windows.Forms.DataGridView
 End Class

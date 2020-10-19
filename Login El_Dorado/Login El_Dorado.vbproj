@@ -79,7 +79,9 @@
     <Compile Include="clientesprincipal.Designer.vb">
       <DependentUpon>clientesprincipal.vb</DependentUpon>
     </Compile>
-    <Compile Include="clientesprincipal.vb" />
+    <Compile Include="clientesprincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="conexion.vb" />
     <Compile Include="ConexionPablo.vb" />
     <Compile Include="empleadosprincipal.Designer.vb">

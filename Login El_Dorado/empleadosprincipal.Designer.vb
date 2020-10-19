@@ -38,6 +38,7 @@ Partial Class empleadosprincipal
         Me.Button8 = New System.Windows.Forms.Button()
         Me.btnImagen = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtCarnet = New System.Windows.Forms.TextBox()
         Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtPass = New System.Windows.Forms.TextBox()
@@ -57,7 +58,6 @@ Partial Class empleadosprincipal
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.opfdempleados = New System.Windows.Forms.OpenFileDialog()
-        Me.txtCarnet = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.pnlpempl.SuspendLayout()
         Me.panelprincipal.SuspendLayout()
@@ -257,6 +257,14 @@ Partial Class empleadosprincipal
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos Empleados"
         '
+        'txtCarnet
+        '
+        Me.txtCarnet.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCarnet.Location = New System.Drawing.Point(141, 222)
+        Me.txtCarnet.Name = "txtCarnet"
+        Me.txtCarnet.Size = New System.Drawing.Size(76, 22)
+        Me.txtCarnet.TabIndex = 31
+        '
         'dtpNacimiento
         '
         Me.dtpNacimiento.AccessibleDescription = "Ingresar Fecha"
@@ -433,14 +441,6 @@ Partial Class empleadosprincipal
         'opfdempleados
         '
         Me.opfdempleados.FileName = "OpenFileDialog1"
-        '
-        'txtCarnet
-        '
-        Me.txtCarnet.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCarnet.Location = New System.Drawing.Point(141, 222)
-        Me.txtCarnet.Name = "txtCarnet"
-        Me.txtCarnet.Size = New System.Drawing.Size(76, 22)
-        Me.txtCarnet.TabIndex = 31
         '
         'empleadosprincipal
         '
