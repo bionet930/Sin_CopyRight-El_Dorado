@@ -48,6 +48,9 @@ Partial Class proveedoresprincipal
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblmenuempleados = New System.Windows.Forms.Label()
         Me.dtgProveedores = New System.Windows.Forms.DataGridView()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.RBProvactivo = New System.Windows.Forms.RadioButton()
+        Me.RBProvinactivo = New System.Windows.Forms.RadioButton()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -56,9 +59,10 @@ Partial Class proveedoresprincipal
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.RBProvinactivo)
+        Me.GroupBox4.Controls.Add(Me.RBProvactivo)
+        Me.GroupBox4.Controls.Add(Me.Label7)
         Me.GroupBox4.Controls.Add(Me.Button6)
-        Me.GroupBox4.Controls.Add(Me.Button3)
-        Me.GroupBox4.Controls.Add(Me.Button4)
         Me.GroupBox4.Controls.Add(Me.Button5)
         Me.GroupBox4.Controls.Add(Me.Button2)
         Me.GroupBox4.Location = New System.Drawing.Point(319, 53)
@@ -81,7 +85,7 @@ Partial Class proveedoresprincipal
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(103, 54)
+        Me.Button3.Location = New System.Drawing.Point(572, 98)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 3
@@ -91,7 +95,7 @@ Partial Class proveedoresprincipal
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(17, 54)
+        Me.Button4.Location = New System.Drawing.Point(572, 53)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 4
@@ -111,7 +115,7 @@ Partial Class proveedoresprincipal
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(17, 99)
+        Me.Button2.Location = New System.Drawing.Point(17, 131)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(161, 23)
         Me.Button2.TabIndex = 2
@@ -317,18 +321,52 @@ Partial Class proveedoresprincipal
         Me.dtgProveedores.Size = New System.Drawing.Size(240, 150)
         Me.dtgProveedores.TabIndex = 20
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(6, 73)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(95, 13)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "Estado Proveedor:"
+        '
+        'RBProvactivo
+        '
+        Me.RBProvactivo.AutoSize = True
+        Me.RBProvactivo.Location = New System.Drawing.Point(19, 99)
+        Me.RBProvactivo.Name = "RBProvactivo"
+        Me.RBProvactivo.Size = New System.Drawing.Size(55, 17)
+        Me.RBProvactivo.TabIndex = 8
+        Me.RBProvactivo.TabStop = True
+        Me.RBProvactivo.Text = "Activo"
+        Me.RBProvactivo.UseVisualStyleBackColor = True
+        '
+        'RBProvinactivo
+        '
+        Me.RBProvinactivo.AutoSize = True
+        Me.RBProvinactivo.Location = New System.Drawing.Point(88, 99)
+        Me.RBProvinactivo.Name = "RBProvinactivo"
+        Me.RBProvinactivo.Size = New System.Drawing.Size(63, 17)
+        Me.RBProvinactivo.TabIndex = 9
+        Me.RBProvinactivo.TabStop = True
+        Me.RBProvinactivo.Text = "Inactivo"
+        Me.RBProvinactivo.UseVisualStyleBackColor = True
+        '
         'proveedoresprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(883, 447)
         Me.Controls.Add(Me.dtgProveedores)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "proveedoresprincipal"
         Me.Text = "                                 "
         Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -363,4 +401,7 @@ Partial Class proveedoresprincipal
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblmenuempleados As System.Windows.Forms.Label
     Friend WithEvents dtgProveedores As System.Windows.Forms.DataGridView
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents RBProvinactivo As System.Windows.Forms.RadioButton
+    Friend WithEvents RBProvactivo As System.Windows.Forms.RadioButton
 End Class
