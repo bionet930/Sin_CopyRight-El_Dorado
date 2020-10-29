@@ -313,7 +313,7 @@ Partial Class clientesprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(684, 474)
+        Me.ClientSize = New System.Drawing.Size(933, 474)
         Me.Controls.Add(Me.dgvClientes)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)

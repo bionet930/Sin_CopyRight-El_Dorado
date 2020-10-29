@@ -6,6 +6,7 @@ Public Class panelsupprincipal
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
 
+
     End Sub
 
     <DllImport("user32.DLL", EntryPoint:="SendMessage")>
@@ -100,6 +101,14 @@ Public Class panelsupprincipal
     End Sub
 
     Private Sub panelprincipal_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles panelprincipal.Paint
+
+
+
+
+
+    End Sub
+
+    Private Sub Chart1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Chart1.Click
 
     End Sub
 End Class

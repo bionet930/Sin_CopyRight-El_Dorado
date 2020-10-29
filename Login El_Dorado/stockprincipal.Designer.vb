@@ -77,7 +77,7 @@ Partial Class stockprincipal
         Me.datosstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datosstock.Location = New System.Drawing.Point(68, 424)
         Me.datosstock.Name = "datosstock"
-        Me.datosstock.Size = New System.Drawing.Size(758, 63)
+        Me.datosstock.Size = New System.Drawing.Size(758, 111)
         Me.datosstock.TabIndex = 1
         '
         'panelsupstock
@@ -375,7 +375,7 @@ Partial Class stockprincipal
         Me.Controls.Add(Me.panelsupstock)
         Me.Controls.Add(Me.datosstock)
         Me.Name = "stockprincipal"
-        Me.Text = "stockprincipal"
+        Me.Text = " "
         CType(Me.datosstock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

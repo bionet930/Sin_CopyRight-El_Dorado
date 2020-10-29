@@ -23,11 +23,14 @@ Partial Class proveedoresprincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.RBProvinactivo = New System.Windows.Forms.RadioButton()
+        Me.RBProvactivo = New System.Windows.Forms.RadioButton()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtdirprov = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -48,9 +51,6 @@ Partial Class proveedoresprincipal
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblmenuempleados = New System.Windows.Forms.Label()
         Me.dtgProveedores = New System.Windows.Forms.DataGridView()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.RBProvactivo = New System.Windows.Forms.RadioButton()
-        Me.RBProvinactivo = New System.Windows.Forms.RadioButton()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -72,6 +72,37 @@ Partial Class proveedoresprincipal
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Acciones Proveedor"
         '
+        'RBProvinactivo
+        '
+        Me.RBProvinactivo.AutoSize = True
+        Me.RBProvinactivo.Location = New System.Drawing.Point(88, 99)
+        Me.RBProvinactivo.Name = "RBProvinactivo"
+        Me.RBProvinactivo.Size = New System.Drawing.Size(63, 17)
+        Me.RBProvinactivo.TabIndex = 9
+        Me.RBProvinactivo.TabStop = True
+        Me.RBProvinactivo.Text = "Inactivo"
+        Me.RBProvinactivo.UseVisualStyleBackColor = True
+        '
+        'RBProvactivo
+        '
+        Me.RBProvactivo.AutoSize = True
+        Me.RBProvactivo.Location = New System.Drawing.Point(19, 99)
+        Me.RBProvactivo.Name = "RBProvactivo"
+        Me.RBProvactivo.Size = New System.Drawing.Size(55, 17)
+        Me.RBProvactivo.TabIndex = 8
+        Me.RBProvactivo.TabStop = True
+        Me.RBProvactivo.Text = "Activo"
+        Me.RBProvactivo.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(6, 73)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(95, 13)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "Estado Proveedor:"
+        '
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -81,26 +112,6 @@ Partial Class proveedoresprincipal
         Me.Button6.TabIndex = 6
         Me.Button6.Text = "&Ingresar"
         Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(572, 98)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Cancela&r"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(572, 53)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "&Eliminar"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -121,6 +132,26 @@ Partial Class proveedoresprincipal
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "&Cerrar"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(540, 126)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 3
+        Me.Button3.Text = "Cancela&r"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(540, 89)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 4
+        Me.Button4.Text = "&Eliminar"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -320,37 +351,6 @@ Partial Class proveedoresprincipal
         Me.dtgProveedores.Name = "dtgProveedores"
         Me.dtgProveedores.Size = New System.Drawing.Size(240, 150)
         Me.dtgProveedores.TabIndex = 20
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(6, 73)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 13)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = "Estado Proveedor:"
-        '
-        'RBProvactivo
-        '
-        Me.RBProvactivo.AutoSize = True
-        Me.RBProvactivo.Location = New System.Drawing.Point(19, 99)
-        Me.RBProvactivo.Name = "RBProvactivo"
-        Me.RBProvactivo.Size = New System.Drawing.Size(55, 17)
-        Me.RBProvactivo.TabIndex = 8
-        Me.RBProvactivo.TabStop = True
-        Me.RBProvactivo.Text = "Activo"
-        Me.RBProvactivo.UseVisualStyleBackColor = True
-        '
-        'RBProvinactivo
-        '
-        Me.RBProvinactivo.AutoSize = True
-        Me.RBProvinactivo.Location = New System.Drawing.Point(88, 99)
-        Me.RBProvinactivo.Name = "RBProvinactivo"
-        Me.RBProvinactivo.Size = New System.Drawing.Size(63, 17)
-        Me.RBProvinactivo.TabIndex = 9
-        Me.RBProvinactivo.TabStop = True
-        Me.RBProvinactivo.Text = "Inactivo"
-        Me.RBProvinactivo.UseVisualStyleBackColor = True
         '
         'proveedoresprincipal
         '

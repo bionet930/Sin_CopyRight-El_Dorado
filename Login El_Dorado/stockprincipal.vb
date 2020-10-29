@@ -47,6 +47,9 @@ Public Class stockprincipal
 
         consulta.establecerConexion()
         datosstock.DataSource = consulta.mostrarEnTabla("Select  * from tblmercaderia;")
+
+
+
         MsgBox("carga y conecta")
     End Sub
 
@@ -104,5 +107,7 @@ Public Class stockprincipal
         End If
 
     End Sub
+
+  
 End Class
 
