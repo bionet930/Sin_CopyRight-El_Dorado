@@ -24,13 +24,23 @@ Public Class stockprincipal
         Call mostrarlosdatos()
     End Sub
 
+
+    Sub llenarProveedores()
+
+        cmdProveedores.DataSource = consulta.mostrarEnTabla("select * from tblproveedores;")
+        cmdProveedores.DisplayMember = "Id Proveedor"
+        cmdProveedores.ValueMember = "id_Prov"
+    End Sub
+
+
+
     Private Sub mostrarlosdatos()
         Try
             sql = "SELECT * FROM tblmercaderia"
             da = New MySqlDataAdapter(sql, conex)
             dt = New DataTable
             da.Fill(dt)
-            datosstock.DataSource = dt
+            dgvDatostock.DataSource = dt
 
 
         Catch ex As Exception
@@ -38,22 +48,24 @@ Public Class stockprincipal
         End Try
     End Sub
 
-    Private Sub datosstock_RowEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles datosstock.RowEnter
-        sql = datosstock.Rows(e.RowIndex).Cells(2).Value.ToString
+    Private Sub datosstock_RowEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvDatostock.RowEnter
+        sql = dgvDatostock.Rows(e.RowIndex).Cells(2).Value.ToString
 
     End Sub
 
     Private Sub stockprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+
+        llenarProveedores()
         consulta.establecerConexion()
-        datosstock.DataSource = consulta.mostrarEnTabla("Select  * from tblmercaderia;")
+        dgvDatostock.DataSource = consulta.mostrarEnTabla("Select  * from tblmercaderia;")
 
 
 
         MsgBox("carga y conecta")
     End Sub
 
-    
+
     Private Sub btnstockprincipal_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnstockprincipal.Click
         mostrarlosdatos()
 
@@ -68,13 +80,13 @@ Public Class stockprincipal
                                     "','" & txtImagen.Text &
                                     "','" & txtPrecioCosto.Text &
                                     "','" & txtPrecioVenta.Text &
-                                    "','" & txtIdProveedor.Text &
+                                    "','" & cmdProveedores.Text &
                                     "','" & txtStock.Text &
                                     "','" & txtDescuento.Text & "');")
 
         If consulta.resultado = 1 Then
             MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")
-            datosstock.DataSource = consulta.mostrarEnTabla("Select  id_Mercaderia,NombreMerc,Imagen,PrecioCosto, PrecioVenta, id_Prov, Stock,Descuento from tblmercaderia;")
+            dgvDatostock.DataSource = consulta.mostrarEnTabla("Select  id_Mercaderia,NombreMerc,Imagen,PrecioCosto, PrecioVenta, id_Prov, Stock,Descuento from tblmercaderia;")
         End If
 
         txtIdmercaderia.Text = ""
@@ -109,5 +121,35 @@ Public Class stockprincipal
     End Sub
 
   
+    Private Sub btnCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCerrar.Click
+
+        Me.Hide()
+
+
+    End Sub
+
+    Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+
+        ''UPDATE `tblmercaderia` SET `EstadoMerc`= 0 WHERE  
+        'consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `Stock`= Stock - '" & nudCantidad.Value & "';")
+        'MsgBox("se borro stock", vbOKOnly + vbDefaultButton2, "Mensaje")
+
+        Dim si As Byte
+
+        si = MsgBox("Desea Eliminar registro?", MsgBoxStyle.YesNo, "Eliminar")
+
+
+        If si = 6 Then
+            consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `EstadoMerc`= 0 WHERE `id_Mercaderia = '" & dgvDatostock.CurrentRow.Index.ToString & "'")
+
+            Dim loFila As DataGridViewRow = Me.dgvDatostock.CurrentRow()
+            dgvDatostock.Rows.Remove(loFila)
+
+            MsgBox("Se elimino registro", MsgBoxStyle.OkOnly, "Rgsitro Eliminado")
+
+        End If
+
+
+    End Sub
 End Class
 

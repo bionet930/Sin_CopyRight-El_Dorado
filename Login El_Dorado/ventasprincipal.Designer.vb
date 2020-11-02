@@ -238,7 +238,7 @@ Partial Class ventasprincipal
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(517, 122)
+        Me.Label5.Location = New System.Drawing.Point(505, 128)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(47, 14)
         Me.Label5.TabIndex = 33
@@ -247,7 +247,7 @@ Partial Class ventasprincipal
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(258, 125)
+        Me.lblNombre.Location = New System.Drawing.Point(240, 128)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(39, 13)
         Me.lblNombre.TabIndex = 34
@@ -273,7 +273,7 @@ Partial Class ventasprincipal
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(590, 122)
+        Me.Label8.Location = New System.Drawing.Point(578, 128)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(36, 13)
         Me.Label8.TabIndex = 37
