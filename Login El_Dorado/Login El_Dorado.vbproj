@@ -85,6 +85,12 @@
     </Compile>
     <Compile Include="conexion.vb" />
     <Compile Include="ConexionPablo.vb" />
+    <Compile Include="detalleventa.Designer.vb">
+      <DependentUpon>detalleventa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="detalleventa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="empleadosprincipal.Designer.vb">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
     </Compile>
@@ -161,6 +167,9 @@
   <ItemGroup>
     <EmbeddedResource Include="clientesprincipal.resx">
       <DependentUpon>clientesprincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detalleventa.resx">
+      <DependentUpon>detalleventa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="empleadosprincipal.resx">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
