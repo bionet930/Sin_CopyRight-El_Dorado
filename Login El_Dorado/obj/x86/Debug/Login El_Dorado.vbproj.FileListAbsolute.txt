@@ -96,3 +96,10 @@ D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login-El_Do
 D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.stockprincipal.resources
 D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.ventasprincipal.resources
 D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.vbproj.GenerateResource.Cache
+D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.detalleventa.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.detalleventa.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.impresion_factura.resources
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.verificar_venta.resources
+C:\Users\hmunoz\Desktop\el dorado error factura\Login-El_Dorado-d230d1bcef13cc6f0533ff2f0420bc310883d4db\Login El_Dorado\obj\x86\Debug\Login El_Dorado.exe
+C:\Users\hmunoz\Desktop\el dorado error factura\Login-El_Dorado-d230d1bcef13cc6f0533ff2f0420bc310883d4db\Login El_Dorado\obj\x86\Debug\Login El_Dorado.xml
+C:\Users\hmunoz\Desktop\el dorado error factura\Login-El_Dorado-d230d1bcef13cc6f0533ff2f0420bc310883d4db\Login El_Dorado\obj\x86\Debug\Login El_Dorado.pdb
