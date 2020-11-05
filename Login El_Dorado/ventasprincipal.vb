@@ -51,7 +51,7 @@ Public Class ventasprincipal
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        dgvVentas.DataSource = consulta.mostrarEnTabla("Select * from detalleventa;")
+        dgvVentas.DataSource = consulta.mostrarEnTabla("Select * from detalleventa")
 
       
     End Sub
@@ -201,6 +201,11 @@ Public Class ventasprincipal
         'insertar en la tabla detalleventa toda la informacio
         'despues conectar el datagrid a la tabla detalle venta
         'UnhandledExceptionMode actualizar datos de la tabla
+
+        Me.dgvFactura.Columns(0).HeaderText = "Identificado Producto"
+        Me.dgvFactura.Columns(1).HeaderText = "Nombre Producto"
+        Me.dgvFactura.Columns(2).HeaderText = "Cantidad"
+        Me.dgvFactura.Columns(3).HeaderText = "Precio Producto"
     End Sub
 
    
@@ -262,4 +267,28 @@ Public Class ventasprincipal
     End Sub
 
   
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfac.Click
+        'impresion_factura.Show()
+        verificar_venta.Show()
+
+        For Each ROW As DataGridViewRow In dgvFactura.SelectedRows
+            Dim ID As String = ROW.Cells(0).Value
+            Dim Nombre As String = ROW.Cells(1).Value
+            Dim Cantidad As String = ROW.Cells(2).Value
+            Dim Precio As String = ROW.Cells(3).Value
+
+            verificar_venta.dgvimprimir.Rows.Add(ID, Nombre, Cantidad, Precio)
+
+
+        Next
+
+    End Sub
+
+    Private Sub dgvFactura_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvFactura.CellContentClick
+
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Close()
+    End Sub
 End Class

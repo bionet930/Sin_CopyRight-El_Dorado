@@ -23,7 +23,7 @@ Partial Class ventasprincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnimprimirfac = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnIngresarProducto = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -58,7 +58,7 @@ Partial Class ventasprincipal
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.Button7)
+        Me.GroupBox4.Controls.Add(Me.btnimprimirfac)
         Me.GroupBox4.Controls.Add(Me.Button2)
         Me.GroupBox4.Controls.Add(Me.btnIngresarProducto)
         Me.GroupBox4.Controls.Add(Me.Button4)
@@ -69,15 +69,15 @@ Partial Class ventasprincipal
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "GroupBox4"
         '
-        'Button7
+        'btnimprimirfac
         '
-        Me.Button7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(20, 62)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(161, 23)
-        Me.Button7.TabIndex = 7
-        Me.Button7.Text = "Imprimir Factura"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnimprimirfac.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnimprimirfac.Location = New System.Drawing.Point(20, 62)
+        Me.btnimprimirfac.Name = "btnimprimirfac"
+        Me.btnimprimirfac.Size = New System.Drawing.Size(161, 23)
+        Me.btnimprimirfac.TabIndex = 7
+        Me.btnimprimirfac.Text = "Imprimir Factura"
+        Me.btnimprimirfac.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -358,7 +358,7 @@ Partial Class ventasprincipal
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents btnimprimirfac As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents nudCantidad As System.Windows.Forms.NumericUpDown
