@@ -39,19 +39,17 @@ Public Class ventasprincipal
         llenarCliente()
         llenarEmpleado()
 
-
         ' borra todos los datos de la tabla detalle venta para una nueva venta
         consulta.consultaSinRetorno("TRUNCATE TABLE DETALLEVENTA;")
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        detalleventa.Show()
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        dgvVentas.DataSource = consulta.mostrarEnTabla("Select * from detalleventa")
+        dgvVentas.DataSource = consulta.mostrarEnTabla("Select * from detalleventa;")
 
       
     End Sub
@@ -69,79 +67,17 @@ Public Class ventasprincipal
 
               
 
-
             End If
 
         Catch ex As Exception
             MsgBox("Debe ingresar algun dato. " & ex.Message)
 
 
+
+
+
+
         End Try
-
-
-          
-
-      
-
-
-
-        '         id_Mercaderia | int(11)     | NO   | PRI | NULL    | auto_increment |
-        '| NombreMerc    | varchar(20) | YES  |     | NULL    |                |
-        '| Imagen        | varchar(50) | YES  |     | NULL    |                |
-        '| PrecioCosto   | double      | YES  |     | NULL    |                |
-        '| PrecioVenta   | double      | NO   |     | NULL    |                |
-        '| id_Prov       | int(3)      | NO   | MUL | NULL    |                |
-        '| Stock         | int(5)      | YES  |     | NULL    |                |
-        '| Descuento     | double      | YES  |     | NULL    |                |
-        '| EstadoProv    | tinyint(4)  | YES  |     | NULL    |                |
-        '| EstadoMerc    | tinyint(4)  | YES  |     | NULL    |                |
-        '+---------------+-------------+------+-----+---------+----------------+
-
-
-
-        '        If DataGridView1.Rows.Count > 0 Then
-        '            For Each Fila As DataGridViewRow In DataGridView1.Rows
-        '                If Not Fila Is Nothing Then
-        '                    '//Puedes hacer una validación con el nombre de la columna
-        '                    If Fila.Cells("Correo").Value = "paco@miemail.com" Then
-        '                        'Código
-        '                    End If
-
-        '                    '//O puedes hacer una validación con el número de la columna
-        '                    If Fila.Cells(1).Value = "Luna Paola" Then
-        '                        'Código
-        '                    End If
-
-        '                    '//O puedes almacenar el valor en una base de datos o mostrarlo en un textbox
-        '                    TextBox1.Text = Fila.Cells("Telefono").Value
-        '                End If
-        '            Next
-        '        End If
-
-        '        '////// CICLO FOR //////
-        '        If DataGridView1.Rows.Count > 0 Then
-        '            For i As Integer = 0 To DataGridView1.Rows.Count
-        '                If Not DataGridView1.Rows.Item(i) Is Nothing Then
-        '                    '//Puedes hacer una validación con el nombre de la columna
-        '                    If DataGridView1.Rows.Item(i).Cells("NombreDeUsuario").Value = "Gaby_26" Then
-        '                        'Código
-        '                    End If
-
-        '                    '//O puedes hacer una validación con el número de la columna
-        '                    If DataGridView1.Rows.Item(i).Cells(2).Value = "Duarte Mendieta" Then
-        '                        'Código
-        '                    End If
-
-        '                    '//O puedes almacenar el valor en una base de datos o mostrarlo en un textbox
-        '                    TextBox1.Text = DataGridView1.Rows.Item(i).Cells("NombreDeUsuario").Value
-        '                End If
-        '            Next
-        '        End If
-        'view rawComoRecorrerLasFilasDeUnDatagridview.vb hosted with ❤ by GitHub
-        'De esta manera, podrás ir obteniendo los valores que necesitas de cada registro y posteriormente, irlos almacenando en una base de datos, mostrarlos al usuario o crear un informe con estos datos.
-
-
-
 
     End Sub
 
@@ -150,11 +86,10 @@ Public Class ventasprincipal
         Dim con As Integer = 1
         Dim fecha As DateTime = Now()
         Dim strf As String
-       
 
-        'resultado = consulta.consultaConRetorno("select `CantidadMerc` from `eldorado`.`detalleventa` ")
 
-        'xprecio = Val(resultado) * Val(nudCantidad.Value.ToString)
+        consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `Stock`= Stock - '" & nudCantidad.Value & "';")
+        MsgBox("se borro stock", vbOKOnly + vbDefaultButton2, "Mensaje")
 
 
         strf = Format(fecha, "yyy-MM-dd") 'Se da formato a la fecha
@@ -165,7 +100,7 @@ Public Class ventasprincipal
                                     "','" & cmbEmpleados.Text &
                                     "','" & strf.ToString &
                                     "','" & nudCantidad.Value &
-                                    "', '" & lblPrecio.Text &
+                                    "', '" & Label8.Text &
                                     "','" & cmbClientes.Text &
                                     "','" & lblNombre.Text & "');")
 
@@ -175,44 +110,38 @@ Public Class ventasprincipal
             con = con + 1
         End If
 
-        '        ---------------+-------------+------+-----+---------+----------------+
-        '| Field         | Type        | Null | Key | Default | Extra          |
-        '+---------------+-------------+------+-----+---------+----------------+
-        '| id_Detalle    | int(11)     | NO   | PRI | NULL    | auto_increment |
-        '| id_Mercaderia | int(11)     | NO   | MUL | NULL    |                |
-        '| id_Empleado   | int(11)     | NO   | MUL | NULL    |                |
-        '| fecha         | date        | YES  |     | NULL    |                |
-        '| CantidadMerc  | int(11)     | YES  |     | NULL    |                |
-        '| PrecioVenta   | double      | YES  |     | NULL    |                |
-        '| id_Cliente    | int(11)     | YES  |     | NULL    |                |
-        '| NombreMerc    | varchar(20) | YES  |     | NULL    |                |
-        '+---------------+----------
+
+
+        Dim Total As Single
+        Dim Col As Integer = Me.dgvFactura.CurrentCell.ColumnIndex
+
+        For Each row As DataGridViewRow In Me.dgvFactura.Rows
+            Total += Val(row.Cells(3).Value)
+        Next
+        Me.txtTotal.Text = Total.ToString
+
+
+        dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
 
 
 
 
-        'InsertKeyMode into detalleventas
         'values(id_Detalle, id_Mercaderia, id_Empleado, fecha, CantidadMerc, PrecioVenta)
         '**se cargar el data grid
         'resta del stock
-
-
-
         'insertar en la tabla detalleventa toda la informacio
         'despues conectar el datagrid a la tabla detalle venta
         'UnhandledExceptionMode actualizar datos de la tabla
-
-        Me.dgvFactura.Columns(0).HeaderText = "Identificado Producto"
-        Me.dgvFactura.Columns(1).HeaderText = "Nombre Producto"
-        Me.dgvFactura.Columns(2).HeaderText = "Cantidad"
-        Me.dgvFactura.Columns(3).HeaderText = "Precio Producto"
     End Sub
 
    
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
 
 
         'borra el articulo de la tabla detalleventa
+
+
+
         'actualiza la tabla
 
 
@@ -231,64 +160,49 @@ Public Class ventasprincipal
 
         End If
 
-
-
-
-
-
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
-
-
         Dim Total As Single
         Dim Col As Integer = Me.dgvFactura.CurrentCell.ColumnIndex
+
+        Dim con As Integer = 1
+        Dim fecha As DateTime = Now()
+        Dim strf As String
+
+
+        'borrar del stock
+
+        strf = Format(fecha, "yyy-MM-dd") 'Se da formato a la fecha
+
+
         For Each row As DataGridViewRow In Me.dgvFactura.Rows
             Total += Val(row.Cells(3).Value)
         Next
-        Me.TextBox1.Text = Total.ToString
-
-       
+        Me.txtTotal.Text = Total.ToString
 
 
+        'mensaje para emitir facturas 
+        'insertar los datos en la tabla ventas  **ptonto**
+
+        consulta.consultaSinRetorno("INSERT INTO `tblventas`(`Id_Ventas`, `id_Empleado`, `fecha`, `PrecioCosto`, `PrecioVenta`, `CantidadMerc`, `id_Cliente`, `EstadoVent`) VALUES ( null,'" & cmbEmpleados.Text & "','" & strf.ToString & "', null ,'" & txtTotal.Text & "', null ,'" & cmbClientes.Text & "',null)")
+
+
+        If consulta.resultado = 1 Then
+            MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")
+            con = con + 1
+        End If
 
 
     End Sub
 
     Private Sub nudCantidad_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nudCantidad.ValueChanged
 
-      
-
         Label8.Text = Val(lblPrecio.Text) * nudCantidad.Value
 
-
-
-    End Sub
-
-  
-    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfac.Click
-        'impresion_factura.Show()
-        verificar_venta.Show()
-
-        For Each ROW As DataGridViewRow In dgvFactura.SelectedRows
-            Dim ID As String = ROW.Cells(0).Value
-            Dim Nombre As String = ROW.Cells(1).Value
-            Dim Cantidad As String = ROW.Cells(2).Value
-            Dim Precio As String = ROW.Cells(3).Value
-
-            verificar_venta.dgvimprimir.Rows.Add(ID, Nombre, Cantidad, Precio)
-
-
-        Next
+        dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
 
     End Sub
 
-    Private Sub dgvFactura_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvFactura.CellContentClick
-
-    End Sub
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Close()
-    End Sub
 End Class
