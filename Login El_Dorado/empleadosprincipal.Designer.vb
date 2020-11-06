@@ -31,14 +31,14 @@ Partial Class empleadosprincipal
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.avatar = New System.Windows.Forms.PictureBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.btnImagen = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txtCarnet = New System.Windows.Forms.TextBox()
+        Me.dtpCarnet = New System.Windows.Forms.DateTimePicker()
         Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtPass = New System.Windows.Forms.TextBox()
@@ -141,7 +141,7 @@ Partial Class empleadosprincipal
         '
         Me.GroupBox4.Controls.Add(Me.btnIngresar)
         Me.GroupBox4.Controls.Add(Me.btnEliminar)
-        Me.GroupBox4.Controls.Add(Me.btnNuevo)
+        Me.GroupBox4.Controls.Add(Me.btnModificar)
         Me.GroupBox4.Controls.Add(Me.btnCerrar)
         Me.GroupBox4.Location = New System.Drawing.Point(320, 233)
         Me.GroupBox4.Name = "GroupBox4"
@@ -153,7 +153,7 @@ Partial Class empleadosprincipal
         'btnIngresar
         '
         Me.btnIngresar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(17, 65)
+        Me.btnIngresar.Location = New System.Drawing.Point(20, 33)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(161, 23)
         Me.btnIngresar.TabIndex = 6
@@ -170,15 +170,15 @@ Partial Class empleadosprincipal
         Me.btnEliminar.Text = "&Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'btnNuevo
+        'btnModificar
         '
-        Me.btnNuevo.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.Location = New System.Drawing.Point(17, 32)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(161, 23)
-        Me.btnNuevo.TabIndex = 5
-        Me.btnNuevo.Text = "&Nuevo"
-        Me.btnNuevo.UseVisualStyleBackColor = True
+        Me.btnModificar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.Location = New System.Drawing.Point(17, 62)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(161, 23)
+        Me.btnModificar.TabIndex = 5
+        Me.btnModificar.Text = "&Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnCerrar
         '
@@ -232,7 +232,7 @@ Partial Class empleadosprincipal
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.txtCarnet)
+        Me.GroupBox2.Controls.Add(Me.dtpCarnet)
         Me.GroupBox2.Controls.Add(Me.dtpNacimiento)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.txtPass)
@@ -257,13 +257,20 @@ Partial Class empleadosprincipal
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos Empleados"
         '
-        'txtCarnet
+        'dtpCarnet
         '
-        Me.txtCarnet.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCarnet.Location = New System.Drawing.Point(141, 222)
-        Me.txtCarnet.Name = "txtCarnet"
-        Me.txtCarnet.Size = New System.Drawing.Size(76, 22)
-        Me.txtCarnet.TabIndex = 31
+        Me.dtpCarnet.AccessibleDescription = "Ingresar Fecha"
+        Me.dtpCarnet.AllowDrop = True
+        Me.dtpCarnet.CustomFormat = "yyyy-MM-dd"
+        Me.dtpCarnet.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpCarnet.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpCarnet.Location = New System.Drawing.Point(140, 226)
+        Me.dtpCarnet.MaxDate = New Date(2098, 12, 31, 0, 0, 0, 0)
+        Me.dtpCarnet.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
+        Me.dtpCarnet.Name = "dtpCarnet"
+        Me.dtpCarnet.Size = New System.Drawing.Size(147, 22)
+        Me.dtpCarnet.TabIndex = 31
+        Me.dtpCarnet.Value = New Date(2020, 10, 11, 0, 0, 0, 0)
         '
         'dtpNacimiento
         '
@@ -297,6 +304,7 @@ Partial Class empleadosprincipal
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(148, 22)
         Me.txtPass.TabIndex = 27
+        Me.txtPass.Visible = False
         '
         'Label8
         '
@@ -307,6 +315,7 @@ Partial Class empleadosprincipal
         Me.Label8.Size = New System.Drawing.Size(62, 14)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "xxx pass"
+        Me.Label8.Visible = False
         '
         'txtImagen
         '
@@ -316,6 +325,7 @@ Partial Class empleadosprincipal
         Me.txtImagen.Name = "txtImagen"
         Me.txtImagen.Size = New System.Drawing.Size(148, 22)
         Me.txtImagen.TabIndex = 25
+        Me.txtImagen.Visible = False
         '
         'Label7
         '
@@ -326,6 +336,7 @@ Partial Class empleadosprincipal
         Me.Label7.Size = New System.Drawing.Size(85, 14)
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "xxx  imagen"
+        Me.Label7.Visible = False
         '
         'Label6
         '
@@ -472,7 +483,7 @@ Partial Class empleadosprincipal
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents btnImagen As System.Windows.Forms.Button
     Friend WithEvents btnIngresar As System.Windows.Forms.Button
-    Friend WithEvents btnNuevo As System.Windows.Forms.Button
+    Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnCerrar As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
@@ -498,5 +509,5 @@ Partial Class empleadosprincipal
     Friend WithEvents opfdempleados As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents dtpNacimiento As System.Windows.Forms.DateTimePicker
-    Friend WithEvents txtCarnet As System.Windows.Forms.TextBox
+    Friend WithEvents dtpCarnet As System.Windows.Forms.DateTimePicker
 End Class

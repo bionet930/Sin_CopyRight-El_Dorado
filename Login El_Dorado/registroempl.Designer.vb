@@ -23,8 +23,8 @@ Partial Class registroempl
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pnlsupregempl = New System.Windows.Forms.Panel()
-        Me.pnlizqregempl = New System.Windows.Forms.Panel()
         Me.lblregempl = New System.Windows.Forms.Label()
+        Me.pnlizqregempl = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -54,6 +54,15 @@ Partial Class registroempl
         Me.pnlsupregempl.Size = New System.Drawing.Size(337, 44)
         Me.pnlsupregempl.TabIndex = 0
         '
+        'lblregempl
+        '
+        Me.lblregempl.AutoSize = True
+        Me.lblregempl.Location = New System.Drawing.Point(80, 9)
+        Me.lblregempl.Name = "lblregempl"
+        Me.lblregempl.Size = New System.Drawing.Size(131, 13)
+        Me.lblregempl.TabIndex = 0
+        Me.lblregempl.Text = "Registro Nuevo Empleado"
+        '
         'pnlizqregempl
         '
         Me.pnlizqregempl.BackColor = System.Drawing.Color.DarkBlue
@@ -63,15 +72,6 @@ Partial Class registroempl
         Me.pnlizqregempl.Name = "pnlizqregempl"
         Me.pnlizqregempl.Size = New System.Drawing.Size(54, 417)
         Me.pnlizqregempl.TabIndex = 1
-        '
-        'lblregempl
-        '
-        Me.lblregempl.AutoSize = True
-        Me.lblregempl.Location = New System.Drawing.Point(80, 9)
-        Me.lblregempl.Name = "lblregempl"
-        Me.lblregempl.Size = New System.Drawing.Size(131, 13)
-        Me.lblregempl.TabIndex = 0
-        Me.lblregempl.Text = "Registro Nuevo Empleado"
         '
         'TextBox1
         '

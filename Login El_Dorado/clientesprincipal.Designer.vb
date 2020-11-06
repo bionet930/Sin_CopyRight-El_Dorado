@@ -25,14 +25,14 @@ Partial Class clientesprincipal
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.avatar = New System.Windows.Forms.PictureBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.btnImagen = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txtSado = New System.Windows.Forms.TextBox()
+        Me.txtSaldo = New System.Windows.Forms.TextBox()
         Me.txtImagen = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtPago = New System.Windows.Forms.TextBox()
@@ -59,7 +59,7 @@ Partial Class clientesprincipal
         '
         Me.GroupBox4.Controls.Add(Me.btnIngresar)
         Me.GroupBox4.Controls.Add(Me.btnEliminar)
-        Me.GroupBox4.Controls.Add(Me.btnNuevo)
+        Me.GroupBox4.Controls.Add(Me.btnModificar)
         Me.GroupBox4.Controls.Add(Me.btnCerrar)
         Me.GroupBox4.Location = New System.Drawing.Point(340, 241)
         Me.GroupBox4.Name = "GroupBox4"
@@ -88,15 +88,15 @@ Partial Class clientesprincipal
         Me.btnEliminar.Text = "&Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'btnNuevo
+        'btnModificar
         '
-        Me.btnNuevo.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.Location = New System.Drawing.Point(17, 94)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(161, 23)
-        Me.btnNuevo.TabIndex = 5
-        Me.btnNuevo.Text = "&Actualizar"
-        Me.btnNuevo.UseVisualStyleBackColor = True
+        Me.btnModificar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.Location = New System.Drawing.Point(17, 94)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(161, 23)
+        Me.btnModificar.TabIndex = 5
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnCerrar
         '
@@ -150,7 +150,7 @@ Partial Class clientesprincipal
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.txtSado)
+        Me.GroupBox2.Controls.Add(Me.txtSaldo)
         Me.GroupBox2.Controls.Add(Me.txtImagen)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.txtPago)
@@ -171,13 +171,13 @@ Partial Class clientesprincipal
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos Clientes"
         '
-        'txtSado
+        'txtSaldo
         '
-        Me.txtSado.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSado.Location = New System.Drawing.Point(139, 166)
-        Me.txtSado.Name = "txtSado"
-        Me.txtSado.Size = New System.Drawing.Size(76, 22)
-        Me.txtSado.TabIndex = 31
+        Me.txtSaldo.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSaldo.Location = New System.Drawing.Point(139, 166)
+        Me.txtSaldo.Name = "txtSaldo"
+        Me.txtSaldo.Size = New System.Drawing.Size(76, 22)
+        Me.txtSaldo.TabIndex = 31
         '
         'txtImagen
         '
@@ -186,6 +186,7 @@ Partial Class clientesprincipal
         Me.txtImagen.Name = "txtImagen"
         Me.txtImagen.Size = New System.Drawing.Size(148, 22)
         Me.txtImagen.TabIndex = 27
+        Me.txtImagen.Visible = False
         '
         'Label8
         '
@@ -196,6 +197,7 @@ Partial Class clientesprincipal
         Me.Label8.Size = New System.Drawing.Size(109, 14)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "variable imagen"
+        Me.Label8.Visible = False
         '
         'txtPago
         '
@@ -332,14 +334,14 @@ Partial Class clientesprincipal
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents btnIngresar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
-    Friend WithEvents btnNuevo As System.Windows.Forms.Button
+    Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnCerrar As System.Windows.Forms.Button
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents avatar As System.Windows.Forms.PictureBox
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents btnImagen As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtSado As System.Windows.Forms.TextBox
+    Friend WithEvents txtSaldo As System.Windows.Forms.TextBox
     Friend WithEvents txtImagen As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtPago As System.Windows.Forms.TextBox

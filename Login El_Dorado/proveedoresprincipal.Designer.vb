@@ -22,14 +22,8 @@ Partial Class proveedoresprincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.RBProvinactivo = New System.Windows.Forms.RadioButton()
-        Me.RBProvactivo = New System.Windows.Forms.RadioButton()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtdirprov = New System.Windows.Forms.TextBox()
@@ -51,64 +45,18 @@ Partial Class proveedoresprincipal
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblmenuempleados = New System.Windows.Forms.Label()
         Me.dtgProveedores = New System.Windows.Forms.DataGridView()
-        Me.GroupBox4.SuspendLayout()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.dtgProveedores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.RBProvinactivo)
-        Me.GroupBox4.Controls.Add(Me.RBProvactivo)
-        Me.GroupBox4.Controls.Add(Me.Label7)
-        Me.GroupBox4.Controls.Add(Me.Button6)
-        Me.GroupBox4.Controls.Add(Me.Button5)
-        Me.GroupBox4.Controls.Add(Me.Button2)
-        Me.GroupBox4.Location = New System.Drawing.Point(319, 53)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(196, 160)
-        Me.GroupBox4.TabIndex = 18
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Acciones Proveedor"
-        '
-        'RBProvinactivo
-        '
-        Me.RBProvinactivo.AutoSize = True
-        Me.RBProvinactivo.Location = New System.Drawing.Point(88, 99)
-        Me.RBProvinactivo.Name = "RBProvinactivo"
-        Me.RBProvinactivo.Size = New System.Drawing.Size(63, 17)
-        Me.RBProvinactivo.TabIndex = 9
-        Me.RBProvinactivo.TabStop = True
-        Me.RBProvinactivo.Text = "Inactivo"
-        Me.RBProvinactivo.UseVisualStyleBackColor = True
-        '
-        'RBProvactivo
-        '
-        Me.RBProvactivo.AutoSize = True
-        Me.RBProvactivo.Location = New System.Drawing.Point(19, 99)
-        Me.RBProvactivo.Name = "RBProvactivo"
-        Me.RBProvactivo.Size = New System.Drawing.Size(55, 17)
-        Me.RBProvactivo.TabIndex = 8
-        Me.RBProvactivo.TabStop = True
-        Me.RBProvactivo.Text = "Activo"
-        Me.RBProvactivo.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(6, 73)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 13)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = "Estado Proveedor:"
-        '
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(103, 25)
+        Me.Button6.Location = New System.Drawing.Point(350, 65)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.Size = New System.Drawing.Size(127, 23)
         Me.Button6.TabIndex = 6
         Me.Button6.Text = "&Ingresar"
         Me.Button6.UseVisualStyleBackColor = True
@@ -116,39 +64,19 @@ Partial Class proveedoresprincipal
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(17, 25)
+        Me.Button5.Location = New System.Drawing.Point(350, 94)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(127, 23)
         Me.Button5.TabIndex = 5
-        Me.Button5.Text = "&Nuevo"
+        Me.Button5.Text = "Modificar"
         Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(17, 131)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(161, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "&Cerrar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(540, 126)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Cancela&r"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(540, 89)
+        Me.Button4.Location = New System.Drawing.Point(350, 123)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(127, 23)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "&Eliminar"
         Me.Button4.UseVisualStyleBackColor = True
@@ -347,10 +275,20 @@ Partial Class proveedoresprincipal
         'dtgProveedores
         '
         Me.dtgProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgProveedores.Location = New System.Drawing.Point(319, 219)
+        Me.dtgProveedores.Location = New System.Drawing.Point(337, 211)
         Me.dtgProveedores.Name = "dtgProveedores"
-        Me.dtgProveedores.Size = New System.Drawing.Size(240, 150)
+        Me.dtgProveedores.Size = New System.Drawing.Size(438, 150)
         Me.dtgProveedores.TabIndex = 20
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(350, 152)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(127, 23)
+        Me.Button3.TabIndex = 3
+        Me.Button3.Text = "Cerrar"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'proveedoresprincipal
         '
@@ -360,13 +298,12 @@ Partial Class proveedoresprincipal
         Me.Controls.Add(Me.dtgProveedores)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "proveedoresprincipal"
         Me.Text = "                                 "
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -375,12 +312,9 @@ Partial Class proveedoresprincipal
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents txtrutprov As System.Windows.Forms.TextBox
     Friend WithEvents txtempresaprov As System.Windows.Forms.TextBox
@@ -401,7 +335,5 @@ Partial Class proveedoresprincipal
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblmenuempleados As System.Windows.Forms.Label
     Friend WithEvents dtgProveedores As System.Windows.Forms.DataGridView
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents RBProvinactivo As System.Windows.Forms.RadioButton
-    Friend WithEvents RBProvactivo As System.Windows.Forms.RadioButton
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

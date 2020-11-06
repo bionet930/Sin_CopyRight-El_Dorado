@@ -29,7 +29,7 @@ Public Class formlogin
         Try
             conexion.ConnectionString = "server=localhost; user id= 'prueba' ; password='prueba';database = eldorado"
             conexion.Open()
-            MsgBox("se conecto")
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
