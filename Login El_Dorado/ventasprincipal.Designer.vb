@@ -90,7 +90,7 @@ Partial Class ventasprincipal
         Me.btnimprimirfac.Name = "btnimprimirfac"
         Me.btnimprimirfac.Size = New System.Drawing.Size(161, 23)
         Me.btnimprimirfac.TabIndex = 7
-        Me.btnimprimirfac.Text = "Imprimir Factura"
+        Me.btnimprimirfac.Text = "Verificar Venta"
         Me.btnimprimirfac.UseVisualStyleBackColor = True
         '
         'dtpFecha

@@ -49,6 +49,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\..\itextsharp.xtra.dll</HintPath>
+    </Reference>
     <Reference Include="mysql.data, Version=5.0.8.1, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\PABLO\3D Objects\mysql-connector-net-5.2.7-noinstall\mysql.data.dll</HintPath>
@@ -151,6 +160,12 @@
     <Compile Include="ventasprincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="verificar_venta.Designer.vb">
+      <DependentUpon>verificar_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="verificar_venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="clientesprincipal.resx">
@@ -169,7 +184,7 @@
       <DependentUpon>Imprimir-Factura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -185,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ventasprincipal.resx">
       <DependentUpon>ventasprincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verificar_venta.resx">
+      <DependentUpon>verificar_venta.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +248,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itextsharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itextsharp.pdfa.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itextsharp.xtra.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

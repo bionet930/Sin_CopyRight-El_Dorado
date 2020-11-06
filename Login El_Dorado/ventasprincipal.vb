@@ -1,7 +1,12 @@
-﻿Imports System.Data
+﻿Imports iTextSharp.text
+Imports iTextSharp.text.pdf
+Imports System.IO
+
+Imports System.Data
 Imports System.Data.DataRow
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms
+
 
 Public Class ventasprincipal
 
@@ -34,6 +39,8 @@ Public Class ventasprincipal
     End Sub
 
     Private Sub ventasprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+
 
         consulta.establecerConexion()
         llenarCliente()
@@ -71,10 +78,6 @@ Public Class ventasprincipal
 
         Catch ex As Exception
             MsgBox("Debe ingresar algun dato. " & ex.Message)
-
-
-
-
 
 
         End Try
@@ -212,6 +215,10 @@ Public Class ventasprincipal
     End Sub
 
     Private Sub btnimprimirfac_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfac.Click
-        Imprimir_Factura.Show()
+        
+
+        Verificar_Venta.Show()
+
+
     End Sub
 End Class
