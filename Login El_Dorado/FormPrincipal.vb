@@ -1,7 +1,13 @@
 ﻿Imports System.Runtime.InteropServices
-
+Imports MySql.Data
+Imports MySql.Data.MySqlClient
+Imports System.Windows.Forms.DataVisualization.Charting
 
 Public Class panelsupprincipal
+
+    Dim da As MySqlDataAdapter
+    Dim ds As DataSet
+
 
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
@@ -102,13 +108,44 @@ Public Class panelsupprincipal
 
     Private Sub panelprincipal_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles panelprincipal.Paint
 
+    End Sub
+
+    Private Sub FormPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        Dim Conexion As MySqlConnection
+        Conexion = New MySqlConnection()
+        Conexion.ConnectionString = "Server=localhost;Database=eldorado;Uid=prueba;Pwd=prueba;"
+
+        Dim sqlventas As String = "SELECT * FROM tblmercaderia"
+        Dim da As New MySqlDataAdapter(sqlventas, Conexion)
+
+        Dim ds As New DataSet()
+        da.Fill(ds, "tblmercaderia")
+
+        With Stock
+            .Series.Clear()
+            .Series.Add("Series1")
+        End With
 
 
+        Stock.DataSource = ds.Tables("tblmercaderia")
+        Dim series1 As Series = Stock.Series("Series1")
+        series1.ChartType = SeriesChartType.Column
+
+        series1.Name = "Stock"
+
+
+        With Stock
+            .Series(series1.Name).XValueMember = "NombreMerc"
+            .Series(series1.Name).YValueMembers = "Stock"
+            .Series(0).LabelFormat = "{#,##0}"
+        End With
 
 
     End Sub
 
-    Private Sub Chart1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub Chart1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Stock.Click
 
     End Sub
+
 End Class
