@@ -23,9 +23,6 @@ Partial Class panelsupprincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.pnlsuperiorprinciapl = New System.Windows.Forms.Panel()
         Me.btnrestauraprincipal = New System.Windows.Forms.Button()
         Me.btnminimprincipal = New System.Windows.Forms.Button()
@@ -47,13 +44,10 @@ Partial Class panelsupprincipal
         Me.panelprincipal = New System.Windows.Forms.Panel()
         Me.tmocultarmenu = New System.Windows.Forms.Timer(Me.components)
         Me.tmmostrarmenu = New System.Windows.Forms.Timer(Me.components)
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.pnlsuperiorprinciapl.SuspendLayout()
         Me.panelizqprincipal.SuspendLayout()
         CType(Me.picboxlogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmenuprincipal, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.panelprincipal.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlsuperiorprinciapl
@@ -309,7 +303,6 @@ Partial Class panelsupprincipal
         '
         Me.panelprincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.panelprincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panelprincipal.Controls.Add(Me.Chart1)
         Me.panelprincipal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.panelprincipal.Location = New System.Drawing.Point(60, 40)
@@ -324,22 +317,6 @@ Partial Class panelsupprincipal
         'tmmostrarmenu
         '
         Me.tmmostrarmenu.Interval = 10
-        '
-        'Chart1
-        '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(121, 59)
-        Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(370, 300)
-        Me.Chart1.TabIndex = 0
-        Me.Chart1.Text = "Chart1"
         '
         'panelsupprincipal
         '
@@ -356,8 +333,6 @@ Partial Class panelsupprincipal
         Me.panelizqprincipal.ResumeLayout(False)
         CType(Me.picboxlogo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmenuprincipal, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.panelprincipal.ResumeLayout(False)
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -382,5 +357,4 @@ Partial Class panelsupprincipal
     Friend WithEvents btnclientesprincipal As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnempleadosprincipal As System.Windows.Forms.Button
-    Friend WithEvents Chart1 As System.Windows.Forms.DataVisualization.Charting.Chart
 End Class

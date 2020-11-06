@@ -108,7 +108,7 @@ Public Class panelsupprincipal
 
     End Sub
 
-    Private Sub Chart1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Chart1.Click
+    Private Sub Chart1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 End Class
