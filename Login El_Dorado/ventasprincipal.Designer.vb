@@ -25,7 +25,7 @@ Partial Class ventasprincipal
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnIngresarProducto = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnimprimirfac = New System.Windows.Forms.Button()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.cmbEmpleados = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -83,15 +83,15 @@ Partial Class ventasprincipal
         Me.btnEliminar.Text = "&Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnimprimirfac
         '
-        Me.Button7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(531, 342)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(161, 23)
-        Me.Button7.TabIndex = 7
-        Me.Button7.Text = "Imprimir Factura"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnimprimirfac.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnimprimirfac.Location = New System.Drawing.Point(531, 342)
+        Me.btnimprimirfac.Name = "btnimprimirfac"
+        Me.btnimprimirfac.Size = New System.Drawing.Size(161, 23)
+        Me.btnimprimirfac.TabIndex = 7
+        Me.btnimprimirfac.Text = "Imprimir Factura"
+        Me.btnimprimirfac.UseVisualStyleBackColor = True
         '
         'dtpFecha
         '
@@ -312,7 +312,7 @@ Partial Class ventasprincipal
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.cmbEmpleados)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.btnimprimirfac)
         Me.Controls.Add(Me.cmbClientes)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
@@ -346,7 +346,7 @@ Partial Class ventasprincipal
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents btnimprimirfac As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents nudCantidad As System.Windows.Forms.NumericUpDown
     Public WithEvents dgvVentas As System.Windows.Forms.DataGridView
