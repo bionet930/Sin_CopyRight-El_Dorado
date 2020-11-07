@@ -272,8 +272,8 @@ Public Class ventasprincipal
     Private Sub btnimprimirfac_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfac.Click
         
 
-        Imprimir_Factura.Show()
-
+        'Imprimir_Factura.Show()
+        verificar_venta.Show()
 
 
 

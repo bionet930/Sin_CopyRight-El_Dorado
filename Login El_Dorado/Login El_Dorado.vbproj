@@ -154,6 +154,12 @@
     <Compile Include="ventasprincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Verificar_Venta.Designer.vb">
+      <DependentUpon>Verificar_Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Verificar_Venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="clientesprincipal.resx">
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ventasprincipal.resx">
       <DependentUpon>ventasprincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verificar_Venta.resx">
+      <DependentUpon>Verificar_Venta.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

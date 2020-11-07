@@ -7,9 +7,6 @@ Imports System.Data.DataRow
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms
 
-
-
-
 Public Class Verificar_Venta
 
     Dim conex As New MySqlConnection("data source=localhost;user id=prueba; password=prueba;database=eldorado")
@@ -64,9 +61,6 @@ Public Class Verificar_Venta
 
     End Function
 
-
-
-
     Public Sub ExportarDatosPDF(ByVal document As Document)
         'Se crea objeto PDFTable con el numero de columnas del DataGridView
         Dim datatable As New PdfPTable(dgvverfactura.ColumnCount)
@@ -105,9 +99,6 @@ Public Class Verificar_Venta
     End Sub
 
 
-
-
-
     Private Sub btnimprimirfactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfactura.Click
 
         'Imprimir_Factura.Show()
@@ -131,4 +122,5 @@ Public Class Verificar_Venta
         End Try
 
     End Sub
+
 End Class
