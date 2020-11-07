@@ -2,6 +2,8 @@
 Imports System.Data.DataRow
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms
+Imports iTextSharp
+
 
 Public Class ventasprincipal
 

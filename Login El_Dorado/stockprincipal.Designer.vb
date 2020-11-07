@@ -31,7 +31,7 @@ Partial Class stockprincipal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.avatar = New System.Windows.Forms.PictureBox()
@@ -52,6 +52,8 @@ Partial Class stockprincipal
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnActualizarStock = New System.Windows.Forms.Button()
+        Me.btnIngresarProducto = New System.Windows.Forms.Button()
         CType(Me.dgvDatostock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.avatar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,7 +73,7 @@ Partial Class stockprincipal
         Me.dgvDatostock.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvDatostock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvDatostock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDatostock.Location = New System.Drawing.Point(68, 424)
+        Me.dgvDatostock.Location = New System.Drawing.Point(68, 361)
         Me.dgvDatostock.Name = "dgvDatostock"
         Me.dgvDatostock.Size = New System.Drawing.Size(758, 111)
         Me.dgvDatostock.TabIndex = 1
@@ -101,11 +103,11 @@ Partial Class stockprincipal
         Me.btnstockprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnstockprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnstockprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnstockprincipal.Location = New System.Drawing.Point(130, 332)
+        Me.btnstockprincipal.Location = New System.Drawing.Point(311, 197)
         Me.btnstockprincipal.Name = "btnstockprincipal"
-        Me.btnstockprincipal.Size = New System.Drawing.Size(107, 23)
+        Me.btnstockprincipal.Size = New System.Drawing.Size(161, 23)
         Me.btnstockprincipal.TabIndex = 3
-        Me.btnstockprincipal.Text = "Ver Stock"
+        Me.btnstockprincipal.Text = "Actualizar Stock"
         Me.btnstockprincipal.UseVisualStyleBackColor = True
         '
         'txtImagen
@@ -129,7 +131,7 @@ Partial Class stockprincipal
         'btnIngresar
         '
         Me.btnIngresar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(341, 290)
+        Me.btnIngresar.Location = New System.Drawing.Point(311, 74)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(161, 23)
         Me.btnIngresar.TabIndex = 10
@@ -139,27 +141,27 @@ Partial Class stockprincipal
         'btnEliminar
         '
         Me.btnEliminar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(341, 319)
+        Me.btnEliminar.Location = New System.Drawing.Point(311, 132)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(161, 23)
         Me.btnEliminar.TabIndex = 8
         Me.btnEliminar.Text = "&Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'btnNuevo
+        'btnModificar
         '
-        Me.btnNuevo.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.Location = New System.Drawing.Point(341, 257)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(161, 23)
-        Me.btnNuevo.TabIndex = 9
-        Me.btnNuevo.Text = "&Nuevo"
-        Me.btnNuevo.UseVisualStyleBackColor = True
+        Me.btnModificar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.Location = New System.Drawing.Point(311, 103)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(161, 23)
+        Me.btnModificar.TabIndex = 9
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnCerrar
         '
         Me.btnCerrar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(341, 348)
+        Me.btnCerrar.Location = New System.Drawing.Point(311, 161)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(161, 23)
         Me.btnCerrar.TabIndex = 7
@@ -171,16 +173,17 @@ Partial Class stockprincipal
         Me.GroupBox3.Controls.Add(Me.avatar)
         Me.GroupBox3.Controls.Add(Me.Button8)
         Me.GroupBox3.Controls.Add(Me.btnImagen)
-        Me.GroupBox3.Location = New System.Drawing.Point(317, 46)
+        Me.GroupBox3.Location = New System.Drawing.Point(614, 161)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(193, 194)
         Me.GroupBox3.TabIndex = 15
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Acciones Foto"
+        Me.GroupBox3.Visible = False
         '
         'avatar
         '
-        Me.avatar.Location = New System.Drawing.Point(36, 19)
+        Me.avatar.Location = New System.Drawing.Point(24, 19)
         Me.avatar.Name = "avatar"
         Me.avatar.Size = New System.Drawing.Size(119, 111)
         Me.avatar.TabIndex = 12
@@ -324,11 +327,34 @@ Partial Class stockprincipal
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Id Mercaderia"
         '
+        'btnActualizarStock
+        '
+        Me.btnActualizarStock.Location = New System.Drawing.Point(81, 293)
+        Me.btnActualizarStock.Name = "btnActualizarStock"
+        Me.btnActualizarStock.Size = New System.Drawing.Size(161, 23)
+        Me.btnActualizarStock.TabIndex = 31
+        Me.btnActualizarStock.Text = "Actualizar"
+        Me.btnActualizarStock.UseVisualStyleBackColor = True
+        Me.btnActualizarStock.Visible = False
+        '
+        'btnIngresarProducto
+        '
+        Me.btnIngresarProducto.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIngresarProducto.Location = New System.Drawing.Point(268, 293)
+        Me.btnIngresarProducto.Name = "btnIngresarProducto"
+        Me.btnIngresarProducto.Size = New System.Drawing.Size(161, 23)
+        Me.btnIngresarProducto.TabIndex = 32
+        Me.btnIngresarProducto.Text = "&Ingresar"
+        Me.btnIngresarProducto.UseVisualStyleBackColor = True
+        Me.btnIngresarProducto.Visible = False
+        '
         'stockprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(852, 487)
+        Me.Controls.Add(Me.btnIngresarProducto)
+        Me.Controls.Add(Me.btnActualizarStock)
         Me.Controls.Add(Me.cmdProveedores)
         Me.Controls.Add(Me.txtDescuento)
         Me.Controls.Add(Me.txtStock)
@@ -346,7 +372,7 @@ Partial Class stockprincipal
         Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.btnEliminar)
-        Me.Controls.Add(Me.btnNuevo)
+        Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.txtImagen)
         Me.Controls.Add(Me.btnstockprincipal)
@@ -372,7 +398,7 @@ Partial Class stockprincipal
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents btnIngresar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
-    Friend WithEvents btnNuevo As System.Windows.Forms.Button
+    Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnCerrar As System.Windows.Forms.Button
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents avatar As System.Windows.Forms.PictureBox
@@ -393,4 +419,6 @@ Partial Class stockprincipal
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnActualizarStock As System.Windows.Forms.Button
+    Friend WithEvents btnIngresarProducto As System.Windows.Forms.Button
 End Class

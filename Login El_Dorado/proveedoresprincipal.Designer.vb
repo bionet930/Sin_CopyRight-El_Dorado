@@ -23,7 +23,7 @@ Partial Class proveedoresprincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtdirprov = New System.Windows.Forms.TextBox()
@@ -61,15 +61,15 @@ Partial Class proveedoresprincipal
         Me.Button6.Text = "&Ingresar"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnModificar
         '
-        Me.Button5.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(350, 94)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(127, 23)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "Modificar"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnModificar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificar.Location = New System.Drawing.Point(350, 94)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(127, 23)
+        Me.btnModificar.TabIndex = 5
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -258,7 +258,7 @@ Partial Class proveedoresprincipal
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(883, 35)
+        Me.Panel1.Size = New System.Drawing.Size(668, 35)
         Me.Panel1.TabIndex = 19
         '
         'lblmenuempleados
@@ -274,10 +274,11 @@ Partial Class proveedoresprincipal
         '
         'dtgProveedores
         '
+        Me.dtgProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtgProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgProveedores.Location = New System.Drawing.Point(337, 211)
+        Me.dtgProveedores.Location = New System.Drawing.Point(13, 395)
         Me.dtgProveedores.Name = "dtgProveedores"
-        Me.dtgProveedores.Size = New System.Drawing.Size(438, 150)
+        Me.dtgProveedores.Size = New System.Drawing.Size(594, 150)
         Me.dtgProveedores.TabIndex = 20
         '
         'Button3
@@ -294,11 +295,11 @@ Partial Class proveedoresprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(883, 447)
+        Me.ClientSize = New System.Drawing.Size(668, 553)
         Me.Controls.Add(Me.dtgProveedores)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox2)
@@ -314,7 +315,7 @@ Partial Class proveedoresprincipal
     End Sub
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents txtrutprov As System.Windows.Forms.TextBox
     Friend WithEvents txtempresaprov As System.Windows.Forms.TextBox
