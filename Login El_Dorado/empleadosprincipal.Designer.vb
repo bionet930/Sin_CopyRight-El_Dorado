@@ -121,7 +121,11 @@ Partial Class empleadosprincipal
         Me.panelprincipal.Controls.Add(Me.dgvEmpleados)
         Me.panelprincipal.Controls.Add(Me.GroupBox4)
         Me.panelprincipal.Controls.Add(Me.GroupBox3)
+        Me.panelprincipal.Controls.Add(Me.txtPass)
         Me.panelprincipal.Controls.Add(Me.GroupBox2)
+        Me.panelprincipal.Controls.Add(Me.Label8)
+        Me.panelprincipal.Controls.Add(Me.txtImagen)
+        Me.panelprincipal.Controls.Add(Me.Label7)
         Me.panelprincipal.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.panelprincipal.Location = New System.Drawing.Point(0, 0)
@@ -131,10 +135,11 @@ Partial Class empleadosprincipal
         '
         'dgvEmpleados
         '
+        Me.dgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvEmpleados.Location = New System.Drawing.Point(11, 397)
+        Me.dgvEmpleados.Location = New System.Drawing.Point(11, 291)
         Me.dgvEmpleados.Name = "dgvEmpleados"
-        Me.dgvEmpleados.Size = New System.Drawing.Size(511, 150)
+        Me.dgvEmpleados.Size = New System.Drawing.Size(616, 150)
         Me.dgvEmpleados.TabIndex = 21
         '
         'GroupBox4
@@ -143,7 +148,7 @@ Partial Class empleadosprincipal
         Me.GroupBox4.Controls.Add(Me.btnEliminar)
         Me.GroupBox4.Controls.Add(Me.btnModificar)
         Me.GroupBox4.Controls.Add(Me.btnCerrar)
-        Me.GroupBox4.Location = New System.Drawing.Point(320, 233)
+        Me.GroupBox4.Location = New System.Drawing.Point(308, 31)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(208, 158)
         Me.GroupBox4.TabIndex = 15
@@ -195,12 +200,13 @@ Partial Class empleadosprincipal
         Me.GroupBox3.Controls.Add(Me.avatar)
         Me.GroupBox3.Controls.Add(Me.Button8)
         Me.GroupBox3.Controls.Add(Me.btnImagen)
-        Me.GroupBox3.Location = New System.Drawing.Point(320, 16)
+        Me.GroupBox3.Location = New System.Drawing.Point(532, 31)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(208, 208)
         Me.GroupBox3.TabIndex = 14
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Acciones Foto"
+        Me.GroupBox3.Visible = False
         '
         'avatar
         '
@@ -235,10 +241,6 @@ Partial Class empleadosprincipal
         Me.GroupBox2.Controls.Add(Me.dtpCarnet)
         Me.GroupBox2.Controls.Add(Me.dtpNacimiento)
         Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.txtPass)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.txtImagen)
-        Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.txtDireccion)
         Me.GroupBox2.Controls.Add(Me.txtTelefono)
@@ -252,7 +254,7 @@ Partial Class empleadosprincipal
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Location = New System.Drawing.Point(8, 16)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(294, 359)
+        Me.GroupBox2.Size = New System.Drawing.Size(294, 265)
         Me.GroupBox2.TabIndex = 13
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos Empleados"
@@ -300,7 +302,7 @@ Partial Class empleadosprincipal
         'txtPass
         '
         Me.txtPass.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(139, 286)
+        Me.txtPass.Location = New System.Drawing.Point(569, 291)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(148, 22)
         Me.txtPass.TabIndex = 27
@@ -310,7 +312,7 @@ Partial Class empleadosprincipal
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(54, 286)
+        Me.Label8.Location = New System.Drawing.Point(484, 291)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(62, 14)
         Me.Label8.TabIndex = 26
@@ -321,7 +323,7 @@ Partial Class empleadosprincipal
         '
         Me.txtImagen.Enabled = False
         Me.txtImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImagen.Location = New System.Drawing.Point(140, 254)
+        Me.txtImagen.Location = New System.Drawing.Point(570, 259)
         Me.txtImagen.Name = "txtImagen"
         Me.txtImagen.Size = New System.Drawing.Size(148, 22)
         Me.txtImagen.TabIndex = 25
@@ -331,7 +333,7 @@ Partial Class empleadosprincipal
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(55, 254)
+        Me.Label7.Location = New System.Drawing.Point(485, 259)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(85, 14)
         Me.Label7.TabIndex = 24
@@ -465,6 +467,7 @@ Partial Class empleadosprincipal
         Me.Panel1.PerformLayout()
         Me.pnlpempl.ResumeLayout(False)
         Me.panelprincipal.ResumeLayout(False)
+        Me.panelprincipal.PerformLayout()
         CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)

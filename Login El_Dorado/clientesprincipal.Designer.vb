@@ -61,7 +61,7 @@ Partial Class clientesprincipal
         Me.GroupBox4.Controls.Add(Me.btnEliminar)
         Me.GroupBox4.Controls.Add(Me.btnModificar)
         Me.GroupBox4.Controls.Add(Me.btnCerrar)
-        Me.GroupBox4.Location = New System.Drawing.Point(340, 241)
+        Me.GroupBox4.Location = New System.Drawing.Point(337, 35)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(208, 158)
         Me.GroupBox4.TabIndex = 18
@@ -113,7 +113,7 @@ Partial Class clientesprincipal
         Me.GroupBox3.Controls.Add(Me.avatar)
         Me.GroupBox3.Controls.Add(Me.Button8)
         Me.GroupBox3.Controls.Add(Me.btnImagen)
-        Me.GroupBox3.Location = New System.Drawing.Point(340, 24)
+        Me.GroupBox3.Location = New System.Drawing.Point(646, 134)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(208, 208)
         Me.GroupBox3.TabIndex = 17
@@ -151,7 +151,6 @@ Partial Class clientesprincipal
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.txtSaldo)
-        Me.GroupBox2.Controls.Add(Me.txtImagen)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.txtPago)
         Me.GroupBox2.Controls.Add(Me.Label7)
@@ -166,7 +165,7 @@ Partial Class clientesprincipal
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Location = New System.Drawing.Point(28, 24)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(294, 359)
+        Me.GroupBox2.Size = New System.Drawing.Size(294, 288)
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos Clientes"
@@ -182,7 +181,7 @@ Partial Class clientesprincipal
         'txtImagen
         '
         Me.txtImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImagen.Location = New System.Drawing.Point(140, 240)
+        Me.txtImagen.Location = New System.Drawing.Point(727, 367)
         Me.txtImagen.Name = "txtImagen"
         Me.txtImagen.Size = New System.Drawing.Size(148, 22)
         Me.txtImagen.TabIndex = 27
@@ -301,8 +300,9 @@ Partial Class clientesprincipal
         '
         'dgvClientes
         '
+        Me.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvClientes.Location = New System.Drawing.Point(95, 419)
+        Me.dgvClientes.Location = New System.Drawing.Point(28, 330)
         Me.dgvClientes.Name = "dgvClientes"
         Me.dgvClientes.Size = New System.Drawing.Size(528, 150)
         Me.dgvClientes.TabIndex = 19
@@ -317,6 +317,7 @@ Partial Class clientesprincipal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(933, 586)
         Me.Controls.Add(Me.dgvClientes)
+        Me.Controls.Add(Me.txtImagen)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -329,6 +330,7 @@ Partial Class clientesprincipal
         Me.GroupBox2.PerformLayout()
         CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox

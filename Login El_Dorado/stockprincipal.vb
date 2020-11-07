@@ -394,5 +394,6 @@ Public Class stockprincipal
         dgvDatostock.DataSource = consulta.mostrarEnTabla("Select  id_Mercaderia,NombreMerc,PrecioCosto, PrecioVenta, id_Prov, Stock,Descuento from tblmercaderia where `EstadoMerc`= 1  ;")
     End Sub
 
+  
 End Class
 

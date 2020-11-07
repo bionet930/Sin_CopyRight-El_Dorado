@@ -47,11 +47,11 @@ Partial Class ventasprincipal
         Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.dgvStock = New System.Windows.Forms.DataGridView()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.nudCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvFactura, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button2
@@ -172,7 +172,7 @@ Partial Class ventasprincipal
         'txtIdmercaderia
         '
         Me.txtIdmercaderia.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdmercaderia.Location = New System.Drawing.Point(117, 119)
+        Me.txtIdmercaderia.Location = New System.Drawing.Point(117, 123)
         Me.txtIdmercaderia.Name = "txtIdmercaderia"
         Me.txtIdmercaderia.Size = New System.Drawing.Size(104, 22)
         Me.txtIdmercaderia.TabIndex = 18
@@ -181,7 +181,7 @@ Partial Class ventasprincipal
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(328, 125)
+        Me.Label4.Location = New System.Drawing.Point(326, 125)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(65, 14)
         Me.Label4.TabIndex = 15
@@ -191,7 +191,7 @@ Partial Class ventasprincipal
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 122)
+        Me.Label2.Location = New System.Drawing.Point(13, 126)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(98, 14)
         Me.Label2.TabIndex = 13
@@ -201,6 +201,7 @@ Partial Class ventasprincipal
         '
         Me.dgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVentas.Enabled = False
         Me.dgvVentas.Location = New System.Drawing.Point(12, 173)
         Me.dgvVentas.Name = "dgvVentas"
         Me.dgvVentas.Size = New System.Drawing.Size(487, 39)
@@ -230,9 +231,8 @@ Partial Class ventasprincipal
         Me.lblPrecio.AutoSize = True
         Me.lblPrecio.Location = New System.Drawing.Point(587, 82)
         Me.lblPrecio.Name = "lblPrecio"
-        Me.lblPrecio.Size = New System.Drawing.Size(39, 13)
+        Me.lblPrecio.Size = New System.Drawing.Size(0, 13)
         Me.lblPrecio.TabIndex = 32
-        Me.lblPrecio.Text = "Label5"
         '
         'Label5
         '
@@ -247,11 +247,10 @@ Partial Class ventasprincipal
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(240, 128)
+        Me.lblNombre.Location = New System.Drawing.Point(238, 128)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(39, 13)
+        Me.lblNombre.Size = New System.Drawing.Size(0, 13)
         Me.lblNombre.TabIndex = 34
-        Me.lblNombre.Text = "Label8"
         '
         'Button3
         '
@@ -275,9 +274,8 @@ Partial Class ventasprincipal
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(578, 128)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(36, 13)
+        Me.Label8.Size = New System.Drawing.Size(0, 13)
         Me.Label8.TabIndex = 37
-        Me.Label8.Text = "precio"
         '
         'Label9
         '
@@ -288,23 +286,30 @@ Partial Class ventasprincipal
         Me.Label9.TabIndex = 40
         Me.Label9.Text = "Precio Unitario"
         '
-        'dgvStock
+        'Label10
         '
-        Me.dgvStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvStock.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvStock.Location = New System.Drawing.Point(359, 5)
-        Me.dgvStock.Name = "dgvStock"
-        Me.dgvStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvStock.Size = New System.Drawing.Size(104, 43)
-        Me.dgvStock.TabIndex = 41
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(407, 47)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(0, 13)
+        Me.Label10.TabIndex = 42
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(315, 47)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(68, 13)
+        Me.Label11.TabIndex = 43
+        Me.Label11.Text = "Stock Actual"
         '
         'ventasprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(790, 532)
-        Me.Controls.Add(Me.dgvStock)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnIngresarProducto)
@@ -335,7 +340,6 @@ Partial Class ventasprincipal
         CType(Me.nudCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvFactura, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvStock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -365,5 +369,6 @@ Partial Class ventasprincipal
     Friend WithEvents txtTotal As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents dgvStock As System.Windows.Forms.DataGridView
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class
