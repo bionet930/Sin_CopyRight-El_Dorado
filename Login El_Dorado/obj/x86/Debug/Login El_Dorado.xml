@@ -39,6 +39,18 @@ LoginEl_Dorado
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Login_El_Dorado.My.Resources.Resources.itextsharp">
+	<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
+</member><member name="P:Login_El_Dorado.My.Resources.Resources.itextsharp_pdfa">
+	<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
+</member><member name="P:Login_El_Dorado.My.Resources.Resources.itextsharp_xtra">
+	<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
 </member><member name="P:Login_El_Dorado.My.Resources.Resources.Mobile_Menu_Icon">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

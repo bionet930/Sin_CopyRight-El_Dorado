@@ -101,7 +101,7 @@ Partial Class empleadosprincipal
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(575, 35)
+        Me.Panel1.Size = New System.Drawing.Size(745, 35)
         Me.Panel1.TabIndex = 2
         '
         'pnlpempl
@@ -112,7 +112,7 @@ Partial Class empleadosprincipal
         Me.pnlpempl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlpempl.Location = New System.Drawing.Point(0, 35)
         Me.pnlpempl.Name = "pnlpempl"
-        Me.pnlpempl.Size = New System.Drawing.Size(575, 560)
+        Me.pnlpempl.Size = New System.Drawing.Size(745, 572)
         Me.pnlpempl.TabIndex = 4
         '
         'panelprincipal
@@ -126,7 +126,7 @@ Partial Class empleadosprincipal
         Me.panelprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.panelprincipal.Location = New System.Drawing.Point(0, 0)
         Me.panelprincipal.Name = "panelprincipal"
-        Me.panelprincipal.Size = New System.Drawing.Size(575, 560)
+        Me.panelprincipal.Size = New System.Drawing.Size(745, 572)
         Me.panelprincipal.TabIndex = 4
         '
         'dgvEmpleados
@@ -457,7 +457,7 @@ Partial Class empleadosprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(575, 595)
+        Me.ClientSize = New System.Drawing.Size(745, 607)
         Me.Controls.Add(Me.pnlpempl)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "empleadosprincipal"
