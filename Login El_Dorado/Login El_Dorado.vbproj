@@ -88,10 +88,17 @@
     </Compile>
     <Compile Include="conexion.vb" />
     <Compile Include="ConexionPablo.vb" />
+    <Compile Include="Correo.vb" />
     <Compile Include="empleadosprincipal.Designer.vb">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="empleadosprincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enviar_Correo.Designer.vb">
+      <DependentUpon>Enviar_Correo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enviar_Correo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -168,6 +175,9 @@
     <EmbeddedResource Include="empleadosprincipal.resx">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Enviar_Correo.resx">
+      <DependentUpon>Enviar_Correo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +252,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dorado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

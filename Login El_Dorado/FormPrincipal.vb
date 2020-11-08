@@ -2,6 +2,7 @@
 Imports MySql.Data
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms.DataVisualization.Charting
+Imports System.IO
 
 Public Class panelsupprincipal
 
@@ -148,4 +149,25 @@ Public Class panelsupprincipal
 
     End Sub
 
+    Private Sub btnmantenimiento_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnmantenimiento.Click
+
+        Dim Ruta As String
+
+        Ruta = "C:\Mantenimiento"
+
+        If Not Directory.Exists(Ruta) Then
+            Directory.CreateDirectory(Ruta)
+            Shell("C:\Mantenimiento\Mantenimiento.BAT", AppWinStyle.NormalFocus, True)
+            MsgBox("Mantenimiento Finalizado Correctamente", MsgBoxStyle.Exclamation, Title:="Proceso Concluido")
+        Else : Shell("C:\Mantenimiento\Mantenimiento.BAT", AppWinStyle.NormalFocus, True)
+            MsgBox("Mantenimiento Finalizado Correctamente", MsgBoxStyle.Exclamation, Title:="Proceso Concluido")
+        End If
+
+    End Sub
+
+    Private Sub btncorreos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncorreos.Click
+
+        Abrirformprincipal(New Enviar_Correo)
+
+    End Sub
 End Class

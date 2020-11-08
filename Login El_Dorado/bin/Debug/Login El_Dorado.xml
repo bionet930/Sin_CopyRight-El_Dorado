@@ -19,6 +19,14 @@ LoginEl_Dorado
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_2">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Login_El_Dorado.My.Resources.Resources.dorado">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Login_El_Dorado.My.Resources.Resources.empleados">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -60,6 +68,10 @@ LoginEl_Dorado
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Login_El_Dorado.My.Resources.Resources.proveedores">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Login_El_Dorado.My.Resources.Resources.relo3">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
