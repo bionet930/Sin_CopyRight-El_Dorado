@@ -37,14 +37,11 @@ Partial Class empleadosprincipal
         Me.avatar = New System.Windows.Forms.PictureBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.btnImagen = New System.Windows.Forms.Button()
+        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dtpCarnet = New System.Windows.Forms.DateTimePicker()
         Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtPass = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtImagen = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
@@ -56,6 +53,9 @@ Partial Class empleadosprincipal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtImagen = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.opfdempleados = New System.Windows.Forms.OpenFileDialog()
         Me.Panel1.SuspendLayout()
@@ -215,6 +215,7 @@ Partial Class empleadosprincipal
         Me.avatar.Size = New System.Drawing.Size(112, 135)
         Me.avatar.TabIndex = 12
         Me.avatar.TabStop = False
+        Me.avatar.Visible = False
         '
         'Button8
         '
@@ -225,6 +226,7 @@ Partial Class empleadosprincipal
         Me.Button8.TabIndex = 8
         Me.Button8.Text = "Eliminar Imagen"
         Me.Button8.UseVisualStyleBackColor = True
+        Me.Button8.Visible = False
         '
         'btnImagen
         '
@@ -235,6 +237,16 @@ Partial Class empleadosprincipal
         Me.btnImagen.TabIndex = 7
         Me.btnImagen.Text = "Seleccionar Imagen"
         Me.btnImagen.UseVisualStyleBackColor = True
+        Me.btnImagen.Visible = False
+        '
+        'txtPass
+        '
+        Me.txtPass.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.Location = New System.Drawing.Point(569, 291)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(148, 22)
+        Me.txtPass.TabIndex = 27
+        Me.txtPass.Visible = False
         '
         'GroupBox2
         '
@@ -298,47 +310,6 @@ Partial Class empleadosprincipal
         Me.Label9.Size = New System.Drawing.Size(76, 14)
         Me.Label9.TabIndex = 29
         Me.Label9.Text = "Fecha Nac."
-        '
-        'txtPass
-        '
-        Me.txtPass.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(569, 291)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(148, 22)
-        Me.txtPass.TabIndex = 27
-        Me.txtPass.Visible = False
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(484, 291)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(62, 14)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "xxx pass"
-        Me.Label8.Visible = False
-        '
-        'txtImagen
-        '
-        Me.txtImagen.Enabled = False
-        Me.txtImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImagen.Location = New System.Drawing.Point(570, 259)
-        Me.txtImagen.Name = "txtImagen"
-        Me.txtImagen.Size = New System.Drawing.Size(148, 22)
-        Me.txtImagen.TabIndex = 25
-        Me.txtImagen.Visible = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(485, 259)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(85, 14)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "xxx  imagen"
-        Me.Label7.Visible = False
         '
         'Label6
         '
@@ -441,6 +412,38 @@ Partial Class empleadosprincipal
         Me.Label1.Size = New System.Drawing.Size(96, 14)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "ID-Empleados"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(484, 291)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(62, 14)
+        Me.Label8.TabIndex = 26
+        Me.Label8.Text = "xxx pass"
+        Me.Label8.Visible = False
+        '
+        'txtImagen
+        '
+        Me.txtImagen.Enabled = False
+        Me.txtImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtImagen.Location = New System.Drawing.Point(570, 259)
+        Me.txtImagen.Name = "txtImagen"
+        Me.txtImagen.Size = New System.Drawing.Size(148, 22)
+        Me.txtImagen.TabIndex = 25
+        Me.txtImagen.Visible = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(485, 259)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(85, 14)
+        Me.Label7.TabIndex = 24
+        Me.Label7.Text = "xxx  imagen"
+        Me.Label7.Visible = False
         '
         'GroupBox1
         '

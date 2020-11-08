@@ -22,7 +22,7 @@ Partial Class ventasprincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnIngresarProducto = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnimprimirfac = New System.Windows.Forms.Button()
@@ -43,7 +43,7 @@ Partial Class ventasprincipal
         Me.lblPrecio = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -54,18 +54,19 @@ Partial Class ventasprincipal
         CType(Me.dgvFactura, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button2
+        'btnCerrar
         '
-        Me.Button2.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(531, 371)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(161, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "&Cerrar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCerrar.Location = New System.Drawing.Point(531, 371)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(161, 23)
+        Me.btnCerrar.TabIndex = 2
+        Me.btnCerrar.Text = "&Cerrar"
+        Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'btnIngresarProducto
         '
+        Me.btnIngresarProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresarProducto.Location = New System.Drawing.Point(520, 189)
         Me.btnIngresarProducto.Name = "btnIngresarProducto"
         Me.btnIngresarProducto.Size = New System.Drawing.Size(161, 23)
@@ -75,7 +76,7 @@ Partial Class ventasprincipal
         '
         'btnEliminar
         '
-        Me.btnEliminar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Location = New System.Drawing.Point(520, 228)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(161, 23)
@@ -85,7 +86,7 @@ Partial Class ventasprincipal
         '
         'btnimprimirfac
         '
-        Me.btnimprimirfac.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnimprimirfac.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnimprimirfac.Location = New System.Drawing.Point(531, 342)
         Me.btnimprimirfac.Name = "btnimprimirfac"
         Me.btnimprimirfac.Size = New System.Drawing.Size(161, 23)
@@ -252,14 +253,15 @@ Partial Class ventasprincipal
         Me.lblNombre.Size = New System.Drawing.Size(0, 13)
         Me.lblNombre.TabIndex = 34
         '
-        'Button3
+        'btnFinalizarVenta
         '
-        Me.Button3.Location = New System.Drawing.Point(531, 313)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(161, 23)
-        Me.Button3.TabIndex = 35
-        Me.Button3.Text = "finalizar venta"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnFinalizarVenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFinalizarVenta.Location = New System.Drawing.Point(531, 313)
+        Me.btnFinalizarVenta.Name = "btnFinalizarVenta"
+        Me.btnFinalizarVenta.Size = New System.Drawing.Size(161, 23)
+        Me.btnFinalizarVenta.TabIndex = 35
+        Me.btnFinalizarVenta.Text = "finalizar venta"
+        Me.btnFinalizarVenta.UseVisualStyleBackColor = True
         '
         'txtTotal
         '
@@ -311,7 +313,7 @@ Partial Class ventasprincipal
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnIngresarProducto)
         Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.btnEliminar)
@@ -324,7 +326,7 @@ Partial Class ventasprincipal
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnFinalizarVenta)
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblPrecio)
@@ -345,7 +347,7 @@ Partial Class ventasprincipal
 
     End Sub
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnCerrar As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -365,7 +367,7 @@ Partial Class ventasprincipal
     Friend WithEvents lblPrecio As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents lblNombre As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnFinalizarVenta As System.Windows.Forms.Button
     Friend WithEvents txtTotal As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label

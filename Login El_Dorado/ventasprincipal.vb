@@ -50,6 +50,14 @@ Public Class ventasprincipal
 
         ' borra todos los datos de la tabla detalle venta para una nueva venta
         consulta.consultaSinRetorno("TRUNCATE TABLE DETALLEVENTA;")
+        nudCantidad.Value = 0
+
+        btnEliminar.Enabled = False
+        btnimprimirfac.Enabled = False
+        btnIngresarProducto.Enabled = False
+        btnCerrar.Enabled = False
+        btnFinalizarVenta.Enabled = False
+
 
     End Sub
 
@@ -181,7 +189,7 @@ Public Class ventasprincipal
                 '*************** borrar del total
 
                 For Each row As DataGridViewRow In Me.dgvFactura.Rows
-                    Total = (Val(row.Cells(3).Value) - Total)
+                    Total = (Val(row.Cells(3).Value) - Total) * (-1)
                 Next
                 Me.txtTotal.Text = Total.ToString
 
@@ -215,7 +223,7 @@ Public Class ventasprincipal
 
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFinalizarVenta.Click
 
         Dim Total As Single
         Dim Col As Integer = Me.dgvFactura.CurrentCell.ColumnIndex
@@ -252,6 +260,13 @@ Public Class ventasprincipal
 
     Private Sub nudCantidad_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nudCantidad.ValueChanged
 
+        btnEliminar.Enabled = True
+        btnimprimirfac.Enabled = True
+        btnIngresarProducto.Enabled = True
+        btnCerrar.Enabled = True
+        btnFinalizarVenta.Enabled = True
+
+
         Label8.Text = Val(lblPrecio.Text) * nudCantidad.Value
 
         'dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
@@ -261,11 +276,13 @@ Public Class ventasprincipal
         Label10.Text = stock
 
 
+
+
     End Sub
 
   
    
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
 

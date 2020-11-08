@@ -33,7 +33,6 @@ Partial Class clientesprincipal
         Me.btnImagen = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtSaldo = New System.Windows.Forms.TextBox()
-        Me.txtImagen = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtPago = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -46,6 +45,7 @@ Partial Class clientesprincipal
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtImagen = New System.Windows.Forms.TextBox()
         Me.dgvClientes = New System.Windows.Forms.DataGridView()
         Me.ofdClientes = New System.Windows.Forms.OpenFileDialog()
         Me.GroupBox4.SuspendLayout()
@@ -119,6 +119,7 @@ Partial Class clientesprincipal
         Me.GroupBox3.TabIndex = 17
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Acciones Foto"
+        Me.GroupBox3.Visible = False
         '
         'avatar
         '
@@ -151,7 +152,6 @@ Partial Class clientesprincipal
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.txtSaldo)
-        Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.txtPago)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -178,20 +178,11 @@ Partial Class clientesprincipal
         Me.txtSaldo.Size = New System.Drawing.Size(76, 22)
         Me.txtSaldo.TabIndex = 31
         '
-        'txtImagen
-        '
-        Me.txtImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImagen.Location = New System.Drawing.Point(727, 367)
-        Me.txtImagen.Name = "txtImagen"
-        Me.txtImagen.Size = New System.Drawing.Size(148, 22)
-        Me.txtImagen.TabIndex = 27
-        Me.txtImagen.Visible = False
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(25, 248)
+        Me.Label8.Location = New System.Drawing.Point(588, 375)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(109, 14)
         Me.Label8.TabIndex = 26
@@ -298,6 +289,15 @@ Partial Class clientesprincipal
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "ID-Clientes"
         '
+        'txtImagen
+        '
+        Me.txtImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtImagen.Location = New System.Drawing.Point(727, 367)
+        Me.txtImagen.Name = "txtImagen"
+        Me.txtImagen.Size = New System.Drawing.Size(148, 22)
+        Me.txtImagen.TabIndex = 27
+        Me.txtImagen.Visible = False
+        '
         'dgvClientes
         '
         Me.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -317,6 +317,7 @@ Partial Class clientesprincipal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(933, 586)
         Me.Controls.Add(Me.dgvClientes)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtImagen)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
