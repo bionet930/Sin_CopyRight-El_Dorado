@@ -43,6 +43,7 @@ Public Class formlogin
         If r.HasRows <> False Then
             r.Read()
             MsgBox(r.GetString("NombreEmpl") + " Bienvenido")
+            Me.Hide()
             panelsupprincipal.Show()
         Else
             MsgBox("Error Datos Incorrectos")

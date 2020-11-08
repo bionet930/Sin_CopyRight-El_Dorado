@@ -45,6 +45,12 @@ Partial Class Verificar_Venta
         '
         'btnverventa
         '
+        Me.btnverventa.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnverventa.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnverventa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnverventa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnverventa.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnverventa.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnverventa.Location = New System.Drawing.Point(107, 51)
         Me.btnverventa.Name = "btnverventa"
         Me.btnverventa.Size = New System.Drawing.Size(162, 71)
@@ -54,6 +60,12 @@ Partial Class Verificar_Venta
         '
         'btnimprimirfactura
         '
+        Me.btnimprimirfactura.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnimprimirfactura.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnimprimirfactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnimprimirfactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnimprimirfactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnimprimirfactura.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnimprimirfactura.Location = New System.Drawing.Point(601, 51)
         Me.btnimprimirfactura.Name = "btnimprimirfactura"
         Me.btnimprimirfactura.Size = New System.Drawing.Size(162, 71)
@@ -93,6 +105,7 @@ Partial Class Verificar_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(829, 553)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
