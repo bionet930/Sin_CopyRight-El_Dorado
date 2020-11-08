@@ -1,4 +1,5 @@
-﻿Public Class Enviar_Correo
+﻿
+Public Class Enviar_Correo
 
     Private Sub btnenviarcorreo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnenviarcorreo.Click
 
@@ -14,4 +15,6 @@
 
 
     End Sub
+
+
 End Class

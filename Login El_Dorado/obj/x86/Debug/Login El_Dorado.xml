@@ -15,51 +15,11 @@ LoginEl_Dorado
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources._3054482">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
 </member><member name="P:Login_El_Dorado.My.Resources.Resources.clientes">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
 </member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_2">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_21">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_22">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_23">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_24">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_25">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_26">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_27">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Login_El_Dorado.My.Resources.Resources.correo_3">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

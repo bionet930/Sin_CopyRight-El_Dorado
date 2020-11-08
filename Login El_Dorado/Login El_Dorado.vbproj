@@ -50,13 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="itextsharp">
-      <HintPath>..\..\itextsharp\itextsharp.dll</HintPath>
-    </Reference>
-    <Reference Include="itextsharp.pdfa">
-      <HintPath>..\..\itextsharp.pdfa.dll</HintPath>
-    </Reference>
-    <Reference Include="itextsharp.xtra">
-      <HintPath>..\..\itextsharp.xtra.dll</HintPath>
+      <HintPath>C:\itextsharp\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="mysql.data, Version=5.0.8.1, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -120,6 +114,12 @@
     <Compile Include="FormPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Imprimir-Factura.Designer.vb">
+      <DependentUpon>Imprimir-Factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir-Factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="mostrarEnTabla.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -143,6 +143,12 @@
     <Compile Include="proveedoresprincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="registroempl.Designer.vb">
+      <DependentUpon>registroempl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registroempl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stockprincipal.Designer.vb">
       <DependentUpon>stockprincipal.vb</DependentUpon>
     </Compile>
@@ -155,10 +161,10 @@
     <Compile Include="ventasprincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="verificar_venta.Designer.vb">
-      <DependentUpon>verificar_venta.vb</DependentUpon>
+    <Compile Include="Verificar_Venta.Designer.vb">
+      <DependentUpon>Verificar_Venta.vb</DependentUpon>
     </Compile>
-    <Compile Include="verificar_venta.vb">
+    <Compile Include="Verificar_Venta.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -178,8 +184,11 @@
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir-Factura.resx">
+      <DependentUpon>Imprimir-Factura.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -187,14 +196,17 @@
     <EmbeddedResource Include="proveedoresprincipal.resx">
       <DependentUpon>proveedoresprincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="registroempl.resx">
+      <DependentUpon>registroempl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="stockprincipal.resx">
       <DependentUpon>stockprincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventasprincipal.resx">
       <DependentUpon>ventasprincipal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="verificar_venta.resx">
-      <DependentUpon>verificar_venta.vb</DependentUpon>
+    <EmbeddedResource Include="Verificar_Venta.resx">
+      <DependentUpon>Verificar_Venta.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -242,52 +254,13 @@
     <None Include="Resources\proveedores.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itextsharp.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itextsharp.pdfa.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itextsharp.xtra.dll" />
+    <None Include="Resources\dorado.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\relo3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\correo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\correo 2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 21.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 22.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 23.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 25.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 26.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3054482.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo 27.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dorado.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

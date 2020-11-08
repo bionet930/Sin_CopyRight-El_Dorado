@@ -243,10 +243,7 @@ Public Class stockprincipal
 
     Private Sub btnCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCerrar.Click
 
-        Me.Close()
-        conex.Close()
-        conexion.Close()
-        panelsupprincipal.Show()
+        Me.Hide()
 
 
     End Sub
