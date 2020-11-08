@@ -36,7 +36,7 @@ Public Class ConexionPablo
             conexion.Close()
         Catch ex As Exception
             resultado = 0
-            MsgBox("Error al conectar con la base de datos " & ex.Message)
+            MsgBox("Error al conectar con la base de datos. " + vbCrLf + ex.Message)
         Finally
             conexion.Close()
         End Try
@@ -50,7 +50,7 @@ Public Class ConexionPablo
             valorReturn = ""
             valorReturn = comando.ExecuteScalar()
         Catch ex As Exception
-            MsgBox("Error al conectar con la base de datos " & ex.Message)
+            MsgBox("Error al conectar con la base de datos. " + vbCrLf + ex.Message)
         Finally
             conexion.Close()
         End Try
