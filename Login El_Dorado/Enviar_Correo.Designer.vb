@@ -40,6 +40,7 @@ Partial Class Enviar_Correo
         Me.txtEmisor.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmisor.Location = New System.Drawing.Point(119, 36)
         Me.txtEmisor.Name = "txtEmisor"
+        Me.txtEmisor.ReadOnly = True
         Me.txtEmisor.Size = New System.Drawing.Size(236, 23)
         Me.txtEmisor.TabIndex = 0
         Me.txtEmisor.Text = "soporte.sincopyright@gmail.com"
@@ -49,6 +50,7 @@ Partial Class Enviar_Correo
         Me.txtReceptor.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtReceptor.Location = New System.Drawing.Point(119, 85)
         Me.txtReceptor.Name = "txtReceptor"
+        Me.txtReceptor.ReadOnly = True
         Me.txtReceptor.Size = New System.Drawing.Size(236, 23)
         Me.txtReceptor.TabIndex = 1
         Me.txtReceptor.Text = "contacto@sincopyright.net"
@@ -67,6 +69,7 @@ Partial Class Enviar_Correo
         Me.txtPassword.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.Location = New System.Drawing.Point(516, 36)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.ReadOnly = True
         Me.txtPassword.Size = New System.Drawing.Size(177, 23)
         Me.txtPassword.TabIndex = 3
         Me.txtPassword.Text = "Sincopyright.2020"
