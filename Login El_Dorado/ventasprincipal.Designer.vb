@@ -56,40 +56,60 @@ Partial Class ventasprincipal
         '
         'btnCerrar
         '
-        Me.btnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(531, 371)
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCerrar.Location = New System.Drawing.Point(520, 363)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(161, 23)
+        Me.btnCerrar.Size = New System.Drawing.Size(161, 27)
         Me.btnCerrar.TabIndex = 2
         Me.btnCerrar.Text = "&Cerrar"
         Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'btnIngresarProducto
         '
-        Me.btnIngresarProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIngresarProducto.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnIngresarProducto.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnIngresarProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnIngresarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnIngresarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIngresarProducto.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresarProducto.Location = New System.Drawing.Point(520, 189)
         Me.btnIngresarProducto.Name = "btnIngresarProducto"
-        Me.btnIngresarProducto.Size = New System.Drawing.Size(161, 23)
+        Me.btnIngresarProducto.Size = New System.Drawing.Size(161, 33)
         Me.btnIngresarProducto.TabIndex = 29
         Me.btnIngresarProducto.Text = "Ingresar Producto"
         Me.btnIngresarProducto.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
-        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Location = New System.Drawing.Point(520, 228)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(161, 23)
+        Me.btnEliminar.Size = New System.Drawing.Size(161, 31)
         Me.btnEliminar.TabIndex = 4
         Me.btnEliminar.Text = "&Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnimprimirfac
         '
-        Me.btnimprimirfac.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnimprimirfac.Location = New System.Drawing.Point(531, 342)
+        Me.btnimprimirfac.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnimprimirfac.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnimprimirfac.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnimprimirfac.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnimprimirfac.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnimprimirfac.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnimprimirfac.Location = New System.Drawing.Point(520, 328)
         Me.btnimprimirfac.Name = "btnimprimirfac"
-        Me.btnimprimirfac.Size = New System.Drawing.Size(161, 23)
+        Me.btnimprimirfac.Size = New System.Drawing.Size(161, 29)
         Me.btnimprimirfac.TabIndex = 7
         Me.btnimprimirfac.Text = "Verificar Venta"
         Me.btnimprimirfac.UseVisualStyleBackColor = True
@@ -116,10 +136,10 @@ Partial Class ventasprincipal
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(12, 47)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 14)
+        Me.Label3.Size = New System.Drawing.Size(80, 12)
         Me.Label3.TabIndex = 30
         Me.Label3.Text = "ID-Empleado"
         '
@@ -135,10 +155,10 @@ Partial Class ventasprincipal
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(23, 74)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(74, 14)
+        Me.Label7.Size = New System.Drawing.Size(64, 12)
         Me.Label7.TabIndex = 26
         Me.Label7.Text = "ID-Cliente"
         '
@@ -146,10 +166,10 @@ Partial Class ventasprincipal
         '
         Me.Label6.AutoSize = True
         Me.Label6.Enabled = False
-        Me.Label6.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(53, 23)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 14)
+        Me.Label6.Size = New System.Drawing.Size(39, 12)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Fecha"
         '
@@ -181,20 +201,20 @@ Partial Class ventasprincipal
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(326, 125)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 14)
+        Me.Label4.Size = New System.Drawing.Size(60, 12)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Cantidad"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(13, 126)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(98, 14)
+        Me.Label2.Size = New System.Drawing.Size(89, 12)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "ID-Mercaderia"
         '
@@ -221,11 +241,12 @@ Partial Class ventasprincipal
         'lblTotal
         '
         Me.lblTotal.AutoSize = True
-        Me.lblTotal.Location = New System.Drawing.Point(356, 399)
+        Me.lblTotal.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotal.Location = New System.Drawing.Point(351, 396)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(27, 13)
+        Me.lblTotal.Size = New System.Drawing.Size(42, 12)
         Me.lblTotal.TabIndex = 31
-        Me.lblTotal.Text = "total"
+        Me.lblTotal.Text = "Total:"
         '
         'lblPrecio
         '
@@ -238,10 +259,10 @@ Partial Class ventasprincipal
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(505, 128)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 14)
+        Me.Label5.Size = New System.Drawing.Size(42, 12)
         Me.Label5.TabIndex = 33
         Me.Label5.Text = "Precio"
         '
@@ -255,10 +276,15 @@ Partial Class ventasprincipal
         '
         'btnFinalizarVenta
         '
-        Me.btnFinalizarVenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFinalizarVenta.Location = New System.Drawing.Point(531, 313)
+        Me.btnFinalizarVenta.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnFinalizarVenta.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnFinalizarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnFinalizarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnFinalizarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFinalizarVenta.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFinalizarVenta.Location = New System.Drawing.Point(520, 295)
         Me.btnFinalizarVenta.Name = "btnFinalizarVenta"
-        Me.btnFinalizarVenta.Size = New System.Drawing.Size(161, 23)
+        Me.btnFinalizarVenta.Size = New System.Drawing.Size(161, 27)
         Me.btnFinalizarVenta.TabIndex = 35
         Me.btnFinalizarVenta.Text = "finalizar venta"
         Me.btnFinalizarVenta.UseVisualStyleBackColor = True
@@ -282,9 +308,10 @@ Partial Class ventasprincipal
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(488, 82)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(76, 13)
+        Me.Label9.Size = New System.Drawing.Size(95, 12)
         Me.Label9.TabIndex = 40
         Me.Label9.Text = "Precio Unitario"
         '
@@ -299,9 +326,10 @@ Partial Class ventasprincipal
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(315, 47)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(68, 13)
+        Me.Label11.Size = New System.Drawing.Size(82, 12)
         Me.Label11.TabIndex = 43
         Me.Label11.Text = "Stock Actual"
         '
@@ -309,7 +337,8 @@ Partial Class ventasprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(790, 532)
+        Me.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.ClientSize = New System.Drawing.Size(926, 530)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)

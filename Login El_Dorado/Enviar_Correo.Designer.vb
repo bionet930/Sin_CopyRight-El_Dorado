@@ -37,59 +37,75 @@ Partial Class Enviar_Correo
         '
         'txtEmisor
         '
-        Me.txtEmisor.Location = New System.Drawing.Point(219, 51)
+        Me.txtEmisor.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmisor.Location = New System.Drawing.Point(119, 36)
         Me.txtEmisor.Name = "txtEmisor"
-        Me.txtEmisor.Size = New System.Drawing.Size(162, 20)
+        Me.txtEmisor.Size = New System.Drawing.Size(236, 23)
         Me.txtEmisor.TabIndex = 0
         Me.txtEmisor.Text = "soporte.sincopyright@gmail.com"
         '
         'txtReceptor
         '
-        Me.txtReceptor.Location = New System.Drawing.Point(219, 100)
+        Me.txtReceptor.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtReceptor.Location = New System.Drawing.Point(119, 85)
         Me.txtReceptor.Name = "txtReceptor"
-        Me.txtReceptor.Size = New System.Drawing.Size(162, 20)
+        Me.txtReceptor.Size = New System.Drawing.Size(236, 23)
         Me.txtReceptor.TabIndex = 1
         Me.txtReceptor.Text = "contacto@sincopyright.net"
         '
         'txtAsunto
         '
-        Me.txtAsunto.Location = New System.Drawing.Point(219, 148)
+        Me.txtAsunto.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAsunto.Location = New System.Drawing.Point(119, 133)
         Me.txtAsunto.Name = "txtAsunto"
-        Me.txtAsunto.Size = New System.Drawing.Size(162, 20)
+        Me.txtAsunto.Size = New System.Drawing.Size(236, 23)
         Me.txtAsunto.TabIndex = 2
         Me.txtAsunto.Text = "Error en el Programa"
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(577, 51)
+        Me.txtPassword.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(516, 36)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(135, 20)
+        Me.txtPassword.Size = New System.Drawing.Size(177, 23)
         Me.txtPassword.TabIndex = 3
         Me.txtPassword.Text = "Sincopyright.2020"
         Me.txtPassword.UseSystemPasswordChar = True
         '
         'rtbMensaje
         '
-        Me.rtbMensaje.Location = New System.Drawing.Point(127, 234)
+        Me.rtbMensaje.Location = New System.Drawing.Point(27, 219)
         Me.rtbMensaje.Name = "rtbMensaje"
-        Me.rtbMensaje.Size = New System.Drawing.Size(619, 233)
+        Me.rtbMensaje.Size = New System.Drawing.Size(703, 233)
         Me.rtbMensaje.TabIndex = 4
         Me.rtbMensaje.Text = ""
         '
         'btnenviarcorreo
         '
-        Me.btnenviarcorreo.Location = New System.Drawing.Point(186, 509)
+        Me.btnenviarcorreo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnenviarcorreo.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnenviarcorreo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnenviarcorreo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnenviarcorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnenviarcorreo.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnenviarcorreo.Location = New System.Drawing.Point(106, 485)
         Me.btnenviarcorreo.Name = "btnenviarcorreo"
-        Me.btnenviarcorreo.Size = New System.Drawing.Size(75, 23)
+        Me.btnenviarcorreo.Size = New System.Drawing.Size(155, 61)
         Me.btnenviarcorreo.TabIndex = 5
         Me.btnenviarcorreo.Text = "Enviar"
         Me.btnenviarcorreo.UseVisualStyleBackColor = True
         '
         'btncerrarcorreo
         '
-        Me.btncerrarcorreo.Location = New System.Drawing.Point(574, 509)
+        Me.btncerrarcorreo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btncerrarcorreo.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btncerrarcorreo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btncerrarcorreo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btncerrarcorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btncerrarcorreo.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btncerrarcorreo.Location = New System.Drawing.Point(494, 485)
         Me.btncerrarcorreo.Name = "btncerrarcorreo"
-        Me.btncerrarcorreo.Size = New System.Drawing.Size(75, 23)
+        Me.btncerrarcorreo.Size = New System.Drawing.Size(155, 61)
         Me.btncerrarcorreo.TabIndex = 6
         Me.btncerrarcorreo.Text = "Cerrar"
         Me.btncerrarcorreo.UseVisualStyleBackColor = True
@@ -97,36 +113,40 @@ Partial Class Enviar_Correo
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(127, 51)
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(50, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(25, 13)
+        Me.Label1.Size = New System.Drawing.Size(36, 18)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "DE:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(130, 100)
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(30, 85)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.Size = New System.Drawing.Size(56, 18)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "PARA:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(130, 154)
+        Me.Label3.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(24, 138)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.Size = New System.Drawing.Size(82, 18)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "ASUNTO:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(461, 57)
+        Me.Label4.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(383, 36)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(84, 13)
+        Me.Label4.Size = New System.Drawing.Size(127, 18)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "CONTRASEÑA:"
         '
@@ -134,7 +154,8 @@ Partial Class Enviar_Correo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(986, 609)
+        Me.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.ClientSize = New System.Drawing.Size(827, 598)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)

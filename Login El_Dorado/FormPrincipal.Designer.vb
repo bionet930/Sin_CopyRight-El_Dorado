@@ -23,41 +23,41 @@ Partial Class panelsupprincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.pnlsuperiorprinciapl = New System.Windows.Forms.Panel()
-        Me.panelizqprincipal = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pnldeco1principal = New System.Windows.Forms.Panel()
-        Me.panelprincipal = New System.Windows.Forms.Panel()
-        Me.Stock = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.tmocultarmenu = New System.Windows.Forms.Timer(Me.components)
-        Me.tmmostrarmenu = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.btncorreos = New System.Windows.Forms.Button()
-        Me.btnmantenimiento = New System.Windows.Forms.Button()
-        Me.btnproveedorprincipal = New System.Windows.Forms.Button()
-        Me.btnstockprincipal = New System.Windows.Forms.Button()
-        Me.btnclientesprincipal = New System.Windows.Forms.Button()
-        Me.btnempleadosprincipal = New System.Windows.Forms.Button()
-        Me.btnventasprincipal = New System.Windows.Forms.Button()
-        Me.picboxlogo = New System.Windows.Forms.PictureBox()
-        Me.btnmenuprincipal = New System.Windows.Forms.PictureBox()
         Me.btnrestauraprincipal = New System.Windows.Forms.Button()
         Me.btnminimprincipal = New System.Windows.Forms.Button()
         Me.btnmaximprincipal = New System.Windows.Forms.Button()
         Me.btncerrarprincipal = New System.Windows.Forms.Button()
+        Me.panelizqprincipal = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btncorreos = New System.Windows.Forms.Button()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.btnmantenimiento = New System.Windows.Forms.Button()
+        Me.btnproveedorprincipal = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.btnstockprincipal = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnclientesprincipal = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnempleadosprincipal = New System.Windows.Forms.Button()
+        Me.pnldeco1principal = New System.Windows.Forms.Panel()
+        Me.btnventasprincipal = New System.Windows.Forms.Button()
+        Me.picboxlogo = New System.Windows.Forms.PictureBox()
+        Me.btnmenuprincipal = New System.Windows.Forms.PictureBox()
+        Me.panelprincipal = New System.Windows.Forms.Panel()
+        Me.Stock = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.tmocultarmenu = New System.Windows.Forms.Timer(Me.components)
+        Me.tmmostrarmenu = New System.Windows.Forms.Timer(Me.components)
         Me.pnlsuperiorprinciapl.SuspendLayout()
         Me.panelizqprincipal.SuspendLayout()
-        Me.panelprincipal.SuspendLayout()
-        CType(Me.Stock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picboxlogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmenuprincipal, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelprincipal.SuspendLayout()
+        CType(Me.Stock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlsuperiorprinciapl
@@ -71,8 +71,65 @@ Partial Class panelsupprincipal
         Me.pnlsuperiorprinciapl.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlsuperiorprinciapl.Location = New System.Drawing.Point(0, 0)
         Me.pnlsuperiorprinciapl.Name = "pnlsuperiorprinciapl"
-        Me.pnlsuperiorprinciapl.Size = New System.Drawing.Size(1308, 40)
+        Me.pnlsuperiorprinciapl.Size = New System.Drawing.Size(1381, 40)
         Me.pnlsuperiorprinciapl.TabIndex = 0
+        '
+        'btnrestauraprincipal
+        '
+        Me.btnrestauraprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnrestauraprincipal.FlatAppearance.BorderSize = 0
+        Me.btnrestauraprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnrestauraprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.btnrestauraprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnrestauraprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Restaurar
+        Me.btnrestauraprincipal.Location = New System.Drawing.Point(1299, 0)
+        Me.btnrestauraprincipal.Name = "btnrestauraprincipal"
+        Me.btnrestauraprincipal.Size = New System.Drawing.Size(40, 40)
+        Me.btnrestauraprincipal.TabIndex = 3
+        Me.btnrestauraprincipal.UseVisualStyleBackColor = True
+        Me.btnrestauraprincipal.Visible = False
+        '
+        'btnminimprincipal
+        '
+        Me.btnminimprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnminimprincipal.FlatAppearance.BorderSize = 0
+        Me.btnminimprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnminimprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.btnminimprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnminimprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Minimizar
+        Me.btnminimprincipal.Location = New System.Drawing.Point(1259, 0)
+        Me.btnminimprincipal.Name = "btnminimprincipal"
+        Me.btnminimprincipal.Size = New System.Drawing.Size(40, 40)
+        Me.btnminimprincipal.TabIndex = 2
+        Me.btnminimprincipal.UseVisualStyleBackColor = True
+        '
+        'btnmaximprincipal
+        '
+        Me.btnmaximprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnmaximprincipal.FlatAppearance.BorderSize = 0
+        Me.btnmaximprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnmaximprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.btnmaximprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnmaximprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Maximizar
+        Me.btnmaximprincipal.Location = New System.Drawing.Point(1299, 0)
+        Me.btnmaximprincipal.Name = "btnmaximprincipal"
+        Me.btnmaximprincipal.Size = New System.Drawing.Size(40, 40)
+        Me.btnmaximprincipal.TabIndex = 1
+        Me.btnmaximprincipal.UseVisualStyleBackColor = True
+        '
+        'btncerrarprincipal
+        '
+        Me.btncerrarprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btncerrarprincipal.FlatAppearance.BorderSize = 0
+        Me.btncerrarprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btncerrarprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.btncerrarprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btncerrarprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_cerrar_FN
+        Me.btncerrarprincipal.Location = New System.Drawing.Point(1339, 0)
+        Me.btncerrarprincipal.Name = "btncerrarprincipal"
+        Me.btncerrarprincipal.Size = New System.Drawing.Size(40, 40)
+        Me.btncerrarprincipal.TabIndex = 0
+        Me.btncerrarprincipal.UseVisualStyleBackColor = True
         '
         'panelizqprincipal
         '
@@ -100,87 +157,13 @@ Partial Class panelsupprincipal
         Me.panelizqprincipal.Size = New System.Drawing.Size(60, 698)
         Me.panelizqprincipal.TabIndex = 1
         '
-        'Panel4
+        'Panel6
         '
-        Me.Panel4.BackColor = System.Drawing.Color.Gold
-        Me.Panel4.Location = New System.Drawing.Point(0, 451)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(5, 50)
-        Me.Panel4.TabIndex = 5
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.Gold
-        Me.Panel3.Location = New System.Drawing.Point(0, 381)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(5, 50)
-        Me.Panel3.TabIndex = 5
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Gold
-        Me.Panel2.Location = New System.Drawing.Point(0, 309)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(5, 50)
-        Me.Panel2.TabIndex = 5
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Gold
-        Me.Panel1.Location = New System.Drawing.Point(0, 244)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(5, 50)
-        Me.Panel1.TabIndex = 5
-        '
-        'pnldeco1principal
-        '
-        Me.pnldeco1principal.BackColor = System.Drawing.Color.Gold
-        Me.pnldeco1principal.Location = New System.Drawing.Point(0, 178)
-        Me.pnldeco1principal.Name = "pnldeco1principal"
-        Me.pnldeco1principal.Size = New System.Drawing.Size(5, 50)
-        Me.pnldeco1principal.TabIndex = 3
-        '
-        'panelprincipal
-        '
-        Me.panelprincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.panelprincipal.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.panelprincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panelprincipal.Controls.Add(Me.Stock)
-        Me.panelprincipal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.panelprincipal.Location = New System.Drawing.Point(60, 40)
-        Me.panelprincipal.Name = "panelprincipal"
-        Me.panelprincipal.Size = New System.Drawing.Size(1248, 698)
-        Me.panelprincipal.TabIndex = 2
-        '
-        'Stock
-        '
-        ChartArea2.Area3DStyle.Enable3D = True
-        ChartArea2.Name = "ChartArea1"
-        Me.Stock.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Stock.Legends.Add(Legend2)
-        Me.Stock.Location = New System.Drawing.Point(85, 72)
-        Me.Stock.Name = "Stock"
-        Me.Stock.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel
-        Series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight
-        Series2.BorderColor = System.Drawing.Color.Black
-        Series2.ChartArea = "ChartArea1"
-        Series2.Color = System.Drawing.Color.DodgerBlue
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Me.Stock.Series.Add(Series2)
-        Me.Stock.Size = New System.Drawing.Size(791, 472)
-        Me.Stock.TabIndex = 0
-        Me.Stock.Text = "Stock"
-        '
-        'tmocultarmenu
-        '
-        Me.tmocultarmenu.Interval = 10
-        '
-        'tmmostrarmenu
-        '
-        Me.tmmostrarmenu.Interval = 10
+        Me.Panel6.BackColor = System.Drawing.Color.Gold
+        Me.Panel6.Location = New System.Drawing.Point(0, 588)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(5, 50)
+        Me.Panel6.TabIndex = 9
         '
         'Panel5
         '
@@ -190,14 +173,6 @@ Partial Class panelsupprincipal
         Me.Panel5.Size = New System.Drawing.Size(5, 50)
         Me.Panel5.TabIndex = 8
         '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.Gold
-        Me.Panel6.Location = New System.Drawing.Point(0, 588)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(5, 50)
-        Me.Panel6.TabIndex = 9
-        '
         'btncorreos
         '
         Me.btncorreos.Cursor = System.Windows.Forms.Cursors.Hand
@@ -205,7 +180,7 @@ Partial Class panelsupprincipal
         Me.btncorreos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod
         Me.btncorreos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btncorreos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btncorreos.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btncorreos.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btncorreos.ForeColor = System.Drawing.Color.White
         Me.btncorreos.Image = Global.Login_El_Dorado.My.Resources.Resources.correo_2
         Me.btncorreos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -217,6 +192,14 @@ Partial Class panelsupprincipal
         Me.btncorreos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btncorreos.UseVisualStyleBackColor = True
         '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Gold
+        Me.Panel4.Location = New System.Drawing.Point(0, 451)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(5, 50)
+        Me.Panel4.TabIndex = 5
+        '
         'btnmantenimiento
         '
         Me.btnmantenimiento.Cursor = System.Windows.Forms.Cursors.Hand
@@ -224,7 +207,7 @@ Partial Class panelsupprincipal
         Me.btnmantenimiento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnmantenimiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnmantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnmantenimiento.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnmantenimiento.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnmantenimiento.ForeColor = System.Drawing.Color.White
         Me.btnmantenimiento.Image = Global.Login_El_Dorado.My.Resources.Resources.relo3
         Me.btnmantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -243,7 +226,7 @@ Partial Class panelsupprincipal
         Me.btnproveedorprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnproveedorprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnproveedorprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnproveedorprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnproveedorprincipal.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnproveedorprincipal.ForeColor = System.Drawing.Color.White
         Me.btnproveedorprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.proveedores
         Me.btnproveedorprincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -255,6 +238,14 @@ Partial Class panelsupprincipal
         Me.btnproveedorprincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnproveedorprincipal.UseVisualStyleBackColor = True
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Gold
+        Me.Panel3.Location = New System.Drawing.Point(0, 381)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(5, 50)
+        Me.Panel3.TabIndex = 5
+        '
         'btnstockprincipal
         '
         Me.btnstockprincipal.Cursor = System.Windows.Forms.Cursors.Hand
@@ -262,7 +253,7 @@ Partial Class panelsupprincipal
         Me.btnstockprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnstockprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnstockprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnstockprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnstockprincipal.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnstockprincipal.ForeColor = System.Drawing.Color.White
         Me.btnstockprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.producto
         Me.btnstockprincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -274,6 +265,14 @@ Partial Class panelsupprincipal
         Me.btnstockprincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnstockprincipal.UseVisualStyleBackColor = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Gold
+        Me.Panel2.Location = New System.Drawing.Point(0, 309)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(5, 50)
+        Me.Panel2.TabIndex = 5
+        '
         'btnclientesprincipal
         '
         Me.btnclientesprincipal.Cursor = System.Windows.Forms.Cursors.Hand
@@ -281,7 +280,7 @@ Partial Class panelsupprincipal
         Me.btnclientesprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnclientesprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnclientesprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnclientesprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnclientesprincipal.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnclientesprincipal.ForeColor = System.Drawing.Color.White
         Me.btnclientesprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.clientes
         Me.btnclientesprincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -293,6 +292,14 @@ Partial Class panelsupprincipal
         Me.btnclientesprincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnclientesprincipal.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Gold
+        Me.Panel1.Location = New System.Drawing.Point(0, 244)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(5, 50)
+        Me.Panel1.TabIndex = 5
+        '
         'btnempleadosprincipal
         '
         Me.btnempleadosprincipal.Cursor = System.Windows.Forms.Cursors.Hand
@@ -300,7 +307,7 @@ Partial Class panelsupprincipal
         Me.btnempleadosprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnempleadosprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnempleadosprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnempleadosprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnempleadosprincipal.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnempleadosprincipal.ForeColor = System.Drawing.Color.White
         Me.btnempleadosprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.empleados
         Me.btnempleadosprincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -312,6 +319,14 @@ Partial Class panelsupprincipal
         Me.btnempleadosprincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnempleadosprincipal.UseVisualStyleBackColor = True
         '
+        'pnldeco1principal
+        '
+        Me.pnldeco1principal.BackColor = System.Drawing.Color.Gold
+        Me.pnldeco1principal.Location = New System.Drawing.Point(0, 178)
+        Me.pnldeco1principal.Name = "pnldeco1principal"
+        Me.pnldeco1principal.Size = New System.Drawing.Size(5, 50)
+        Me.pnldeco1principal.TabIndex = 3
+        '
         'btnventasprincipal
         '
         Me.btnventasprincipal.Cursor = System.Windows.Forms.Cursors.Hand
@@ -319,7 +334,7 @@ Partial Class panelsupprincipal
         Me.btnventasprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnventasprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
         Me.btnventasprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnventasprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnventasprincipal.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnventasprincipal.ForeColor = System.Drawing.Color.White
         Me.btnventasprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.venta
         Me.btnventasprincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -352,68 +367,53 @@ Partial Class panelsupprincipal
         Me.btnmenuprincipal.TabIndex = 0
         Me.btnmenuprincipal.TabStop = False
         '
-        'btnrestauraprincipal
+        'panelprincipal
         '
-        Me.btnrestauraprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnrestauraprincipal.FlatAppearance.BorderSize = 0
-        Me.btnrestauraprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnrestauraprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.btnrestauraprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnrestauraprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Restaurar
-        Me.btnrestauraprincipal.Location = New System.Drawing.Point(1226, 0)
-        Me.btnrestauraprincipal.Name = "btnrestauraprincipal"
-        Me.btnrestauraprincipal.Size = New System.Drawing.Size(40, 40)
-        Me.btnrestauraprincipal.TabIndex = 3
-        Me.btnrestauraprincipal.UseVisualStyleBackColor = True
-        Me.btnrestauraprincipal.Visible = False
+        Me.panelprincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.panelprincipal.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.panelprincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelprincipal.Controls.Add(Me.Stock)
+        Me.panelprincipal.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.panelprincipal.Location = New System.Drawing.Point(60, 40)
+        Me.panelprincipal.Name = "panelprincipal"
+        Me.panelprincipal.Size = New System.Drawing.Size(1321, 698)
+        Me.panelprincipal.TabIndex = 2
         '
-        'btnminimprincipal
+        'Stock
         '
-        Me.btnminimprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnminimprincipal.FlatAppearance.BorderSize = 0
-        Me.btnminimprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnminimprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.btnminimprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnminimprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Minimizar
-        Me.btnminimprincipal.Location = New System.Drawing.Point(1186, 0)
-        Me.btnminimprincipal.Name = "btnminimprincipal"
-        Me.btnminimprincipal.Size = New System.Drawing.Size(40, 40)
-        Me.btnminimprincipal.TabIndex = 2
-        Me.btnminimprincipal.UseVisualStyleBackColor = True
+        ChartArea1.Area3DStyle.Enable3D = True
+        ChartArea1.Name = "ChartArea1"
+        Me.Stock.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Stock.Legends.Add(Legend1)
+        Me.Stock.Location = New System.Drawing.Point(85, 72)
+        Me.Stock.Name = "Stock"
+        Me.Stock.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel
+        Series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight
+        Series1.BorderColor = System.Drawing.Color.Black
+        Series1.ChartArea = "ChartArea1"
+        Series1.Color = System.Drawing.Color.DodgerBlue
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Stock.Series.Add(Series1)
+        Me.Stock.Size = New System.Drawing.Size(791, 472)
+        Me.Stock.TabIndex = 0
+        Me.Stock.Text = "Stock"
         '
-        'btnmaximprincipal
+        'tmocultarmenu
         '
-        Me.btnmaximprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnmaximprincipal.FlatAppearance.BorderSize = 0
-        Me.btnmaximprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnmaximprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.btnmaximprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnmaximprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_Maximizar
-        Me.btnmaximprincipal.Location = New System.Drawing.Point(1226, 0)
-        Me.btnmaximprincipal.Name = "btnmaximprincipal"
-        Me.btnmaximprincipal.Size = New System.Drawing.Size(40, 40)
-        Me.btnmaximprincipal.TabIndex = 1
-        Me.btnmaximprincipal.UseVisualStyleBackColor = True
+        Me.tmocultarmenu.Interval = 10
         '
-        'btncerrarprincipal
+        'tmmostrarmenu
         '
-        Me.btncerrarprincipal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btncerrarprincipal.FlatAppearance.BorderSize = 0
-        Me.btncerrarprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btncerrarprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.btncerrarprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btncerrarprincipal.Image = Global.Login_El_Dorado.My.Resources.Resources.Icono_cerrar_FN
-        Me.btncerrarprincipal.Location = New System.Drawing.Point(1266, 0)
-        Me.btncerrarprincipal.Name = "btncerrarprincipal"
-        Me.btncerrarprincipal.Size = New System.Drawing.Size(40, 40)
-        Me.btncerrarprincipal.TabIndex = 0
-        Me.btncerrarprincipal.UseVisualStyleBackColor = True
+        Me.tmmostrarmenu.Interval = 10
         '
         'panelsupprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1308, 738)
+        Me.ClientSize = New System.Drawing.Size(1381, 738)
         Me.Controls.Add(Me.panelprincipal)
         Me.Controls.Add(Me.panelizqprincipal)
         Me.Controls.Add(Me.pnlsuperiorprinciapl)
@@ -422,10 +422,10 @@ Partial Class panelsupprincipal
         Me.Text = "FormPrincipal"
         Me.pnlsuperiorprinciapl.ResumeLayout(False)
         Me.panelizqprincipal.ResumeLayout(False)
-        Me.panelprincipal.ResumeLayout(False)
-        CType(Me.Stock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picboxlogo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmenuprincipal, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelprincipal.ResumeLayout(False)
+        CType(Me.Stock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

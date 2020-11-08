@@ -210,7 +210,8 @@ Public Class proveedoresprincipal
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Me.Close()
-
+        conexion.Close()
+        panelsupprincipal.Show()
     End Sub
 
     Private Sub dtgProveedores_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dtgProveedores.CellClick

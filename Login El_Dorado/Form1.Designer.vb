@@ -41,25 +41,26 @@ Partial Class formlogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(149, 98)
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(144, 96)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 16)
+        Me.Label1.Size = New System.Drawing.Size(75, 18)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Usuario:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(125, 163)
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(120, 161)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 16)
+        Me.Label2.Size = New System.Drawing.Size(106, 18)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Contraseña:"
         '
         'txtnombre
         '
+        Me.txtnombre.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtnombre.Location = New System.Drawing.Point(225, 94)
         Me.txtnombre.Name = "txtnombre"
         Me.txtnombre.Size = New System.Drawing.Size(135, 20)
@@ -68,6 +69,7 @@ Partial Class formlogin
         '
         'txtpass
         '
+        Me.txtpass.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtpass.Location = New System.Drawing.Point(225, 163)
         Me.txtpass.Name = "txtpass"
         Me.txtpass.Size = New System.Drawing.Size(135, 20)
@@ -77,10 +79,15 @@ Partial Class formlogin
         '
         'btningresar
         '
-        Me.btningresar.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btningresar.Location = New System.Drawing.Point(225, 238)
+        Me.btningresar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btningresar.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btningresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btningresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btningresar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btningresar.Location = New System.Drawing.Point(194, 224)
         Me.btningresar.Name = "btningresar"
-        Me.btningresar.Size = New System.Drawing.Size(135, 38)
+        Me.btningresar.Size = New System.Drawing.Size(166, 52)
         Me.btningresar.TabIndex = 4
         Me.btningresar.Text = "Ingresar"
         Me.btningresar.UseVisualStyleBackColor = True
@@ -174,14 +181,14 @@ Partial Class formlogin
         '
         Me.btnaboutus.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnaboutus.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnaboutus.FlatAppearance.BorderSize = 0
-        Me.btnaboutus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnaboutus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
+        Me.btnaboutus.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnaboutus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnaboutus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnaboutus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnaboutus.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnaboutus.Location = New System.Drawing.Point(400, 315)
+        Me.btnaboutus.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnaboutus.Location = New System.Drawing.Point(369, 301)
         Me.btnaboutus.Name = "btnaboutus"
-        Me.btnaboutus.Size = New System.Drawing.Size(95, 23)
+        Me.btnaboutus.Size = New System.Drawing.Size(126, 37)
         Me.btnaboutus.TabIndex = 7
         Me.btnaboutus.Text = "About US"
         Me.btnaboutus.UseVisualStyleBackColor = False
@@ -190,6 +197,7 @@ Partial Class formlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(507, 350)
         Me.Controls.Add(Me.btnaboutus)
         Me.Controls.Add(Me.panelizqlogin)

@@ -35,15 +35,21 @@ Partial Class Verificar_Venta
         Me.dgvverfactura.AllowUserToAddRows = False
         Me.dgvverfactura.AllowUserToDeleteRows = False
         Me.dgvverfactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvverfactura.Location = New System.Drawing.Point(85, 203)
+        Me.dgvverfactura.Location = New System.Drawing.Point(78, 194)
         Me.dgvverfactura.Name = "dgvverfactura"
         Me.dgvverfactura.ReadOnly = True
-        Me.dgvverfactura.Size = New System.Drawing.Size(665, 180)
+        Me.dgvverfactura.Size = New System.Drawing.Size(665, 209)
         Me.dgvverfactura.TabIndex = 0
         '
         'btnverventa
         '
-        Me.btnverventa.Location = New System.Drawing.Point(119, 82)
+        Me.btnverventa.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnverventa.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnverventa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnverventa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnverventa.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnverventa.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnverventa.Location = New System.Drawing.Point(112, 73)
         Me.btnverventa.Name = "btnverventa"
         Me.btnverventa.Size = New System.Drawing.Size(126, 62)
         Me.btnverventa.TabIndex = 1
@@ -52,7 +58,13 @@ Partial Class Verificar_Venta
         '
         'btnimprimirfactura
         '
-        Me.btnimprimirfactura.Location = New System.Drawing.Point(571, 82)
+        Me.btnimprimirfactura.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnimprimirfactura.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnimprimirfactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnimprimirfactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnimprimirfactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnimprimirfactura.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnimprimirfactura.Location = New System.Drawing.Point(564, 73)
         Me.btnimprimirfactura.Name = "btnimprimirfactura"
         Me.btnimprimirfactura.Size = New System.Drawing.Size(130, 62)
         Me.btnimprimirfactura.TabIndex = 2
@@ -65,22 +77,23 @@ Partial Class Verificar_Venta
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(824, 44)
+        Me.Panel1.Size = New System.Drawing.Size(824, 49)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkBlue
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 44)
+        Me.Panel2.Location = New System.Drawing.Point(0, 49)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(55, 576)
+        Me.Panel2.Size = New System.Drawing.Size(58, 571)
         Me.Panel2.TabIndex = 4
         '
         'Verificar_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(824, 620)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)

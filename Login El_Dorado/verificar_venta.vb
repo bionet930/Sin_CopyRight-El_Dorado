@@ -121,6 +121,8 @@ Public Class Verificar_Venta
             'MsgBox(ex.Message)
         End Try
 
+        Me.Close()
+        panelsupprincipal.Show()
     End Sub
 
 End Class

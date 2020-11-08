@@ -48,6 +48,8 @@ Public Class formlogin
             MsgBox("Error Datos Incorrectos")
         End If
 
+        Me.Hide()
+
     End Sub
 
     Private Sub btncerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncerrar.Click
