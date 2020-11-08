@@ -122,7 +122,7 @@ Public Class proveedoresprincipal
 
     End Sub
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
 
 
         Dim fila As DataGridViewRow = dtgProveedores.CurrentRow
@@ -233,6 +233,10 @@ Public Class proveedoresprincipal
         txtrutprov.Text = fila.Cells(4).Value.ToString
         txtdirprov.Text = fila.Cells(5).Value
 
+
+    End Sub
+
+    Private Sub dtgProveedores_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dtgProveedores.CellContentClick
 
     End Sub
 End Class

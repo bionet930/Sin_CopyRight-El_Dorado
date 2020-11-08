@@ -6,6 +6,8 @@ Imports System.Data
 Imports System.Data.DataRow
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms
+Imports iTextSharp
+
 
 
 Public Class ventasprincipal
@@ -72,6 +74,9 @@ Public Class ventasprincipal
                 MsgBox("Debe ingresar algun dato. ")
                 lblNombre.Text = "*"
 
+
+            
+
               
 
             End If
@@ -79,12 +84,18 @@ Public Class ventasprincipal
         Catch ex As Exception
             MsgBox("Debe ingresar algun dato. " & ex.Message)
 
+            
 
         End Try
 
     End Sub
 
     Private Sub btnIngresarProducto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarProducto.Click
+
+        'resta del stock
+        'insertar en la tabla detalleventa toda la informacio
+        'despues conectar el datagrid a la tabla detalle venta
+        'actualizar datos de la tabla
 
         Dim con As Integer = 1
         Dim fecha As DateTime = Now()
@@ -124,17 +135,16 @@ Public Class ventasprincipal
         Me.txtTotal.Text = Total.ToString
 
 
-        dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+
+        'dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+
+        Dim stock As String
+        stock = consulta.consultaConRetorno("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+        Label10.Text = stock
 
 
-
-
-        'values(id_Detalle, id_Mercaderia, id_Empleado, fecha, CantidadMerc, PrecioVenta)
-        '**se cargar el data grid
-        'resta del stock
-        'insertar en la tabla detalleventa toda la informacio
-        'despues conectar el datagrid a la tabla detalle venta
-        'UnhandledExceptionMode actualizar datos de la tabla
+       
+        
     End Sub
 
    
@@ -147,21 +157,61 @@ Public Class ventasprincipal
 
         'actualiza la tabla
 
-
-        Dim si As Byte
-
-        si = MsgBox("Desea Eliminar registro?", MsgBoxStyle.YesNo, "Eliminar")
+        If dgvFactura.SelectedCells.Count <> 0 Then
 
 
-        If si = 6 Then
-            consulta.consultaSinRetorno("DELETE FROM DETALLEVENTA WHERE id_Detalle= '" & dgvFactura.CurrentRow.Index.ToString & "'")
 
-            Dim loFila As DataGridViewRow = Me.dgvFactura.CurrentRow()
-            dgvFactura.Rows.Remove(loFila)
 
-            MsgBox("Se elimino registro", MsgBoxStyle.OkOnly, "Rgsitro Eliminado")
+            Dim si As Byte
 
+            si = MsgBox("Desea Eliminar registro?", MsgBoxStyle.YesNo, "Eliminar")
+
+
+            If si = 6 Then
+                consulta.consultaSinRetorno("DELETE FROM DETALLEVENTA WHERE id_Detalle= '" & dgvFactura.CurrentRow.Index.ToString & "'")
+
+                Dim loFila As DataGridViewRow = Me.dgvFactura.CurrentRow()
+                dgvFactura.Rows.Remove(loFila)
+
+                MsgBox("Se elimino registro", MsgBoxStyle.OkOnly, "Rgsitro Eliminado")
+
+
+                Dim Total As Single
+
+                '*************** borrar del total
+
+                For Each row As DataGridViewRow In Me.dgvFactura.Rows
+                    Total = (Val(row.Cells(3).Value) - Total)
+                Next
+                Me.txtTotal.Text = Total.ToString
+
+
+                '*************** agregar al stock tomando como cantidad a devolver nudCantidad
+
+                Dim cont As String
+                Dim resultado As Integer
+
+                cont = consulta.consultaConRetorno("SELECT `Stock` FROM `tblmercaderia` WHERE `id_Mercaderia` = '" & txtIdmercaderia.Text & "'")
+                resultado = Val(cont) + nudCantidad.Value
+
+
+                consulta.consultaSinRetorno(" UPDATE `tblmercaderia` SET `Stock`= '" & resultado & "' where `id_Mercaderia` = '" & txtIdmercaderia.Text & "' ;")
+
+                MsgBox("se Agrego al stock", vbOKOnly + vbDefaultButton2, "Mensaje")
+
+                Dim stock As String
+                stock = consulta.consultaConRetorno("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+                Label10.Text = stock
+
+
+            Else
+                MsgBox("No Existen lmas productos en el carrito", MsgBoxStyle.Critical, AcceptButton)
+
+            End If
         End If
+
+
+
 
     End Sub
 
@@ -187,7 +237,7 @@ Public Class ventasprincipal
 
 
         'mensaje para emitir facturas 
-        'insertar los datos en la tabla ventas  **ptonto**
+        'insertar los datos en la tabla ventas  **pronto**
 
         consulta.consultaSinRetorno("INSERT INTO `tblventas`(`Id_Ventas`, `id_Empleado`, `fecha`, `PrecioCosto`, `PrecioVenta`, `CantidadMerc`, `id_Cliente`, `EstadoVent`) VALUES ( null,'" & cmbEmpleados.Text & "','" & strf.ToString & "', null ,'" & txtTotal.Text & "', null ,'" & cmbClientes.Text & "',null)")
 
@@ -204,7 +254,12 @@ Public Class ventasprincipal
 
         Label8.Text = Val(lblPrecio.Text) * nudCantidad.Value
 
-        dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+        'dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+
+        Dim stock As String
+        stock = consulta.consultaConRetorno("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+        Label10.Text = stock
+
 
     End Sub
 
@@ -219,8 +274,11 @@ Public Class ventasprincipal
     Private Sub btnimprimirfac_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfac.Click
         
 
-        Verificar_Venta.Show()
+        'Imprimir_Factura.Show()
+        verificar_venta.Show()
+
 
 
     End Sub
+
 End Class
