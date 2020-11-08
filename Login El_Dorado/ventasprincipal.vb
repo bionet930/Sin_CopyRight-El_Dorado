@@ -212,6 +212,8 @@ Public Class ventasprincipal
    
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Close()
+        conexion.Close()
+        panelsupprincipal.Show()
     End Sub
 
     Private Sub btnimprimirfac_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfac.Click

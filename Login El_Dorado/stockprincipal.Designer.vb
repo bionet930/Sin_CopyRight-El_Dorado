@@ -24,8 +24,6 @@ Partial Class stockprincipal
     Private Sub InitializeComponent()
         Me.btnstock = New System.Windows.Forms.Button()
         Me.dgvDatostock = New System.Windows.Forms.DataGridView()
-        Me.panelsupstock = New System.Windows.Forms.Panel()
-        Me.panelizqstock = New System.Windows.Forms.Panel()
         Me.btnstockprincipal = New System.Windows.Forms.Button()
         Me.txtImagen = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -71,46 +69,29 @@ Partial Class stockprincipal
         Me.dgvDatostock.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvDatostock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvDatostock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDatostock.Location = New System.Drawing.Point(68, 424)
+        Me.dgvDatostock.Location = New System.Drawing.Point(68, 420)
         Me.dgvDatostock.Name = "dgvDatostock"
-        Me.dgvDatostock.Size = New System.Drawing.Size(758, 111)
+        Me.dgvDatostock.Size = New System.Drawing.Size(793, 111)
         Me.dgvDatostock.TabIndex = 1
-        '
-        'panelsupstock
-        '
-        Me.panelsupstock.BackColor = System.Drawing.Color.Gold
-        Me.panelsupstock.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelsupstock.Location = New System.Drawing.Point(0, 0)
-        Me.panelsupstock.Name = "panelsupstock"
-        Me.panelsupstock.Size = New System.Drawing.Size(852, 40)
-        Me.panelsupstock.TabIndex = 2
-        '
-        'panelizqstock
-        '
-        Me.panelizqstock.BackColor = System.Drawing.Color.MidnightBlue
-        Me.panelizqstock.Dock = System.Windows.Forms.DockStyle.Left
-        Me.panelizqstock.Location = New System.Drawing.Point(0, 40)
-        Me.panelizqstock.Name = "panelizqstock"
-        Me.panelizqstock.Size = New System.Drawing.Size(37, 447)
-        Me.panelizqstock.TabIndex = 3
         '
         'btnstockprincipal
         '
         Me.btnstockprincipal.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnstockprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnstockprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnstockprincipal.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnstockprincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnstockprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnstockprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnstockprincipal.Font = New System.Drawing.Font("Mongolian Baiti", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnstockprincipal.Location = New System.Drawing.Point(130, 332)
+        Me.btnstockprincipal.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnstockprincipal.Location = New System.Drawing.Point(130, 293)
         Me.btnstockprincipal.Name = "btnstockprincipal"
-        Me.btnstockprincipal.Size = New System.Drawing.Size(107, 23)
+        Me.btnstockprincipal.Size = New System.Drawing.Size(107, 28)
         Me.btnstockprincipal.TabIndex = 3
         Me.btnstockprincipal.Text = "Ver Stock"
         Me.btnstockprincipal.UseVisualStyleBackColor = True
         '
         'txtImagen
         '
-        Me.txtImagen.Location = New System.Drawing.Point(680, 98)
+        Me.txtImagen.Location = New System.Drawing.Point(680, 59)
         Me.txtImagen.Name = "txtImagen"
         Me.txtImagen.Size = New System.Drawing.Size(117, 20)
         Me.txtImagen.TabIndex = 10
@@ -119,49 +100,70 @@ Partial Class stockprincipal
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(596, 101)
+        Me.Label3.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(596, 62)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 13)
+        Me.Label3.Size = New System.Drawing.Size(48, 12)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Imagen"
         Me.Label3.Visible = False
         '
         'btnIngresar
         '
-        Me.btnIngresar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(341, 290)
+        Me.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIngresar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIngresar.Location = New System.Drawing.Point(341, 247)
         Me.btnIngresar.Name = "btnIngresar"
-        Me.btnIngresar.Size = New System.Drawing.Size(161, 23)
+        Me.btnIngresar.Size = New System.Drawing.Size(161, 27)
         Me.btnIngresar.TabIndex = 10
         Me.btnIngresar.Text = "&Ingresar"
         Me.btnIngresar.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
-        Me.btnEliminar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(341, 319)
+        Me.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.Location = New System.Drawing.Point(341, 280)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(161, 23)
+        Me.btnEliminar.Size = New System.Drawing.Size(161, 33)
         Me.btnEliminar.TabIndex = 8
         Me.btnEliminar.Text = "&Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnNuevo
         '
-        Me.btnNuevo.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.Location = New System.Drawing.Point(341, 257)
+        Me.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevo.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNuevo.Location = New System.Drawing.Point(341, 208)
         Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(161, 23)
+        Me.btnNuevo.Size = New System.Drawing.Size(161, 33)
         Me.btnNuevo.TabIndex = 9
         Me.btnNuevo.Text = "&Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
         'btnCerrar
         '
-        Me.btnCerrar.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(341, 348)
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCerrar.Location = New System.Drawing.Point(341, 319)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(161, 23)
+        Me.btnCerrar.Size = New System.Drawing.Size(161, 30)
         Me.btnCerrar.TabIndex = 7
         Me.btnCerrar.Text = "&Cerrar"
         Me.btnCerrar.UseVisualStyleBackColor = True
@@ -171,9 +173,10 @@ Partial Class stockprincipal
         Me.GroupBox3.Controls.Add(Me.avatar)
         Me.GroupBox3.Controls.Add(Me.Button8)
         Me.GroupBox3.Controls.Add(Me.btnImagen)
-        Me.GroupBox3.Location = New System.Drawing.Point(317, 46)
+        Me.GroupBox3.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(317, 7)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(193, 194)
+        Me.GroupBox3.Size = New System.Drawing.Size(204, 194)
         Me.GroupBox3.TabIndex = 15
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Acciones Foto"
@@ -188,8 +191,13 @@ Partial Class stockprincipal
         '
         'Button8
         '
-        Me.Button8.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(96, 146)
+        Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Lucida Sans", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(109, 146)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(89, 36)
         Me.Button8.TabIndex = 8
@@ -198,10 +206,15 @@ Partial Class stockprincipal
         '
         'btnImagen
         '
-        Me.btnImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnImagen.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnImagen.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnImagen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnImagen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnImagen.Font = New System.Drawing.Font("Lucida Sans", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnImagen.Location = New System.Drawing.Point(5, 146)
         Me.btnImagen.Name = "btnImagen"
-        Me.btnImagen.Size = New System.Drawing.Size(89, 36)
+        Me.btnImagen.Size = New System.Drawing.Size(97, 36)
         Me.btnImagen.TabIndex = 7
         Me.btnImagen.Text = "Seleccionar Imagen"
         Me.btnImagen.UseVisualStyleBackColor = True
@@ -213,49 +226,49 @@ Partial Class stockprincipal
         'cmdProveedores
         '
         Me.cmdProveedores.FormattingEnabled = True
-        Me.cmdProveedores.Location = New System.Drawing.Point(149, 190)
+        Me.cmdProveedores.Location = New System.Drawing.Point(149, 151)
         Me.cmdProveedores.Name = "cmdProveedores"
         Me.cmdProveedores.Size = New System.Drawing.Size(121, 21)
         Me.cmdProveedores.TabIndex = 30
         '
         'txtDescuento
         '
-        Me.txtDescuento.Location = New System.Drawing.Point(149, 245)
+        Me.txtDescuento.Location = New System.Drawing.Point(149, 206)
         Me.txtDescuento.Name = "txtDescuento"
         Me.txtDescuento.Size = New System.Drawing.Size(117, 20)
         Me.txtDescuento.TabIndex = 29
         '
         'txtStock
         '
-        Me.txtStock.Location = New System.Drawing.Point(149, 219)
+        Me.txtStock.Location = New System.Drawing.Point(149, 180)
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(117, 20)
         Me.txtStock.TabIndex = 28
         '
         'txtPrecioVenta
         '
-        Me.txtPrecioVenta.Location = New System.Drawing.Point(149, 164)
+        Me.txtPrecioVenta.Location = New System.Drawing.Point(149, 125)
         Me.txtPrecioVenta.Name = "txtPrecioVenta"
         Me.txtPrecioVenta.Size = New System.Drawing.Size(117, 20)
         Me.txtPrecioVenta.TabIndex = 27
         '
         'txtPrecioCosto
         '
-        Me.txtPrecioCosto.Location = New System.Drawing.Point(149, 135)
+        Me.txtPrecioCosto.Location = New System.Drawing.Point(149, 96)
         Me.txtPrecioCosto.Name = "txtPrecioCosto"
         Me.txtPrecioCosto.Size = New System.Drawing.Size(117, 20)
         Me.txtPrecioCosto.TabIndex = 26
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(149, 102)
+        Me.txtNombre.Location = New System.Drawing.Point(149, 63)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(117, 20)
         Me.txtNombre.TabIndex = 25
         '
         'txtIdmercaderia
         '
-        Me.txtIdmercaderia.Location = New System.Drawing.Point(149, 74)
+        Me.txtIdmercaderia.Location = New System.Drawing.Point(149, 35)
         Me.txtIdmercaderia.Name = "txtIdmercaderia"
         Me.txtIdmercaderia.Size = New System.Drawing.Size(117, 20)
         Me.txtIdmercaderia.TabIndex = 24
@@ -264,63 +277,70 @@ Partial Class stockprincipal
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(65, 247)
+        Me.Label8.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(74, 208)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(59, 13)
+        Me.Label8.Size = New System.Drawing.Size(69, 12)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = "Descuento"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(65, 221)
+        Me.Label7.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(103, 184)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(35, 13)
+        Me.Label7.Size = New System.Drawing.Size(40, 12)
         Me.Label7.TabIndex = 22
         Me.Label7.Text = "Stock"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(65, 197)
+        Me.Label6.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(61, 155)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 13)
+        Me.Label6.Size = New System.Drawing.Size(82, 12)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "Id Proveedor"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(65, 171)
+        Me.Label5.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(63, 129)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(68, 13)
+        Me.Label5.Size = New System.Drawing.Size(80, 12)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Precio Venta"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(65, 142)
+        Me.Label4.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(61, 100)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 13)
+        Me.Label4.Size = New System.Drawing.Size(82, 12)
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "Precio Costo"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(65, 105)
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(92, 67)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(51, 12)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Nombre"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(65, 77)
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(54, 39)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 13)
+        Me.Label1.Size = New System.Drawing.Size(89, 12)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Id Mercaderia"
         '
@@ -328,7 +348,8 @@ Partial Class stockprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(852, 487)
+        Me.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.ClientSize = New System.Drawing.Size(887, 557)
         Me.Controls.Add(Me.cmdProveedores)
         Me.Controls.Add(Me.txtDescuento)
         Me.Controls.Add(Me.txtStock)
@@ -350,8 +371,6 @@ Partial Class stockprincipal
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.txtImagen)
         Me.Controls.Add(Me.btnstockprincipal)
-        Me.Controls.Add(Me.panelizqstock)
-        Me.Controls.Add(Me.panelsupstock)
         Me.Controls.Add(Me.dgvDatostock)
         Me.Controls.Add(Me.Label3)
         Me.Name = "stockprincipal"
@@ -365,8 +384,6 @@ Partial Class stockprincipal
     End Sub
     Friend WithEvents btnstock As System.Windows.Forms.Button
     Friend WithEvents dgvDatostock As System.Windows.Forms.DataGridView
-    Friend WithEvents panelsupstock As System.Windows.Forms.Panel
-    Friend WithEvents panelizqstock As System.Windows.Forms.Panel
     Friend WithEvents btnstockprincipal As System.Windows.Forms.Button
     Friend WithEvents txtImagen As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label

@@ -2,9 +2,10 @@
 Imports MySql.Data
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms.DataVisualization.Charting
+Imports System.IO
 
 Public Class panelsupprincipal
-
+    Dim proceso As Process()
     Dim da As MySqlDataAdapter
     Dim ds As DataSet
 
@@ -22,7 +23,10 @@ Public Class panelsupprincipal
 
 
     Private Sub btncerrarprincipal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncerrarprincipal.Click
+
         Me.Close()
+        Application.Exit()
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnminimprincipal.Click
@@ -71,7 +75,7 @@ Public Class panelsupprincipal
         End If
     End Sub
 
-    Private Sub Abrirformprincipal(ByVal formhijo As Object)
+    Public Sub Abrirformprincipal(ByVal formhijo As Object)
         If Me.panelprincipal.Controls.Count > 0 Then
             Me.panelprincipal.Controls.RemoveAt(0)
         End If
@@ -82,7 +86,6 @@ Public Class panelsupprincipal
         Me.panelprincipal.Controls.Add(fh)
         Me.panelprincipal.Tag = fh
         fh.Show()
-
 
     End Sub
 
@@ -148,4 +151,29 @@ Public Class panelsupprincipal
 
     End Sub
 
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnmantenimiento.Click
+
+        Dim Ruta As String
+
+        Ruta = "C:\Mantenimiento"
+
+        If Not Directory.Exists(Ruta) Then
+            Directory.CreateDirectory(Ruta)
+            Shell("C:\Mantenimiento\Mantenimiento.BAT", AppWinStyle.NormalFocus, True)
+            MsgBox("Mantenimiento Finalizado Correctamente", MsgBoxStyle.Exclamation, Title:="Proceso Concluido")
+        Else : Shell("C:\Mantenimiento\Mantenimiento.BAT", AppWinStyle.NormalFocus, True)
+            MsgBox("Mantenimiento Finalizado Correctamente", MsgBoxStyle.Exclamation, Title:="Proceso Concluido")
+        End If
+
+    End Sub
+
+    Private Sub btncorreos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncorreos.Click
+
+        Abrirformprincipal(New Enviar_Correo)
+
+    End Sub
+
+    Private Sub picboxlogo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles picboxlogo.Click
+
+    End Sub
 End Class

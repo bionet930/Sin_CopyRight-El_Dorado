@@ -94,10 +94,17 @@
     </Compile>
     <Compile Include="conexion.vb" />
     <Compile Include="ConexionPablo.vb" />
+    <Compile Include="Correo.vb" />
     <Compile Include="empleadosprincipal.Designer.vb">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="empleadosprincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enviar_Correo.Designer.vb">
+      <DependentUpon>Enviar_Correo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enviar_Correo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -111,12 +118,6 @@
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Imprimir-Factura.Designer.vb">
-      <DependentUpon>Imprimir-Factura.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Imprimir-Factura.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mostrarEnTabla.vb" />
@@ -140,12 +141,6 @@
       <DependentUpon>proveedoresprincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="proveedoresprincipal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="registroempl.Designer.vb">
-      <DependentUpon>registroempl.vb</DependentUpon>
-    </Compile>
-    <Compile Include="registroempl.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="stockprincipal.Designer.vb">
@@ -174,14 +169,14 @@
     <EmbeddedResource Include="empleadosprincipal.resx">
       <DependentUpon>empleadosprincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Enviar_Correo.resx">
+      <DependentUpon>Enviar_Correo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Imprimir-Factura.resx">
-      <DependentUpon>Imprimir-Factura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
@@ -191,9 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="proveedoresprincipal.resx">
       <DependentUpon>proveedoresprincipal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="registroempl.resx">
-      <DependentUpon>registroempl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stockprincipal.resx">
       <DependentUpon>stockprincipal.vb</DependentUpon>
@@ -257,6 +249,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itextsharp.xtra.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3054482.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo 27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dorado.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
