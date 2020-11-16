@@ -73,28 +73,17 @@ Public Class ventasprincipal
 
     Private Sub txtIdmercaderia_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtIdmercaderia.TextChanged
 
+        If Not txtIdmercaderia.Text.Equals("") Then
+            consulta.consultaConRetorno("Select NombreMerc from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & ";")
+            Dim nombre As String = consulta.valorReturn
 
-        Try
+            consulta.consultaConRetorno("Select PrecioVenta from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & ";")
+            Dim precioVenta As Integer = Val(consulta.valorReturn)
+
             dgvVentas.DataSource = consulta.mostrarEnTabla("Select id_Mercaderia,NombreMerc,Descuento,PrecioVenta from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & ";")
-            lblNombre.Text = dgvVentas.CurrentRow.Cells.Item(1).Value.ToString
-            lblPrecio.Text = dgvVentas.CurrentRow.Cells.Item(3).Value.ToString
-            If lblNombre.Text = "" Then
-                MsgBox("Debe ingresar algun dato. ")
-                lblNombre.Text = "*"
-
-
-            
-
-              
-
-            End If
-
-        Catch ex As Exception
-            MsgBox("Debe ingresar algun dato. " & ex.Message)
-
-            
-
-        End Try
+            lblNombre.Text = nombre
+            lblPrecio.Text = precioVenta
+        End If
 
     End Sub
 
@@ -105,50 +94,61 @@ Public Class ventasprincipal
         'despues conectar el datagrid a la tabla detalle venta
         'actualizar datos de la tabla
 
-        Dim con As Integer = 1
-        Dim fecha As DateTime = Now()
-        Dim strf As String
-
-
-        consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `Stock`= Stock - '" & nudCantidad.Value & "';")
-        MsgBox("se borro stock", vbOKOnly + vbDefaultButton2, "Mensaje")
-
-
-        strf = Format(fecha, "yyy-MM-dd") 'Se da formato a la fecha
+        If Not txtIdmercaderia.Text.Equals("") Then
+            Dim con As Integer = 1
+            Dim fecha As DateTime = Now()
+            Dim strf As String
 
 
 
-        consulta.consultaSinRetorno("INSERT INTO `eldorado`.`detalleventa` (`id_Mercaderia`, `id_Empleado`, `fecha`, `CantidadMerc`, `PrecioVenta`, `id_Cliente`, `NombreMerc`) VALUES ('" & txtIdmercaderia.Text &
-                                    "','" & cmbEmpleados.Text &
-                                    "','" & strf.ToString &
-                                    "','" & nudCantidad.Value &
-                                    "', '" & Label8.Text &
-                                    "','" & cmbClientes.Text &
-                                    "','" & lblNombre.Text & "');")
+            consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `Stock`= Stock - '" & nudCantidad.Value & "';")
+            'MsgBox("se borro stock", vbOKOnly + vbDefaultButton2, "Mensaje")
 
-        If consulta.resultado = 1 Then
-            MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")
-            dgvFactura.DataSource = consulta.mostrarEnTabla("Select id_Mercaderia,NombreMerc, CantidadMerc, PrecioVenta  from detalleventa;")
-            con = con + 1
+
+            strf = Format(fecha, "yyy-MM-dd") 'Se da formato a la fecha
+
+
+
+            consulta.consultaSinRetorno("INSERT INTO `eldorado`.`detalleventa` (`id_Mercaderia`, `id_Empleado`, `fecha`, `CantidadMerc`, `PrecioVenta`, `id_Cliente`, `NombreMerc`) VALUES ('" & txtIdmercaderia.Text &
+                                        "','" & cmbEmpleados.Text &
+                                        "','" & strf.ToString &
+                                        "','" & nudCantidad.Value &
+                                        "', '" & Label8.Text &
+                                        "','" & cmbClientes.Text &
+                                        "','" & lblNombre.Text & "');")
+
+            If consulta.resultado = 1 Then
+                MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")
+                dgvFactura.DataSource = consulta.mostrarEnTabla("Select id_Mercaderia,NombreMerc, CantidadMerc, PrecioVenta  from detalleventa;")
+                con = con + 1
+                txtIdmercaderia.Text = ""
+            End If
+
+
+
+            Dim Total As Single
+            Dim Col As Integer = Me.dgvFactura.CurrentCell.ColumnIndex
+
+
+
+
+            For Each row As DataGridViewRow In Me.dgvFactura.Rows
+                Total += Val(row.Cells(3).Value)
+            Next
+            Me.txtTotal.Text = Total.ToString
+
+
+        
+            Dim stock As String
+            stock = consulta.consultaConRetorno("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
+            Label10.Text = stock
+
+        Else
+
+            MsgBox("Debe rellenar el ID de la mercaderia.")
         End If
 
-
-
-        Dim Total As Single
-        Dim Col As Integer = Me.dgvFactura.CurrentCell.ColumnIndex
-
-        For Each row As DataGridViewRow In Me.dgvFactura.Rows
-            Total += Val(row.Cells(3).Value)
-        Next
-        Me.txtTotal.Text = Total.ToString
-
-
-
-        'dgvStock.DataSource = consulta.mostrarEnTabla("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
-
-        Dim stock As String
-        stock = consulta.consultaConRetorno("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
-        Label10.Text = stock
+        
 
 
        
@@ -189,7 +189,7 @@ Public Class ventasprincipal
                 '*************** borrar del total
 
                 For Each row As DataGridViewRow In Me.dgvFactura.Rows
-                    Total = (Val(row.Cells(3).Value) - Total) * (-1)
+                    Total = (Total - Val(row.Cells(3).Value))
                 Next
                 Me.txtTotal.Text = Total.ToString
 
@@ -289,13 +289,8 @@ Public Class ventasprincipal
     End Sub
 
     Private Sub btnimprimirfac_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnimprimirfac.Click
-        
-
         'Imprimir_Factura.Show()
         verificar_venta.Show()
-
-
-
     End Sub
 
 End Class

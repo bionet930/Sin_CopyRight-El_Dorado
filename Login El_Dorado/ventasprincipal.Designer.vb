@@ -320,8 +320,9 @@ Partial Class ventasprincipal
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(407, 47)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(0, 13)
+        Me.Label10.Size = New System.Drawing.Size(19, 13)
         Me.Label10.TabIndex = 42
+        Me.Label10.Text = "***"
         '
         'Label11
         '
