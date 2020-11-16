@@ -141,4 +141,12 @@ Public Class empleadosprincipal
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
 
     End Sub
+
+    Private Sub panelprincipal_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles panelprincipal.Paint
+
+    End Sub
+
+    Private Sub dgvEmpleados_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvEmpleados.CellContentClick
+
+    End Sub
 End Class

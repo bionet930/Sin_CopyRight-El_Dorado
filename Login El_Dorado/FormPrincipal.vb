@@ -24,6 +24,7 @@ Public Class panelsupprincipal
 
     Private Sub btncerrarprincipal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncerrarprincipal.Click
         Me.Close()
+        Application.Exit()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnminimprincipal.Click

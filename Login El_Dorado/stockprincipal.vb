@@ -180,6 +180,28 @@ Public Class stockprincipal
 
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
 
+
+        Try
+
+            consulta.consultaSinRetorno("INSERT INTO tblMercaderia(id_Mercaderia ,NombreMerc, Imagen, PrecioCosto, PrecioVenta,id_Prov, Stock, Descuento, EstadoMerc) VALUES ('" & txtIdmercaderia.Text & "','" & txtNombre.Text & "', '" & txtImagen.Text & "','" & txtPrecioCosto.Text & "', '" & txtPrecioVenta.Text & "','" & cmdProveedores.Text & "', '" & txtStock.Text & "', '" & txtDescuento.Text & "','1')")
+
+            MsgBox("Datos Guardado")
+
+            txtIdmercaderia.Text = ""
+            txtNombre.Text = ""
+            txtImagen.Text = ""
+            txtPrecioCosto.Text = ""
+            txtPrecioVenta.Text = ""
+            cmdProveedores.Text = ""
+            txtStock.Text = ""
+            txtDescuento.Text = ""
+
+        Catch ex As Exception
+            MsgBox("Error al Guardar los Datos")
+        End Try
+
+
+
         limpiarTex()
         btnIngresarProducto.Visible = True
         btnIngresar.Visible = False

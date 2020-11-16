@@ -17,4 +17,7 @@ Public Class Enviar_Correo
     End Sub
 
 
+    Private Sub Enviar_Correo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

@@ -55,7 +55,7 @@ Public Class ventasprincipal
         btnEliminar.Enabled = False
         btnimprimirfac.Enabled = False
         btnIngresarProducto.Enabled = False
-        btnCerrar.Enabled = False
+        'btnCerrar.Enabled = False
         btnFinalizarVenta.Enabled = False
 
 

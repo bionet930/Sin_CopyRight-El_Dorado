@@ -50,12 +50,12 @@ Public Class clientesprincipal
 
 
 
-        consulta.consultaSinRetorno("INSERT INTO tblclientes(id_Cliente,NombreCli,DomicilioCli,TelefonoCli,SaldoCli,PagoCli) Values (" & txtId.Text &
+        consulta.consultaSinRetorno("INSERT INTO tblclientes(id_Cliente,NombreCli,DomicilioCli,TelefonoCli,SaldoCli,PagoCli, EstadoClient) Values (" & txtId.Text &
                                     ",'" & txtNombre.Text &
                                     "','" & txtDireccion.Text &
                                     "','" & txtTelefono.Text &
                                     "','" & txtSaldo.Text &
-                                    "','" & txtPago.Text & "');")
+                                    "','" & txtPago.Text & "', 1);")
 
         If consulta.resultado = 1 Then
             MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")

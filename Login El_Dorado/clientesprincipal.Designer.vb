@@ -205,18 +205,18 @@ Partial Class clientesprincipal
         '
         'txtSaldo
         '
-        Me.txtSaldo.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSaldo.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSaldo.Location = New System.Drawing.Point(139, 166)
         Me.txtSaldo.Name = "txtSaldo"
-        Me.txtSaldo.Size = New System.Drawing.Size(76, 22)
+        Me.txtSaldo.Size = New System.Drawing.Size(76, 23)
         Me.txtSaldo.TabIndex = 31
         '
         'txtPago
         '
-        Me.txtPago.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPago.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPago.Location = New System.Drawing.Point(139, 205)
         Me.txtPago.Name = "txtPago"
-        Me.txtPago.Size = New System.Drawing.Size(148, 22)
+        Me.txtPago.Size = New System.Drawing.Size(148, 23)
         Me.txtPago.TabIndex = 25
         '
         'Label7
@@ -241,34 +241,34 @@ Partial Class clientesprincipal
         '
         'txtDireccion
         '
-        Me.txtDireccion.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDireccion.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDireccion.Location = New System.Drawing.Point(140, 101)
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(148, 22)
+        Me.txtDireccion.Size = New System.Drawing.Size(148, 23)
         Me.txtDireccion.TabIndex = 21
         '
         'txtTelefono
         '
-        Me.txtTelefono.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTelefono.Location = New System.Drawing.Point(139, 129)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(138, 22)
+        Me.txtTelefono.Size = New System.Drawing.Size(138, 23)
         Me.txtTelefono.TabIndex = 20
         '
         'txtNombre
         '
-        Me.txtNombre.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.Location = New System.Drawing.Point(140, 73)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(141, 22)
+        Me.txtNombre.Size = New System.Drawing.Size(141, 23)
         Me.txtNombre.TabIndex = 18
         '
         'txtId
         '
-        Me.txtId.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtId.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtId.Location = New System.Drawing.Point(140, 45)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(141, 22)
+        Me.txtId.Size = New System.Drawing.Size(141, 23)
         Me.txtId.TabIndex = 17
         '
         'Label5
@@ -324,10 +324,10 @@ Partial Class clientesprincipal
         '
         'txtImagen
         '
-        Me.txtImagen.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtImagen.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImagen.Location = New System.Drawing.Point(727, 367)
         Me.txtImagen.Name = "txtImagen"
-        Me.txtImagen.Size = New System.Drawing.Size(148, 22)
+        Me.txtImagen.Size = New System.Drawing.Size(148, 23)
         Me.txtImagen.TabIndex = 27
         Me.txtImagen.Visible = False
         '
