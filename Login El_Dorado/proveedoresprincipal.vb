@@ -21,7 +21,7 @@ Public Class proveedoresprincipal
 
 
     Private Sub proveedoresprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        txtidprov.Enabled = False
+
 
         Try
             conexion.ConnectionString = "server=localhost; user id= 'prueba' ; password='prueba';database = eldorado"

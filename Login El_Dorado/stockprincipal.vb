@@ -22,7 +22,6 @@ Public Class stockprincipal
 
     Private Sub btnstockprincipal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Call mostrarlosdatos()
-        txtIdmercaderia.Enabled = False
     End Sub
 
 
@@ -55,7 +54,6 @@ Public Class stockprincipal
     End Sub
 
     Private Sub stockprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        txtIdmercaderia.Enabled = False
         inhabilitarBotones()
         limpiarTex()
         llenarProveedores()
@@ -304,7 +302,6 @@ Public Class stockprincipal
 
         habilitarBotones()
         habilitarTextos()
-        txtIdmercaderia.Enabled = False
 
 
 

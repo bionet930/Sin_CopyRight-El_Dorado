@@ -139,7 +139,6 @@ C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-E
 C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.ventasprincipal.resources
 C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login El_Dorado\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.Verificar_Venta.resources
 C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.vbproj.GenerateResource.Cache
-<<<<<<< Updated upstream
 C:\Users\hmunoz\Documents\GitHub\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.exe
 C:\Users\hmunoz\Documents\GitHub\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.xml
 C:\Users\hmunoz\Documents\GitHub\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.pdb
@@ -165,32 +164,3 @@ C:\Users\hmunoz\Documents\GitHub\Login-El_Dorado\Login El_Dorado\bin\Debug\Login
 C:\Users\hmunoz\Documents\GitHub\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.TrustInfo.xml
 C:\Users\hmunoz\Documents\GitHub\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.exe.manifest
 C:\Users\hmunoz\Documents\GitHub\Login-El_Dorado\Login El_Dorado\obj\x86\Debug\Login El_Dorado.application
-=======
->>>>>>> Stashed changes
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.exe
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.xml
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.pdb
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\bin\Debug\Login El_Dorado.exe
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\bin\Debug\Login El_Dorado.pdb
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\bin\Debug\Login El_Dorado.xml
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\bin\Debug\itextsharp.dll
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\bin\Debug\mysql.data.dll
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.vbprojResolveAssemblyReference.cache
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.clientesprincipal.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.empleadosprincipal.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.Enviar_Correo.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.formlogin.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.panelsupprincipal.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.Imprimir_Factura.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.Resources.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.proveedoresprincipal.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.registroempl.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.stockprincipal.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.ventasprincipal.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login_El_Dorado.Verificar_Venta.resources
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.vbproj.GenerateResource.Cache
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\bin\Debug\Login El_Dorado.exe.manifest
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\bin\Debug\Login El_Dorado.application
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.TrustInfo.xml
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.exe.manifest
-D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.application

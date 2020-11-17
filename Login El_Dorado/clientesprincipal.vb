@@ -20,8 +20,6 @@ Public Class clientesprincipal
 
     Private Sub clientesprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        txtId.Enabled = False
-
         consulta.establecerConexion()
         dgvClientes.DataSource = consulta.mostrarEnTabla("SELECT `id_Cliente`, `NombreCli`, `DomicilioCli`, `TelefonoCli`, `SaldoCli`, `PagoCli` FROM `tblclientes` WHERE `EstadoClient` = 1 ;")
 
