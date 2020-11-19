@@ -31,6 +31,7 @@ Public Class empleadosprincipal
         Me.Close()
         conexion.Close()
         panelsupprincipal.Show()
+
     End Sub
 
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click

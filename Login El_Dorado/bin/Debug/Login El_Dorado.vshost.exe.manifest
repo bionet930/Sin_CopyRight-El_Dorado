@@ -60,14 +60,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Login El_Dorado.exe" size="3974656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Login El_Dorado.exe" size="3980800">
       <assemblyIdentity name="Login El_Dorado" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vmq9xhw/vT2qcspigG0mUVdOJnk=</dsig:DigestValue>
+        <dsig:DigestValue>6H1A000pOQ7I5klIfQ89BfohRO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MessagingToolkit.QRCode.dll" size="6193152">
+      <assemblyIdentity name="MessagingToolkit.QRCode" version="1.0.3541.23206" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xMg4gZkN1VGy2SLD636Zi0XZA8c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

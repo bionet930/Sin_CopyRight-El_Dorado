@@ -112,7 +112,8 @@ Public Class panelsupprincipal
 
     End Sub
 
-    Private Sub FormPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    Public Sub FormPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load, Stock.Click
 
         Dim Conexion As MySqlConnection
         Conexion = New MySqlConnection()
@@ -146,7 +147,7 @@ Public Class panelsupprincipal
 
     End Sub
 
-    Private Sub Chart1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Stock.Click
+    Private Sub Chart1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 

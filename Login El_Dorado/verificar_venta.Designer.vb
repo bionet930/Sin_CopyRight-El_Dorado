@@ -27,7 +27,10 @@ Partial Class Verificar_Venta
         Me.btnimprimirfactura = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         CType(Me.dgvverfactura, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvverfactura
@@ -35,9 +38,10 @@ Partial Class Verificar_Venta
         Me.dgvverfactura.AllowUserToAddRows = False
         Me.dgvverfactura.AllowUserToDeleteRows = False
         Me.dgvverfactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvverfactura.Location = New System.Drawing.Point(78, 194)
+        Me.dgvverfactura.Location = New System.Drawing.Point(102, 141)
         Me.dgvverfactura.Name = "dgvverfactura"
         Me.dgvverfactura.ReadOnly = True
+        Me.dgvverfactura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvverfactura.Size = New System.Drawing.Size(665, 209)
         Me.dgvverfactura.TabIndex = 0
         '
@@ -89,12 +93,27 @@ Partial Class Verificar_Venta
         Me.Panel2.Size = New System.Drawing.Size(58, 571)
         Me.Panel2.TabIndex = 4
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(301, 382)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(226, 199)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
+        'SaveFileDialog1
+        '
+        Me.SaveFileDialog1.FileName = "qr.png"
+        Me.SaveFileDialog1.Filter = "PNG Image |*.png"
+        '
         'Verificar_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(824, 620)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnimprimirfactura)
@@ -103,6 +122,7 @@ Partial Class Verificar_Venta
         Me.Name = "Verificar_Venta"
         Me.Text = "Verificar_Venta"
         CType(Me.dgvverfactura, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -111,4 +131,6 @@ Partial Class Verificar_Venta
     Friend WithEvents btnimprimirfactura As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
 End Class

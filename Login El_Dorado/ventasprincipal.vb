@@ -247,7 +247,7 @@ Public Class ventasprincipal
         'mensaje para emitir facturas 
         'insertar los datos en la tabla ventas  **pronto**
 
-        consulta.consultaSinRetorno("INSERT INTO `tblventas`(`Id_Ventas`, `id_Empleado`, `fecha`, `PrecioCosto`, `PrecioVenta`, `CantidadMerc`, `id_Cliente`, `EstadoVent`) VALUES ( null,'" & cmbEmpleados.Text & "','" & strf.ToString & "', null ,'" & txtTotal.Text & "', null ,'" & cmbClientes.Text & "',null)")
+        consulta.consultaSinRetorno("INSERT INTO `tblventas`(`Id_Ventas`, `id_Empleado`, `fecha`, `PrecioCosto`, `PrecioVenta`, `CantidadMerc`, `id_Cliente`, `EstadoVent`) VALUES ( null,'" & cmbEmpleados.Text & "','" & strf.ToString & "', null ,'" & txtTotal.Text & "', '" & dgvFactura.Item(2, 0).Value() & "' ,'" & cmbClientes.Text & "',null)")
 
 
         If consulta.resultado = 1 Then
@@ -298,4 +298,7 @@ Public Class ventasprincipal
 
     End Sub
 
+    Private Sub cmbEmpleados_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbEmpleados.SelectedIndexChanged
+
+    End Sub
 End Class
