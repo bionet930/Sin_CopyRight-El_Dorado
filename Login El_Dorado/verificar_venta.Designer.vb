@@ -29,6 +29,9 @@ Partial Class Verificar_Venta
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.lblempleadoventa = New System.Windows.Forms.Label()
+        Me.lblclienteventa = New System.Windows.Forms.Label()
+        Me.lbldireccioncliente = New System.Windows.Forms.Label()
         CType(Me.dgvverfactura, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -107,12 +110,51 @@ Partial Class Verificar_Venta
         Me.SaveFileDialog1.FileName = "qr.png"
         Me.SaveFileDialog1.Filter = "PNG Image |*.png"
         '
+        'lblempleadoventa
+        '
+        Me.lblempleadoventa.AutoSize = True
+        Me.lblempleadoventa.Enabled = False
+        Me.lblempleadoventa.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.lblempleadoventa.Location = New System.Drawing.Point(126, 405)
+        Me.lblempleadoventa.Name = "lblempleadoventa"
+        Me.lblempleadoventa.Size = New System.Drawing.Size(39, 13)
+        Me.lblempleadoventa.TabIndex = 6
+        Me.lblempleadoventa.Text = "Label1"
+        Me.lblempleadoventa.Visible = False
+        '
+        'lblclienteventa
+        '
+        Me.lblclienteventa.AutoSize = True
+        Me.lblclienteventa.Enabled = False
+        Me.lblclienteventa.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.lblclienteventa.Location = New System.Drawing.Point(126, 435)
+        Me.lblclienteventa.Name = "lblclienteventa"
+        Me.lblclienteventa.Size = New System.Drawing.Size(39, 13)
+        Me.lblclienteventa.TabIndex = 7
+        Me.lblclienteventa.Text = "Label2"
+        Me.lblclienteventa.Visible = False
+        '
+        'lbldireccioncliente
+        '
+        Me.lbldireccioncliente.AutoSize = True
+        Me.lbldireccioncliente.Enabled = False
+        Me.lbldireccioncliente.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.lbldireccioncliente.Location = New System.Drawing.Point(126, 457)
+        Me.lbldireccioncliente.Name = "lbldireccioncliente"
+        Me.lbldireccioncliente.Size = New System.Drawing.Size(39, 13)
+        Me.lbldireccioncliente.TabIndex = 8
+        Me.lbldireccioncliente.Text = "Label2"
+        Me.lbldireccioncliente.Visible = False
+        '
         'Verificar_Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(824, 620)
+        Me.Controls.Add(Me.lbldireccioncliente)
+        Me.Controls.Add(Me.lblclienteventa)
+        Me.Controls.Add(Me.lblempleadoventa)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -124,6 +166,7 @@ Partial Class Verificar_Venta
         CType(Me.dgvverfactura, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents dgvverfactura As System.Windows.Forms.DataGridView
@@ -133,4 +176,7 @@ Partial Class Verificar_Venta
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents lblempleadoventa As System.Windows.Forms.Label
+    Friend WithEvents lblclienteventa As System.Windows.Forms.Label
+    Friend WithEvents lbldireccioncliente As System.Windows.Forms.Label
 End Class

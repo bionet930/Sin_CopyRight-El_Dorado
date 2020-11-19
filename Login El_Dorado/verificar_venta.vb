@@ -13,6 +13,18 @@ Imports System.Windows.Forms
 
 Public Class Verificar_Venta
 
+    Public cmd As MySqlCommand
+    Public dr As MySqlDataReader
+    Public adt As MySqlDataAdapter
+    Public ds As DataSet
+
+    Dim conexion As New MySqlConnection()
+
+
+    Dim consulta As ConexionPablo = New ConexionPablo()
+
+
+
     Dim conex As New MySqlConnection("data source=localhost;user id=prueba; password=prueba;database=eldorado")
     Dim da As MySqlDataAdapter
     Dim dt As DataTable
@@ -86,7 +98,7 @@ Public Class Verificar_Venta
         End Try
     End Sub
 
-    Private Sub btnverventa_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnverventa.Click
+    Public Sub btnverventa_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnverventa.Click
 
         Call mostrarlosdatos()
 
@@ -100,7 +112,9 @@ Public Class Verificar_Venta
         PictureBox1.Image.Save("C:\Mantenimiento\QRVenta.png", Drawing.Imaging.ImageFormat.Png)
         'SaveFileDialog1.ShowDialog()
 
-
+        lblempleadoventa.Text = consulta.consultaConRetorno("Select NombreEmpl from tblempleados where `id_Empleado`= '" & dgvverfactura.Item(1, 0).Value() & "' ;")
+        lblclienteventa.Text = consulta.consultaConRetorno("Select NombreCli from tblclientes where `id_Cliente`= '" & dgvverfactura.Item(6, 0).Value() & "' ;")
+        lbldireccioncliente.Text = consulta.consultaConRetorno("Select DomicilioCli from tblclientes where `id_Cliente`= '" & dgvverfactura.Item(6, 0).Value() & "' ;")
     End Sub
 
     Private Sub AltoFila() 'Para Configurar el alto de la fuila del DGVW
@@ -150,7 +164,7 @@ Public Class Verificar_Venta
         Table1.SetWidths(widths)
 
         'Tabla 1 del Encabezado
-        Dim imagenURL As String = "C:\Mantenimiento\dorado.jpeg"
+        Dim imagenURL As String = "C:\Mantenimiento\dorado.jpg"
         Dim imagenJPG As iTextSharp.text.Image
         imagenJPG = iTextSharp.text.Image.GetInstance(imagenURL)
         imagenJPG.ScaleToFit(50.0F, 65.0F)
@@ -228,7 +242,7 @@ Public Class Verificar_Venta
         Col1 = New PdfPCell(New Phrase("CLIENTE", fontB8))
         Col1.Border = 0
         table2.AddCell(Col1)
-        Col2 = New PdfPCell(New Phrase("Sin Copyright", font8))
+        Col2 = New PdfPCell(New Phrase(lblclienteventa.Text, font8))
         Col2.Border = 0
         table2.AddCell(Col2)
         Col3 = New PdfPCell(New Phrase("Fecha de Emisión", fontB8))
@@ -263,7 +277,7 @@ Public Class Verificar_Venta
         Col1 = New PdfPCell(New Phrase("Dirección:", fontB8))
         Col1.Border = 0
         table2.AddCell(Col1)
-        Col2 = New PdfPCell(New Phrase("Gutierrez Ruiz 881", font8))
+        Col2 = New PdfPCell(New Phrase(lbldireccioncliente.Text, font8))
         Col2.Border = 0
         table2.AddCell(Col2)
         table2.AddCell(CVacio)
@@ -313,7 +327,7 @@ Public Class Verificar_Venta
         Col1 = New PdfPCell(New Phrase(dgvverfactura.Item(0, 0).Value(), font8))
         Col1.Border = 0
         Table4.AddCell(Col1)
-        Col2 = New PdfPCell(New Phrase("Empleado", font8))
+        Col2 = New PdfPCell(New Phrase(lblempleadoventa.Text, font8))
         Col2.Border = 0
         Table4.AddCell(Col2)
         Col3 = New PdfPCell(New Phrase(dgvverfactura.Item(2, 0).Value(), font8))
@@ -487,6 +501,11 @@ Public Class Verificar_Venta
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+
+    End Sub
+
+   
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbldireccioncliente.Click
 
     End Sub
 End Class

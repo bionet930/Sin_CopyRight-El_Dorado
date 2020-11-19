@@ -49,6 +49,8 @@ Partial Class ventasprincipal
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.lblempleado = New System.Windows.Forms.Label()
+        Me.lblcliente = New System.Windows.Forms.Label()
         CType(Me.nudCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvFactura, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -184,7 +186,7 @@ Partial Class ventasprincipal
         '
         'nudCantidad
         '
-        Me.nudCantidad.Location = New System.Drawing.Point(399, 123)
+        Me.nudCantidad.Location = New System.Drawing.Point(431, 123)
         Me.nudCantidad.Name = "nudCantidad"
         Me.nudCantidad.Size = New System.Drawing.Size(53, 20)
         Me.nudCantidad.TabIndex = 28
@@ -192,17 +194,17 @@ Partial Class ventasprincipal
         '
         'txtIdmercaderia
         '
-        Me.txtIdmercaderia.Font = New System.Drawing.Font("Mongolian Baiti", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIdmercaderia.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIdmercaderia.Location = New System.Drawing.Point(117, 123)
         Me.txtIdmercaderia.Name = "txtIdmercaderia"
-        Me.txtIdmercaderia.Size = New System.Drawing.Size(104, 22)
+        Me.txtIdmercaderia.Size = New System.Drawing.Size(104, 23)
         Me.txtIdmercaderia.TabIndex = 18
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(326, 125)
+        Me.Label4.Location = New System.Drawing.Point(358, 125)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(60, 12)
         Me.Label4.TabIndex = 15
@@ -251,7 +253,7 @@ Partial Class ventasprincipal
         'lblPrecio
         '
         Me.lblPrecio.AutoSize = True
-        Me.lblPrecio.Location = New System.Drawing.Point(587, 82)
+        Me.lblPrecio.Location = New System.Drawing.Point(619, 82)
         Me.lblPrecio.Name = "lblPrecio"
         Me.lblPrecio.Size = New System.Drawing.Size(0, 13)
         Me.lblPrecio.TabIndex = 32
@@ -260,7 +262,7 @@ Partial Class ventasprincipal
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(505, 128)
+        Me.Label5.Location = New System.Drawing.Point(537, 128)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(42, 12)
         Me.Label5.TabIndex = 33
@@ -269,9 +271,10 @@ Partial Class ventasprincipal
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.Location = New System.Drawing.Point(238, 128)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(0, 13)
+        Me.lblNombre.Size = New System.Drawing.Size(0, 12)
         Me.lblNombre.TabIndex = 34
         '
         'btnFinalizarVenta
@@ -292,6 +295,7 @@ Partial Class ventasprincipal
         'txtTotal
         '
         Me.txtTotal.Enabled = False
+        Me.txtTotal.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTotal.Location = New System.Drawing.Point(399, 392)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.Size = New System.Drawing.Size(100, 20)
@@ -300,7 +304,7 @@ Partial Class ventasprincipal
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(578, 128)
+        Me.Label8.Location = New System.Drawing.Point(610, 128)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(0, 13)
         Me.Label8.TabIndex = 37
@@ -309,7 +313,7 @@ Partial Class ventasprincipal
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(488, 82)
+        Me.Label9.Location = New System.Drawing.Point(520, 82)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(95, 12)
         Me.Label9.TabIndex = 40
@@ -318,7 +322,7 @@ Partial Class ventasprincipal
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(407, 47)
+        Me.Label10.Location = New System.Drawing.Point(439, 47)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(0, 13)
         Me.Label10.TabIndex = 42
@@ -327,11 +331,31 @@ Partial Class ventasprincipal
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(315, 47)
+        Me.Label11.Location = New System.Drawing.Point(347, 47)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(82, 12)
         Me.Label11.TabIndex = 43
         Me.Label11.Text = "Stock Actual"
+        '
+        'lblempleado
+        '
+        Me.lblempleado.AutoSize = True
+        Me.lblempleado.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblempleado.Location = New System.Drawing.Point(208, 55)
+        Me.lblempleado.Name = "lblempleado"
+        Me.lblempleado.Size = New System.Drawing.Size(51, 12)
+        Me.lblempleado.TabIndex = 44
+        Me.lblempleado.Text = "Label12"
+        '
+        'lblcliente
+        '
+        Me.lblcliente.AutoSize = True
+        Me.lblcliente.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcliente.Location = New System.Drawing.Point(209, 81)
+        Me.lblcliente.Name = "lblcliente"
+        Me.lblcliente.Size = New System.Drawing.Size(51, 12)
+        Me.lblcliente.TabIndex = 45
+        Me.lblcliente.Text = "Label13"
         '
         'ventasprincipal
         '
@@ -339,6 +363,8 @@ Partial Class ventasprincipal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(926, 530)
+        Me.Controls.Add(Me.lblcliente)
+        Me.Controls.Add(Me.lblempleado)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -402,4 +428,6 @@ Partial Class ventasprincipal
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents lblempleado As System.Windows.Forms.Label
+    Friend WithEvents lblcliente As System.Windows.Forms.Label
 End Class

@@ -30,6 +30,7 @@ Public Class ventasprincipal
         cmbClientes.DataSource = consulta.mostrarEnTabla("select * from tblclientes;")
         cmbClientes.DisplayMember = "Id Cliente"
         cmbClientes.ValueMember = "id_Cliente"
+
     End Sub
 
     Sub llenarEmpleado()
@@ -37,7 +38,6 @@ Public Class ventasprincipal
         cmbEmpleados.DataSource = consulta.mostrarEnTabla("select * from tblempleados;")
         cmbEmpleados.DisplayMember = "Id Empleado"
         cmbEmpleados.ValueMember = "id_Empleado"
-
     End Sub
 
     Private Sub ventasprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -60,6 +60,7 @@ Public Class ventasprincipal
         cmbClientes.Enabled = False
         txtIdmercaderia.Enabled = False
         nudCantidad.Enabled = False
+
 
 
     End Sub
@@ -335,19 +336,22 @@ Public Class ventasprincipal
 
     Private Sub cmbEmpleados_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbEmpleados.SelectedIndexChanged
 
+        lblempleado.Text = consulta.consultaConRetorno("Select NombreEmpl from tblempleados where `id_Empleado`= '" & cmbEmpleados.Text & "' ;")
+
     End Sub
 
     Private Sub cmbEmpleados_SelectionChangeCommitted(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbEmpleados.SelectionChangeCommitted
 
         cmbClientes.Enabled = True
-        cmbEmpleados.Enabled = False
+        'cmbEmpleados.Enabled = False
 
 
     End Sub
 
     Private Sub cmbClientes_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbClientes.SelectedIndexChanged
-        cmbClientes.Enabled = False
+        'cmbClientes.Enabled = False
         txtIdmercaderia.Enabled = True
-
+        lblcliente.Text = consulta.consultaConRetorno("Select NombreCli from tblclientes where `id_Cliente`= '" & cmbClientes.Text & "' ;")
     End Sub
+
 End Class

@@ -58,7 +58,7 @@ Public Class ConexionPablo
     End Function
 
 
-    Private Function consultaReturnHideVariosValores(ByVal Sql As String) As String
+    Public Function consultaReturnHideVariosValores(ByVal Sql As String) As String
         Try
             conexion.Open()
             comando = New MySqlCommand(Sql, conexion)
@@ -71,7 +71,7 @@ Public Class ConexionPablo
         Return valorReturn
     End Function
 
-    Private Function insertarEnTabla(ByVal consulta As String) As DataTable
+    Public Function insertarEnTabla(ByVal consulta As String) As DataTable
         Try
             adaptador = New MySqlDataAdapter(consulta, Me.conexion)
             Me.tabla = New DataTable

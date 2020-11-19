@@ -275,3 +275,4 @@ D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Do
 D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.TrustInfo.xml
 D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.exe.manifest
 D:\PROYECTO 3RO BF PROVISION EL DORADO\Login-El_Dorado con Pantallas\Login El_Dorado\obj\x86\Debug\Login El_Dorado.application
+C:\Users\Usuario\Desktop\UTU-2020\Proyecto Sin-Copyright\Login El_Dorado\Login-El_Dorado\Login El_Dorado\Login El_Dorado\bin\Debug\MessagingToolkit.QRCode.dll
