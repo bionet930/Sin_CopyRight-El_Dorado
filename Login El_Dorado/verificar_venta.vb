@@ -1,6 +1,8 @@
 ﻿Imports iTextSharp.text
 Imports iTextSharp.text.pdf
 Imports System.IO
+Imports MessagingToolkit.QRCode
+
 
 Imports System.Data
 Imports System.Data.DataRow
@@ -148,7 +150,7 @@ Public Class Verificar_Venta
         Table1.SetWidths(widths)
 
         'Tabla 1 del Encabezado
-        Dim imagenURL As String = "C:\Mantenimiento\dorado.jpg"
+        Dim imagenURL As String = "C:\Mantenimiento\dorado.jpeg"
         Dim imagenJPG As iTextSharp.text.Image
         imagenJPG = iTextSharp.text.Image.GetInstance(imagenURL)
         imagenJPG.ScaleToFit(50.0F, 65.0F)

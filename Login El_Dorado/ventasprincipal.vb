@@ -57,6 +57,9 @@ Public Class ventasprincipal
         btnIngresarProducto.Enabled = False
         'btnCerrar.Enabled = False
         btnFinalizarVenta.Enabled = False
+        cmbClientes.Enabled = False
+        txtIdmercaderia.Enabled = False
+        nudCantidad.Enabled = False
 
 
     End Sub
@@ -74,27 +77,46 @@ Public Class ventasprincipal
     Private Sub txtIdmercaderia_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtIdmercaderia.TextChanged
 
 
-        Try
-            dgvVentas.DataSource = consulta.mostrarEnTabla("Select id_Mercaderia,NombreMerc,Descuento,PrecioVenta from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & ";")
-            lblNombre.Text = dgvVentas.CurrentRow.Cells.Item(1).Value.ToString
-            lblPrecio.Text = dgvVentas.CurrentRow.Cells.Item(3).Value.ToString
-            If lblNombre.Text = "" Then
-                MsgBox("Debe ingresar algun dato. ")
-                lblNombre.Text = "*"
+        'Try
+        '    dgvVentas.DataSource = consulta.mostrarEnTabla("Select id_Mercaderia,NombreMerc,Descuento,PrecioVenta from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & ";")
+        '    lblNombre.Text = dgvVentas.CurrentRow.Cells.Item(1).Value.ToString
+        '    lblPrecio.Text = dgvVentas.CurrentRow.Cells.Item(3).Value.ToString
+        '    If lblNombre.Text = "" Then
+        '        MsgBox("Debe ingresar algun dato. ")
+        '        lblNombre.Text = "*"
 
 
-            
 
-              
 
-            End If
 
-        Catch ex As Exception
-            MsgBox("Debe ingresar algun dato. " & ex.Message)
 
-            
+        '    End If
 
-        End Try
+        'Catch ex As Exception
+        '    MsgBox("Debe ingresar algun dato. " & ex.Message)
+
+
+
+        'End Try
+
+        If Not txtIdmercaderia.Text.Equals("") Then
+            consulta.consultaConRetorno("Select NombreMerc from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & " and EstadoMerc=1;")
+            Dim nombre As String = consulta.valorReturn
+
+            consulta.consultaConRetorno("Select PrecioVenta from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & ";")
+            Dim precioVenta As Integer = Val(consulta.valorReturn)
+
+            dgvVentas.DataSource = consulta.mostrarEnTabla("Select id_Mercaderia,NombreMerc,Descuento,PrecioVenta from tblmercaderia where id_Mercaderia = " & txtIdmercaderia.Text & " and EstadoMerc=1;")
+            lblNombre.Text = nombre
+            lblPrecio.Text = precioVenta
+        End If
+
+
+
+
+
+        nudCantidad.Enabled = True
+        btnIngresarProducto.Enabled = True
 
     End Sub
 
@@ -111,8 +133,7 @@ Public Class ventasprincipal
 
 
         consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `Stock`= Stock - '" & nudCantidad.Value & "';")
-        MsgBox("se borro stock", vbOKOnly + vbDefaultButton2, "Mensaje")
-
+        
 
         strf = Format(fecha, "yyy-MM-dd") 'Se da formato a la fecha
 
@@ -127,7 +148,6 @@ Public Class ventasprincipal
                                     "','" & lblNombre.Text & "');")
 
         If consulta.resultado = 1 Then
-            MsgBox("Ingresado correctamente", vbOKOnly + vbDefaultButton2, "Mensaje")
             dgvFactura.DataSource = consulta.mostrarEnTabla("Select id_Mercaderia,NombreMerc, CantidadMerc, PrecioVenta  from detalleventa;")
             con = con + 1
         End If
@@ -149,6 +169,13 @@ Public Class ventasprincipal
         Dim stock As String
         stock = consulta.consultaConRetorno("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
         Label10.Text = stock
+
+        txtIdmercaderia.Text = ""
+        nudCantidad.Value = 0
+        btnFinalizarVenta.Enabled = True
+        lblPrecio.Text = ""
+        lblNombre.Text = ""
+
 
 
        
@@ -189,8 +216,10 @@ Public Class ventasprincipal
                 '*************** borrar del total
 
                 For Each row As DataGridViewRow In Me.dgvFactura.Rows
-                    Total = (Val(row.Cells(3).Value) - Total) * (-1)
+                    Total = ((Total) - (Val(row.Cells(3).Value)))
+
                 Next
+                Total = Total * (-1)
                 Me.txtTotal.Text = Total.ToString
 
 
@@ -205,7 +234,6 @@ Public Class ventasprincipal
 
                 consulta.consultaSinRetorno(" UPDATE `tblmercaderia` SET `Stock`= '" & resultado & "' where `id_Mercaderia` = '" & txtIdmercaderia.Text & "' ;")
 
-                MsgBox("se Agrego al stock", vbOKOnly + vbDefaultButton2, "Mensaje")
 
                 Dim stock As String
                 stock = consulta.consultaConRetorno("Select Stock from tblmercaderia where `id_Mercaderia`= '" & txtIdmercaderia.Text & "' ;")
@@ -213,7 +241,7 @@ Public Class ventasprincipal
 
 
             Else
-                MsgBox("No Existen lmas productos en el carrito", MsgBoxStyle.Critical, AcceptButton)
+                MsgBox("No Existen mas productos en el carrito", MsgBoxStyle.Critical, AcceptButton)
 
             End If
         End If
@@ -255,16 +283,23 @@ Public Class ventasprincipal
             con = con + 1
         End If
 
+        btnEliminar.Enabled = False
+        btnIngresarProducto.Enabled = False
+        btnimprimirfac.Enabled = True
+        txtIdmercaderia.Enabled = False
+        nudCantidad.Enabled = False
+
+
 
     End Sub
 
     Private Sub nudCantidad_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nudCantidad.ValueChanged
 
         btnEliminar.Enabled = True
-        btnimprimirfac.Enabled = True
+        btnimprimirfac.Enabled = False
         btnIngresarProducto.Enabled = True
         btnCerrar.Enabled = True
-        btnFinalizarVenta.Enabled = True
+        btnFinalizarVenta.Enabled = False
 
 
         Label8.Text = Val(lblPrecio.Text) * nudCantidad.Value
@@ -299,6 +334,20 @@ Public Class ventasprincipal
     End Sub
 
     Private Sub cmbEmpleados_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbEmpleados.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbEmpleados_SelectionChangeCommitted(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbEmpleados.SelectionChangeCommitted
+
+        cmbClientes.Enabled = True
+        cmbEmpleados.Enabled = False
+
+
+    End Sub
+
+    Private Sub cmbClientes_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbClientes.SelectedIndexChanged
+        cmbClientes.Enabled = False
+        txtIdmercaderia.Enabled = True
 
     End Sub
 End Class
