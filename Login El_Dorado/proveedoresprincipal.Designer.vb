@@ -57,7 +57,7 @@ Partial Class proveedoresprincipal
         Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(368, 295)
+        Me.btnIngresar.Location = New System.Drawing.Point(368, 44)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(151, 40)
         Me.btnIngresar.TabIndex = 6
@@ -72,7 +72,7 @@ Partial Class proveedoresprincipal
         Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(368, 115)
+        Me.btnModificar.Location = New System.Drawing.Point(368, 143)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(151, 40)
         Me.btnModificar.TabIndex = 5
@@ -87,7 +87,7 @@ Partial Class proveedoresprincipal
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(368, 173)
+        Me.btnEliminar.Location = New System.Drawing.Point(368, 194)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(151, 40)
         Me.btnEliminar.TabIndex = 4
@@ -281,7 +281,7 @@ Partial Class proveedoresprincipal
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(368, 231)
+        Me.btnCerrar.Location = New System.Drawing.Point(368, 247)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(151, 40)
         Me.btnCerrar.TabIndex = 3
@@ -296,7 +296,7 @@ Partial Class proveedoresprincipal
         Me.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNuevo.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.Location = New System.Drawing.Point(368, 60)
+        Me.btnNuevo.Location = New System.Drawing.Point(368, 92)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(151, 40)
         Me.btnNuevo.TabIndex = 21

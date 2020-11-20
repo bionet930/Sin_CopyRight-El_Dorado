@@ -60,14 +60,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Login El_Dorado.exe" size="3985408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Login El_Dorado.exe" size="3990016">
       <assemblyIdentity name="Login El_Dorado" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>RPki3e0eHue0nLFDA7SUalvXU/E=</dsig:DigestValue>
+        <dsig:DigestValue>4ul25L2DY1LaP/7L/fjCjrGuasM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

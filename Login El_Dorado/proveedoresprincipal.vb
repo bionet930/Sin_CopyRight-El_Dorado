@@ -139,7 +139,7 @@ Public Class proveedoresprincipal
         si = MsgBox("Desea Modificar registro?", MsgBoxStyle.YesNo, "Eliminar")
 
         If si = 6 Then
-            consulta.consultaSinRetorno("UPDATE `tblproveedores` SET `NombrePrv`='" & txtnombreprov.Text & "',`TelefonoProv`='" & txttelprov.Text & "',`EmpresaProv`='" & txtempresaprov.Text & "',`RutEmpresaProv`='" & txtrutprov.Text & "',`DirEmpresaProv`='" & txtidprov.Text & "' WHERE `id_Prov`='" & txtidprov.Text & "'")
+            consulta.consultaSinRetorno("UPDATE `tblproveedores` SET `NombrePrv`='" & txtnombreprov.Text & "',`TelefonoProv`='" & txttelprov.Text & "',`EmpresaProv`='" & txtempresaprov.Text & "',`RutEmpresaProv`='" & txtrutprov.Text & "',`DirEmpresaProv`='" & txtdirprov.Text & "' WHERE `id_Prov`='" & txtidprov.Text & "'")
 
             ''                                  
 
@@ -235,7 +235,7 @@ Public Class proveedoresprincipal
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
 
         txtidprov.Clear()
-        txtidprov.Enabled = False
+        txtidprov.Enabled = True
 
         txtnombreprov.Clear()
         txttelprov.Clear()
@@ -246,9 +246,8 @@ Public Class proveedoresprincipal
         btnIngresar.Enabled = True
         btnEliminar.Enabled = False
         btnModificar.Enabled = False
-        btnCerrar.Enabled = False
+        btnCerrar.Enabled = True
         btnNuevo.Enabled = False
-
 
     End Sub
 End Class

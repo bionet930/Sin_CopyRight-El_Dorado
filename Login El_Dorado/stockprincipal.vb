@@ -54,11 +54,11 @@ Public Class stockprincipal
     End Sub
 
     Private Sub stockprincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        inhabilitarBotones()
+        'inhabilitarBotones()
         limpiarTex()
         llenarProveedores()
         consulta.establecerConexion()
-        inabilitarTextos()
+        'inabilitarTextos()
         actualizarTabla()
 
 
@@ -105,10 +105,6 @@ Public Class stockprincipal
             txtPrecioVenta.Text = fila.Cells(3).Value.ToString
             txtStock.Text = fila.Cells(5).Value
             txtDescuento.Text = fila.Cells(6).Value.ToString
-
-
-
-
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -281,15 +277,13 @@ Public Class stockprincipal
 
 
         If si = 6 Then
-            consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `EstadoMerc`= 0 WHERE id_Mercaderia = '" & dgvDatostock.CurrentRow.Index.ToString & "'")
+
+            consulta.consultaSinRetorno("UPDATE `tblmercaderia` SET `EstadoMerc`= 0 WHERE `tblmercaderia`.`id_Mercaderia` = '" & txtIdmercaderia.Text & "'")
 
             Dim loFila As DataGridViewRow = Me.dgvDatostock.CurrentRow()
             dgvDatostock.Rows.Remove(loFila)
 
             MsgBox("Se elimino registro", MsgBoxStyle.OkOnly, "Regsitro Eliminado")
-
-
-
 
         End If
 
@@ -300,8 +294,8 @@ Public Class stockprincipal
 
         Dim fila As DataGridViewRow = dgvDatostock.CurrentRow
 
-        habilitarBotones()
-        habilitarTextos()
+        'habilitarBotones()
+        'habilitarTextos()
 
 
 
@@ -361,9 +355,6 @@ Public Class stockprincipal
 
         txtNombre.Enabled = True
 
-
-
-
     End Sub
 
     Private Sub btnIngresarProducto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresarProducto.Click
@@ -407,10 +398,6 @@ Public Class stockprincipal
 
         limpiarTex()
 
-
-
-
-
     End Sub
 
     Sub actualizarTabla()
@@ -419,5 +406,34 @@ Public Class stockprincipal
     End Sub
 
   
+    Private Sub dgvDatostock_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvDatostock.CellContentClick
+
+    End Sub
+
+    Private Sub btnnuevo_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnnuevo.Click
+
+        txtIdmercaderia.Clear()
+        txtIdmercaderia.Enabled = True
+
+        txtNombre.Clear()
+        txtPrecioCosto.Clear()
+        txtPrecioVenta.Clear()
+        txtStock.Clear()
+        txtDescuento.Clear()
+
+        btnIngresar.Enabled = True
+        btnEliminar.Enabled = False
+        btnModificar.Enabled = False
+        btnCerrar.Enabled = True
+        btnnuevo.Enabled = False
+        btnActualizarStock.Enabled = False
+        btnstockprincipal.Enabled = False
+    End Sub
+
+    Private Sub cmdProveedores_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdProveedores.SelectedIndexChanged
+
+        lblnombreprov.Text = consulta.consultaConRetorno("Select NombrePrv from tblproveedores where `id_Prov`= '" & cmdProveedores.Text & "' ;")
+
+    End Sub
 End Class
 

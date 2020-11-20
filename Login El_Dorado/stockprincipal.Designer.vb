@@ -52,6 +52,8 @@ Partial Class stockprincipal
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnActualizarStock = New System.Windows.Forms.Button()
         Me.btnIngresarProducto = New System.Windows.Forms.Button()
+        Me.btnnuevo = New System.Windows.Forms.Button()
+        Me.lblnombreprov = New System.Windows.Forms.Label()
         CType(Me.dgvDatostock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.avatar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,7 +86,7 @@ Partial Class stockprincipal
         Me.btnstockprincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnstockprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnstockprincipal.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnstockprincipal.Location = New System.Drawing.Point(301, 178)
+        Me.btnstockprincipal.Location = New System.Drawing.Point(357, 208)
         Me.btnstockprincipal.Name = "btnstockprincipal"
         Me.btnstockprincipal.Size = New System.Drawing.Size(161, 30)
         Me.btnstockprincipal.TabIndex = 3
@@ -119,7 +121,7 @@ Partial Class stockprincipal
         Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(301, 21)
+        Me.btnIngresar.Location = New System.Drawing.Point(357, 17)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(161, 32)
         Me.btnIngresar.TabIndex = 10
@@ -134,7 +136,7 @@ Partial Class stockprincipal
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(301, 91)
+        Me.btnEliminar.Location = New System.Drawing.Point(357, 121)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(161, 32)
         Me.btnEliminar.TabIndex = 8
@@ -149,11 +151,11 @@ Partial Class stockprincipal
         Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(301, 57)
+        Me.btnModificar.Location = New System.Drawing.Point(357, 87)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(161, 32)
         Me.btnModificar.TabIndex = 9
-        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.Text = "&Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnCerrar
@@ -164,7 +166,7 @@ Partial Class stockprincipal
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(301, 125)
+        Me.btnCerrar.Location = New System.Drawing.Point(357, 155)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(161, 32)
         Me.btnCerrar.TabIndex = 7
@@ -278,6 +280,7 @@ Partial Class stockprincipal
         '
         'txtIdmercaderia
         '
+        Me.txtIdmercaderia.Enabled = False
         Me.txtIdmercaderia.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIdmercaderia.Location = New System.Drawing.Point(150, 33)
         Me.txtIdmercaderia.Name = "txtIdmercaderia"
@@ -387,12 +390,39 @@ Partial Class stockprincipal
         Me.btnIngresarProducto.UseVisualStyleBackColor = True
         Me.btnIngresarProducto.Visible = False
         '
+        'btnnuevo
+        '
+        Me.btnnuevo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnnuevo.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnnuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnnuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnnuevo.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnnuevo.Location = New System.Drawing.Point(357, 52)
+        Me.btnnuevo.Name = "btnnuevo"
+        Me.btnnuevo.Size = New System.Drawing.Size(161, 32)
+        Me.btnnuevo.TabIndex = 33
+        Me.btnnuevo.Text = "&Nuevo"
+        Me.btnnuevo.UseVisualStyleBackColor = True
+        '
+        'lblnombreprov
+        '
+        Me.lblnombreprov.AutoSize = True
+        Me.lblnombreprov.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnombreprov.Location = New System.Drawing.Point(278, 155)
+        Me.lblnombreprov.Name = "lblnombreprov"
+        Me.lblnombreprov.Size = New System.Drawing.Size(44, 12)
+        Me.lblnombreprov.TabIndex = 34
+        Me.lblnombreprov.Text = "Label9"
+        '
         'stockprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(1011, 560)
+        Me.Controls.Add(Me.lblnombreprov)
+        Me.Controls.Add(Me.btnnuevo)
         Me.Controls.Add(Me.btnIngresarProducto)
         Me.Controls.Add(Me.btnActualizarStock)
         Me.Controls.Add(Me.cmdProveedores)
@@ -457,4 +487,6 @@ Partial Class stockprincipal
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnActualizarStock As System.Windows.Forms.Button
     Friend WithEvents btnIngresarProducto As System.Windows.Forms.Button
+    Friend WithEvents btnnuevo As System.Windows.Forms.Button
+    Friend WithEvents lblnombreprov As System.Windows.Forms.Label
 End Class

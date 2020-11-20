@@ -102,7 +102,7 @@ Public Class clientesprincipal
         If si = 6 Then
 
 
-            consulta.consultaSinRetorno("UPDATE `tblclientes` SET `EstadoClient`= 0 WHERE `tblclientes`.`id_Cliente` = '" & dgvClientes.CurrentRow.Index.ToString & "'")
+            consulta.consultaSinRetorno("UPDATE `tblclientes` SET `EstadoClient`= 0 WHERE `tblclientes`.`id_Cliente` = '" & txtId.Text & "'")
 
 
             Dim loFila As DataGridViewRow = Me.dgvClientes.CurrentRow()
@@ -191,9 +191,24 @@ Public Class clientesprincipal
         txtSaldo.Text = fila.Cells(4).Value.ToString
         txtPago.Text = fila.Cells(5).Value
 
-       
-
     End Sub
 
-   
+    Private Sub btnnuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnnuevo.Click
+
+        txtId.Clear()
+        txtId.Enabled = True
+
+        txtNombre.Clear()
+        txtTelefono.Clear()
+        txtDireccion.Clear()
+        txtSaldo.Clear()
+        txtPago.Clear()
+
+        btnIngresar.Enabled = True
+        btnEliminar.Enabled = False
+        btnModificar.Enabled = False
+        btnCerrar.Enabled = True
+        btnnuevo.Enabled = False
+
+    End Sub
 End Class

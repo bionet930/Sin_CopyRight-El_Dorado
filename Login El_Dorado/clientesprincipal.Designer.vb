@@ -23,6 +23,7 @@ Partial Class clientesprincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnnuevo = New System.Windows.Forms.Button()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
@@ -57,6 +58,7 @@ Partial Class clientesprincipal
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnnuevo)
         Me.GroupBox4.Controls.Add(Me.btnIngresar)
         Me.GroupBox4.Controls.Add(Me.btnEliminar)
         Me.GroupBox4.Controls.Add(Me.btnModificar)
@@ -64,10 +66,25 @@ Partial Class clientesprincipal
         Me.GroupBox4.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(337, 35)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(208, 158)
+        Me.GroupBox4.Size = New System.Drawing.Size(208, 209)
         Me.GroupBox4.TabIndex = 18
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Botones"
+        '
+        'btnnuevo
+        '
+        Me.btnnuevo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnnuevo.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnnuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnnuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnnuevo.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnnuevo.Location = New System.Drawing.Point(17, 58)
+        Me.btnnuevo.Name = "btnnuevo"
+        Me.btnnuevo.Size = New System.Drawing.Size(161, 29)
+        Me.btnnuevo.TabIndex = 7
+        Me.btnnuevo.Text = "&Nuevo"
+        Me.btnnuevo.UseVisualStyleBackColor = True
         '
         'btnIngresar
         '
@@ -92,7 +109,7 @@ Partial Class clientesprincipal
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(17, 57)
+        Me.btnEliminar.Location = New System.Drawing.Point(17, 91)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(161, 29)
         Me.btnEliminar.TabIndex = 4
@@ -107,7 +124,7 @@ Partial Class clientesprincipal
         Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(17, 90)
+        Me.btnModificar.Location = New System.Drawing.Point(17, 124)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(161, 29)
         Me.btnModificar.TabIndex = 5
@@ -122,7 +139,7 @@ Partial Class clientesprincipal
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(17, 123)
+        Me.btnCerrar.Location = New System.Drawing.Point(17, 157)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(161, 29)
         Me.btnCerrar.TabIndex = 2
@@ -265,6 +282,7 @@ Partial Class clientesprincipal
         '
         'txtId
         '
+        Me.txtId.Enabled = False
         Me.txtId.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtId.Location = New System.Drawing.Point(140, 45)
         Me.txtId.Name = "txtId"
@@ -394,4 +412,5 @@ Partial Class clientesprincipal
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dgvClientes As System.Windows.Forms.DataGridView
     Friend WithEvents ofdClientes As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents btnnuevo As System.Windows.Forms.Button
 End Class

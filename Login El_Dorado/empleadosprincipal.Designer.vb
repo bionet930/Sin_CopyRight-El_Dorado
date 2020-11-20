@@ -56,6 +56,7 @@ Partial Class empleadosprincipal
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.opfdempleados = New System.Windows.Forms.OpenFileDialog()
+        Me.btnnuevo = New System.Windows.Forms.Button()
         Me.pnlpempl.SuspendLayout()
         Me.panelprincipal.SuspendLayout()
         CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,11 +116,13 @@ Partial Class empleadosprincipal
         Me.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvEmpleados.Location = New System.Drawing.Point(37, 344)
         Me.dgvEmpleados.Name = "dgvEmpleados"
+        Me.dgvEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvEmpleados.Size = New System.Drawing.Size(616, 150)
         Me.dgvEmpleados.TabIndex = 21
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnnuevo)
         Me.GroupBox4.Controls.Add(Me.btnIngresar)
         Me.GroupBox4.Controls.Add(Me.btnEliminar)
         Me.GroupBox4.Controls.Add(Me.btnModificar)
@@ -127,7 +130,7 @@ Partial Class empleadosprincipal
         Me.GroupBox4.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(334, 32)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(208, 158)
+        Me.GroupBox4.Size = New System.Drawing.Size(208, 202)
         Me.GroupBox4.TabIndex = 15
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Acciones Empleado"
@@ -155,7 +158,7 @@ Partial Class empleadosprincipal
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(17, 92)
+        Me.btnEliminar.Location = New System.Drawing.Point(17, 127)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(161, 26)
         Me.btnEliminar.TabIndex = 4
@@ -170,7 +173,7 @@ Partial Class empleadosprincipal
         Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(17, 60)
+        Me.btnModificar.Location = New System.Drawing.Point(17, 95)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(161, 26)
         Me.btnModificar.TabIndex = 5
@@ -185,7 +188,7 @@ Partial Class empleadosprincipal
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrar.Location = New System.Drawing.Point(17, 125)
+        Me.btnCerrar.Location = New System.Drawing.Point(17, 160)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(161, 25)
         Me.btnCerrar.TabIndex = 2
@@ -467,6 +470,21 @@ Partial Class empleadosprincipal
         '
         Me.opfdempleados.FileName = "OpenFileDialog1"
         '
+        'btnnuevo
+        '
+        Me.btnnuevo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnnuevo.FlatAppearance.BorderColor = System.Drawing.Color.Gold
+        Me.btnnuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold
+        Me.btnnuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnnuevo.Font = New System.Drawing.Font("Lucida Sans", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnnuevo.Location = New System.Drawing.Point(17, 61)
+        Me.btnnuevo.Name = "btnnuevo"
+        Me.btnnuevo.Size = New System.Drawing.Size(161, 26)
+        Me.btnnuevo.TabIndex = 7
+        Me.btnnuevo.Text = "&Nuevo"
+        Me.btnnuevo.UseVisualStyleBackColor = True
+        '
         'empleadosprincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -520,4 +538,5 @@ Partial Class empleadosprincipal
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents dtpNacimiento As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpCarnet As System.Windows.Forms.DateTimePicker
+    Friend WithEvents btnnuevo As System.Windows.Forms.Button
 End Class

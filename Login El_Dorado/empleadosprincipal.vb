@@ -23,9 +23,7 @@ Public Class empleadosprincipal
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnregistroempl.Click
-        registroempl.Show()
-    End Sub
+  
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCerrar.Click
         Me.Close()
@@ -48,7 +46,7 @@ Public Class empleadosprincipal
 
         ' insertar datos a la tabla
 
-        consulta.consultaSinRetorno("INSERT INTO tblEmpleados (NombreEmpl,EdadEmpl,TelefonoEmpl,DireccionEmpl,ImagenEmpl,CarnetEmpl,PassEmpl, EstadoEmpl) Values ('" & txtNombre.Text &
+        consulta.consultaSinRetorno("INSERT INTO tblEmpleados (id_Empleado,NombreEmpl,EdadEmpl,TelefonoEmpl,DireccionEmpl,ImagenEmpl,CarnetEmpl,PassEmpl, EstadoEmpl) Values ('" & txtId.Text & "','" & txtNombre.Text &
                                     "', " & txtEdad.Text & ", '" & txtTelefono.Text & "','" & txtDireccion.Text & "', '" & txtImagen.Text &
                                     "','" & strf.ToString & "','" & txtPass.Text & "', '1' );")
 
@@ -91,7 +89,7 @@ Public Class empleadosprincipal
 
 
         If si = 6 Then
-            consulta.consultaSinRetorno("UPDATE `tblempleados` SET `EstadoEmpl` = '0' WHERE `tblempleados`.`id_Empleado` = '" & dgvEmpleados.CurrentRow.Index.ToString & "'")
+            consulta.consultaSinRetorno("UPDATE `tblempleados` SET `EstadoEmpl` = '0' WHERE `id_Empleado` = '" & txtId.Text & "'")
 
             Dim loFila As DataGridViewRow = Me.dgvEmpleados.CurrentRow()
             dgvEmpleados.Rows.Remove(loFila)
@@ -103,6 +101,18 @@ Public Class empleadosprincipal
 
 
          End Sub
+
+    Sub actualizarTabla()
+        '**
+        dgvEmpleados.DataSource = consulta.mostrarEnTabla("Select  id_Empleado, NombreEmpl, EdadEmpl, TelefonoEmpl, DireccionEmpl, CarnetEmpl from tblempleados where `EstadoEmpl`= 1  ;")
+
+    End Sub
+
+    Private Sub Button1_Click()
+
+        actualizarTabla()
+
+    End Sub
 
 
     Private Sub btnImagen_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnImagen.Click
@@ -143,11 +153,90 @@ Public Class empleadosprincipal
 
     End Sub
 
-    Private Sub panelprincipal_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles panelprincipal.Paint
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
+
+
+        Dim fila As DataGridViewRow = dgvEmpleados.CurrentRow
+
+        If dgvEmpleados.SelectedCells.Count <> 0 Then
+            'EnableBoton()
+        End If
+
+        Dim si As Byte
+
+
+        'modificar datos de un Cliente
+        si = MsgBox("Desea Modificar registro?", MsgBoxStyle.YesNo, "Eliminar")
+
+        If si = 6 Then
+            consulta.consultaSinRetorno("UPDATE `tblempleados` SET `NombreEmpl`='" & txtNombre.Text & "',`EdadEmpl`='" & txtEdad.Text & "',`TelefonoEmpl`='" & txtTelefono.Text & "',`DireccionEmpl`='" & txtDireccion.Text & "',`CarnetEmpl`='" & dtpCarnet.Text & "' WHERE `id_Empleado`='" & txtId.Text & "'")
+
+            ''                                  
+
+            MsgBox("Se Modifico registro", MsgBoxStyle.OkOnly, "Rgsitro Eliminado")
+            dgvEmpleados.DataSource = consulta.mostrarEnTabla("SELECT `id_Empleado`, `NombreEmpl`, `EdadEmpl`, `TelefonoEmpl`, `DireccionEmpl`, `CarnetEmpl` FROM tblempleados WHERE `EstadoEmpl` = '1' ;")
+
+        End If
+
+        txtId.Text = ""
+        txtNombre.Text = ""
+        txtEdad.Text = ""
+        txtTelefono.Text = ""
+        txtDireccion.Text = ""
+        'txtdirprov.Text = ""
+
+
+    End Sub
+
+    Private Sub dgvEmpleados_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvEmpleados.CellClick
+
+        Dim fila As DataGridViewRow = dgvEmpleados.CurrentRow
+
+        Try
+
+            If dgvEmpleados.SelectedCells.Count <> 0 Then
+
+            End If
+
+
+            txtId.Text = dgvEmpleados.SelectedCells(0).Value.ToString
+
+            txtId.Text = fila.Cells(0).Value.ToString
+            txtNombre.Text = fila.Cells(1).Value.ToString
+            'dtpNacimiento.Text = fila.Cells(2).Value.ToString
+            txtEdad.Text = fila.Cells(2).Value.ToString
+            txtTelefono.Text = fila.Cells(3).Value.ToString
+            txtDireccion.Text = fila.Cells(4).Value
+            dtpCarnet.Text = fila.Cells(5).Value.ToString
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
 
     End Sub
 
     Private Sub dgvEmpleados_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvEmpleados.CellContentClick
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnnuevo.Click
+
+        txtId.Clear()
+        txtId.Enabled = True
+
+        txtNombre.Clear()
+
+        txtEdad.Clear()
+        txtTelefono.Clear()
+        txtDireccion.Clear()
+
+        btnIngresar.Enabled = True
+        btnEliminar.Enabled = False
+        btnModificar.Enabled = False
+        btnCerrar.Enabled = True
+        btnNuevo.Enabled = False
 
     End Sub
 End Class

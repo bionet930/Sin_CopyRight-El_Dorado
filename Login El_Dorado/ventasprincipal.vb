@@ -354,4 +354,7 @@ Public Class ventasprincipal
         lblcliente.Text = consulta.consultaConRetorno("Select NombreCli from tblclientes where `id_Cliente`= '" & cmbClientes.Text & "' ;")
     End Sub
 
+    Private Sub lblempleado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblempleado.Click
+
+    End Sub
 End Class
