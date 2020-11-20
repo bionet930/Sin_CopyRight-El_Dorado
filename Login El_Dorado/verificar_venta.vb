@@ -289,7 +289,7 @@ Public Class Verificar_Venta
 
         'Tabla 3 Cabecera de los datos
         Dim table3 As PdfPTable = New PdfPTable(7)
-        Dim widths3 As Single() = New Single() {1.0F, 8.0F, 1.0F, 1.0F, 2.0F, 2.0F, 1.0F}
+        Dim widths3 As Single() = New Single() {1.0F, 8.0F, 3.0F, 1.0F, 2.0F, 2.0F, 1.0F}
 
         table3.WidthPercentage = 95
         table3.SetWidths(widths3)
@@ -321,7 +321,7 @@ Public Class Verificar_Venta
 
         'Tabla 4 Datos de Contenido
         Dim Table4 As PdfPTable = New PdfPTable(7)
-        Dim widths4 As Single() = New Single() {1.0F, 8.0F, 1.0F, 1.0F, 2.0F, 2.0F, 1.0F}
+        Dim widths4 As Single() = New Single() {1.0F, 8.0F, 3.0F, 1.0F, 2.0F, 2.0F, 1.0F}
         Table4.WidthPercentage = 95
         Table4.SetWidths(widths4)
         Col1 = New PdfPCell(New Phrase(dgvverfactura.Item(0, 0).Value(), font8))
